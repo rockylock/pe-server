@@ -205,6 +205,10 @@ I need to add some index.html files and clean up some stuff!
 My git repo is pe-server, which points to the alpha-6 server. When I commit from terminal, is there anything else I need to do in order for the server to update? I'm pretty confused here. 
 
 
+## 2022-10-13
 
+### Git workflow
+
+Make changes > collect changes into meaningful commit with Tower > push changes up to GitHub with Tower 
 
 
