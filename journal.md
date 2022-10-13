@@ -207,10 +207,19 @@ My git repo is pe-server, which points to the alpha-6 server. When I commit from
 
 ## 2022-10-13
 
+Installed Tower
+
+
 ### Git workflow
 
 Make changes > collect changes into meaningful commit with Tower > push changes up to GitHub with Tower 
 
 in Tower: remote server names are placeholders -- they don't affect anything but can increase understanding. 
+
+### Emmet (Sublime Text)
+
+I also installed Sublime's Package Control, along with Emmet
+
+
 
 
