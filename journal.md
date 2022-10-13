@@ -104,3 +104,107 @@ Once that error appeared, I looked at the url, manually entered the newest file 
 I think from here on out I’ll pick a file name and leave versioning to git!
 
 So, is the process save files > git committ > update transmit?
+
+### Blog post idea - Who to trust?
+
+I wanted to know more about linking with a new tab using the target="_blank"_ property, and found about the "rel=noopener norefferer" properties to address the reverse tabnapping security vulnerability. In hopes of building a new connection in my brain, I added it to my code. Days later, I noticed that some of the information I'd been following was 4-6 years old. What's more, I found a thread stating that changes made to major browsers in 2021--last year at time of writing--addressed this issue, so it was no longer needed. 
+
+So, who should I trust? How often are we second-guessing ourselves? I think back on my times searching for something to buy. What's the best product, bar-none? Which one provides the best value? Which company best aligns with my ideals? 
+
+Who is behind this review? When was it shared? I look back and thank my librarians, as they were at the forefront of showing me how to trust and verify sources of all sorts, from local publications to fresh, polished web pages. 
+
+I've tried my best to find information that's accurate in the present moment in so many facets of my life; I'm seeing that this pursuit will carry on in this realm. 
+
+
+## 2022-10-12
+
+I'm changing my file structure, and want to make sure that the file paths don't get too messed up. 
+
+- I'm changing FTP folder name from pe-projects to pe-server - so I need to update Transmit location and index.html files 
+- Added archive, images, goals, css folders
+
+When testing with the Open Graph Preview, it suggested I change the metadata image file location to https://peprojects.dev/alpha-6/miguel/images/og-metadata-test/og-metadata-test-001.png -- why?
+
+Affinity Designer
+
+
+It’ll definitely take some getting used to, especially with how some of Affinity’s behavior & shortcuts differ from Illustrator. As with anything, time’ll tell which is preferred. My tutorials I looked at were:
+
+UI overview
+Selecting
+Layers Panel
+
+Next up are:
+New document with templates
+Transforming
+Placing images
+Ordering
+
+I played around with the tools, tried to get comfy with the layout, and the time flew by. In the end, I have some blue triangles, woo!
+
+
+
+Metadata image woes and fix
+
+
+I was having trouble with my metadata image not showing up in Slack and Open Graph Preview. I had…
+
+Added my images to the server, and confirmed it could be found (ex: https://peprojects.dev/alpha-6/miguel/images/og-metadata-test/og-metadata-test-001.jpg )
+Updated my code to include the og metadata property with the full image URL
+
+None of the images showed. So, off to the internet I go.
+
+I found this OGP link that states secure HTTPS sites may need the og:image:secure_url   structured property. I added that optional structured property, and it worked! From the link:
+
+Structured Properties
+
+Some properties can have extra metadata attached to them. These are specified in the same way as other metadata with property and content, but the property will have extra :.
+
+The og:image property has some optional structured properties:
+
+    og:image:url - Identical to og:image.
+    og:image:secure_url - An alternate url to use if the webpage requires HTTPS.
+    og:image:type - A MIME type for this image.
+    og:image:width - The number of pixels wide.
+    og:image:height - The number of pixels high.
+    og:image:alt - A description of what is in the image (not a caption). If the page specifies an og:image it should specify og:image:alt.
+
+A full image example:
+
+<meta property="og:image" content="https://example.com/ogp.jpg" />
+<meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+
+
+
+OGP Preview URL change?
+
+
+When trying the Open Graph preview, the image URL changes from…
+
+https://peprojects.dev/alpha-6/miguel/images/og-metadata-test/og-metadata-test-001.png
+
+to
+
+https://peprojects.devimages/og-metadata-test/og-metadata-test-001.png
+
+@sheriffderek, why does it do that?
+
+
+
+Next steps
+
+
+I need to add some index.html files and clean up some stuff!
+
+### Git/FTP confusion
+
+My git repo is pe-server, which points to the alpha-6 server. When I commit from terminal, is there anything else I need to do in order for the server to update? I'm pretty confused here. 
+
+
+
+
+
