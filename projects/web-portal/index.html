@@ -3,29 +3,69 @@
 <html lang='en'>
 	<head>
 
-		<title>Important sites</title>
+		<title>Important sites | Miguel</title>
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="A practice portal with important websites">
 
+		<style>
+			body {
+				background-color: whitesmoke;
+				max-width: 960px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 40px;
+			}
+
+			h1 {
+				background-color: darkslategray;
+				font-size: 32px;
+				color: whitesmoke;
+				padding: 15px;
+			}
+
+			h2 {
+				font-size: 24px;
+				color: black;
+			}
+				
+			p {
+				font-family: serif;
+				font-size: 18px;
+				color: black;
+			}
+
+			li {
+				display: inline-block; /* This was added in preparation for buttons. Why does this get rid of the list? */
+
+				padding: 10px;
+
+				/* The border below is to test and see how close list items are to one another. Could line-height also work here to give additional space? */
+				/* border: 1px solid red; */
+
+				margin-top: 20px;
+			}
+
+		</style>
+
 	</head>
 
-	<body style="padding-top: 40px; background-color: aliceblue">
-		
-		<h1 style='color:steelblue'>Important sites | Spider Anchor</h1>
+	<body>
+	
+		<h1>Important sites</h1>
 
-		<h2>DFTW</h2>
+		<h2><abbr title="Design for the Web">DFTW</h2>
 
 		<ul>
-			<li><a style="display: inline-block; padding:10px; border:1px solid red" href="https://perpetual.education/design-for-the-web/" target="_blank" rel="noopener noreferrer">DFTW Lessons | Perpetual Education</a></li>
-			<li style="display:inline-block; padding: 10px; border:1px solid red"><a href="http://www.tomatotimers.com/" target="_blank" rel="noopener noreferrer">Pomodoro timer | Tomato Timers</a></li>
-			<li style='margin-top: 10px;'><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">Markup Validator | W3C</a></li>
-			<li style='margin-top: 10px;'><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener norefferer">HTML Elements | MDN</a></li>
-			<li style='margin-top: 10px;'><a href="https://www.htmlhelp.com/reference/html40/alist.html" target="_blank" rel="noopener noreferrer">HTML 4 Elements list</a></li>
-			<li style='margin-top: 10px;'><a href="https://rockylockstep.substack.com/" target="_blank" rel="noopener noreferrer">Meanderings journal | Substack</a></li>
-			<li style='margin-top: 10px;'><a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer">Speedtest | Ookla</a></li>
-			<li style='margin-top: 10px;'><a href="https://drive.google.com/drive/folders/1qC4uwv3zxumu5dhXXhx3qSgXFCRMLpkB" target="_blank" rel="noopener noreferrer">G Drive</a></li>
+			<li><a href="https://perpetual.education/design-for-the-web/" target="_blank" title="View current and previous DFTW lessons">DFTW Lessons | Perpetual Education</a></li>
+			<li><a href="http://www.tomatotimers.com/" target="_blank" title="A virtual Pomodoro timer to stay on task">Pomodoro timer | Tomato Timers</a></li>
+			<li><a href="https://validator.w3.org/" target="_blank" title="Check the markup validity of your web documents">Markup Validator | W3C</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" title="This page lists all the HTML elements, which are created using tags">HTML Elements Reference | MDN</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="blank" title="Alphabetical CSS index">CSS Reference | MDN</a></li>
+			<li><a href="https://rockylockstep.substack.com/" target="_blank" title="Find my writings here">Meanderings journal | Substack</a></li>
+			<li><a href="https://www.speedtest.net/" target="_blank" title="Check your connection">Speedtest | Ookla</a></li>
+			<li><a href="https://drive.google.com/drive/folders/1qC4uwv3zxumu5dhXXhx3qSgXFCRMLpkB" target="_blank" title="Personal PE Drive folder">G Drive</a></li>
 		</ul>
 
 		<br>
@@ -52,4 +92,5 @@
 		<br>
 
 	</body>
+
 </html>

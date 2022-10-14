@@ -212,7 +212,7 @@ Installed Tower
 
 ### Git workflow
 
-Make changes > collect changes into meaningful commit with Tower > push changes up to GitHub with Tower 
+Make changes > Sync to server with Transmit > Collect changes into meaningful commit with Tower > Push changes up to GitHub with Tower 
 
 in Tower: remote server names are placeholders -- they don't affect anything but can increase understanding. 
 
@@ -220,6 +220,12 @@ in Tower: remote server names are placeholders -- they don't affect anything but
 
 I also installed Sublime's Package Control, along with Emmet
 
+
+## 2022-10-14
+
+### CSS
+
+You can use the style abbreviation element to style content. It shows when in hover mode!
 
 
 
