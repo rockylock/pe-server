@@ -1,0 +1,85 @@
+
+/*Setup / Reset*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	/*border: 1px solid red;*/
+}
+
+
+/*Site-wide structure*/
+
+html {
+	background-color: #032e3a;
+}
+
+.inner-column {
+	max-width: 600px;
+	font-size: 1.2em;
+	font-family: serif;
+	text-align: center;
+	color: #58d181;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	line-height: 1.5;
+	/*border-box: 1px solid red;*/
+}
+
+.welcome {
+	background-color: #032e3a;
+	padding: 10px;
+}
+
+section {
+	margin-top: 40px;
+	padding: 10px;
+}
+
+section + section {
+	margin-top: 20px;
+}
+
+
+h1 + ul {
+	margin-top: 25px;
+}
+
+li{
+	text-decoration: square;
+}
+
+li a {
+	text-decoration: circle;
+	padding: 5px;
+}
+
+a {
+	color: inherit;
+	display: block;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: Futura; sans-serif;
+}
+
+h1 + p {
+	margin-top: 40px;
+}
+
+h2 {
+	margin-top: 40px;
+	font-size: 1.5em;
+	font-family: Futura; sans-serif;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+p {
+	margin-top: 20px;
+}

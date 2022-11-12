@@ -1,0 +1,197 @@
+
+/* Site-wide */
+
+* { 
+	box-sizing: border-box;
+	margin: 0;
+ 	/*border: 1px solid red; */
+}
+
+body {
+	background-color: #E0DCE2;
+}
+
+.inner-column {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+/* Headings & text */
+
+.site-header .inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px; 
+	/* gap is like a smarter margin. I'll work whether horiz or vert*/
+}
+
+header {
+	padding: 30px 10px 0;
+}
+
+h1, h2, h3, p {
+	color: #041424;
+}
+
+h1 {
+	/*display: inline-block;*/
+ 	font-family: Source Serif Pro; serif;
+	/*min. font size: 36px, max: 72px; start scaling @ 320px vw, stop @ 960px vw*/
+	font-size: 2.25rem;
+	font-size: clamp(2.25rem, 5.625vw + 1.125rem, 4.5rem);
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-style: italic;
+	padding: 0;
+}
+
+h1 + nav {
+	padding: 0 40px;
+}
+
+h1 + h2 {
+	margin-top: 15px;
+}
+
+h2 {
+	font-family: Dosis, sans-serif;
+/*font size from 1.25 rem to 2.5rem*/
+	font-size: 1.25rem;
+	font-size: clamp(1.25rem, 3.125vw + 0.625rem, 2.5rem);
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+p {
+	font-family: georgia, serif;
+	font-size: 1.125rem;
+	font-size: clamp(1.125rem, 0.65rem + 2.37vw, 2.25rem);
+	text-align: center;
+}
+
+/* Images */
+
+picture {
+	display: block;
+}
+
+.logo {
+	display: block;
+	max-width: 100px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	/*box-shadow: 10px 70px 150px 0px rgba(0,0,0,.5);*/
+}
+
+.ig {
+	max-width: 125px;
+}
+
+/* Links */
+
+a {
+	display: block;
+	list-style: none;
+	color: inherit;
+}
+
+p a {
+	display: inline-block;
+	list-style: underline;
+	color: blue;
+}
+
+a + a {
+	margin-top: 30px;
+}
+
+.ig {
+	background:inherit;
+}
+
+nav {
+	display: inline-block;
+}
+
+nav a {
+	background-color: #041424;
+	color: #E0DCE2;
+	font-family: work sans;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+	padding: 20px 30px;
+	margin: 10px;
+}
+
+nav a:active {
+	color: #E0DCE2;
+	background-color: #006e3c;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; /* top */
+	align-items: center; /* left */
+	padding: 0 0 80px 0;
+}
+
+/*Breakpoints - avoid numbers*/
+
+
+@media (min-width: 768px) {
+	h1 {
+		display: inline-block;
+		text-align: left;
+	}
+	
+	h2 {
+		display: flex;
+		text-align: right;
+	}
+
+	.logo {
+		display: inline-block;
+		max-width: 9%	;
+	}
+
+	.site-header .inner-column {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.site-footer nav {
+		flex-direction: row;
+		justify-content: top;
+	}
+
+	nav a {
+		background-color: #E0DCE2;
+		color: #041424;
+		font-size: 1.3rem;
+		text-decoration: underline;
+		text-align: center;
+		border-radius: 5px;
+		padding: 3px 3px;
+		gap: 5px;
+		/*border: 1px solid red;*/
+	}
+
+	.ig {
+		max-width: 40px;
+	}
+}
+
