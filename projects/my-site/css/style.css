@@ -1,0 +1,117 @@
+
+/* Site-wide structure */
+
+@import "meyer-reset.css";
+@import "setup.css";
+ 
+ * {
+ 	/*border: 1px solid red;*/
+ }
+
+body {
+	background-color: ghostwhite; 
+}
+
+.inner-column {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+/* Headings & text */
+
+h1 {
+ 	font-family: georgia;
+ 	color: #041424;
+	/*min. font size: 36px, max: 72px; start scaling @ 320px vw, stop @ 960px vw*/
+	font-size: 2.25rem;
+	font-size: clamp(2.25rem, 5.625vw + 1.125rem, 4.5rem);
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+	text-align: center;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+p {
+	font-family: georgia, serif;
+	font-size: 1.125rem;
+	font-size: clamp(1.125rem, 0.65rem + 2.37vw, 2.25rem);
+	text-align: center;
+}
+
+
+/* Links */
+
+a {
+	font-family: georgia, serif;
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 1.5rem + 1.25vw, 2.25rem);
+	text-decoration: none;
+	color: ghostwhite;
+	background-color: #041424;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+a:active {
+	background-color: #507282;
+}
+
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; /* default = top */
+	align-items: center; /* default = left */
+}
+
+a + a {
+	margin-top: 1rem;
+}
+
+/* SVG */
+
+.logo {
+	width: 100%;
+	max-height: 50vh;
+	margin-top: 5vh;
+}
+
+.logo-top, .logo-bottom {
+	fill: #041424;
+	transition: 2s;
+}
+
+/* testing without background circle
+.logo-background {
+	fill: #cccccc;
+}
+*/
+
+/* SVG hover, active states */
+/* Final .logo-top, .logo-bottom color: #507282 */
+
+/*
+.logo:hover .logo-top {
+	fill: #507282; 
+	transition: 2s;
+}
+
+.logo:hover .logo-bottom {
+	fill: #507282;
+	transition: 2s;
+}
+
+.reveal:hover h1 {
+	color: #507282;
+	transition: 2s;
+	transition-delay: 2s;
+}
+*/
+
+
+
