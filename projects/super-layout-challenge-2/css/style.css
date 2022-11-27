@@ -1,0 +1,299 @@
+
+/* Site-wide structure */
+
+@import "meyer-reset.css";
+@import "setup.css";
+ 
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100vh;
+	background-color: black;
+/*	border: 3px solid red;*/
+}
+
+/* Header */
+
+header { 
+	background-color: #efefef;
+/*	border: 3px solid blue;*/
+} 
+
+.inner-column {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+/*	border: 3px solid green;*/
+}
+
+header-module {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+/*	border: 3px solid orange;*/
+}
+
+/* Main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: #ff0066;
+}
+
+.welcome {
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.7);
+	padding: 10vh 0;
+}
+
+intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: 	flex-start;
+	gap: 10px;
+}
+
+info {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	gap: 10px;
+/*	border: 1px solid purple;*/
+}
+
+bonus {
+	display: none;
+	border: 1px solid gray;
+	width: 60%;
+	margin-top: 4vh;
+	padding: 10px;
+}
+
+/* Stories */
+
+.stories {
+	display: flex;
+	flex-direction: column;
+	background-color: #ff0066;
+	gap: 10px;
+	padding: 10vh 0;
+}
+
+content-module {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.story {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255,255,255,0.7);
+	gap: 10px;
+	padding: 10px;
+}
+
+/* Footer */
+
+footer {
+/*	border: 1px solid green;*/
+}
+
+footer-module {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	color: white;
+/*	border: 1px solid blue;*/
+}
+
+footer-module p {
+	color: white;
+/*	border: 1px solid red;*/
+}
+
+/* Headings & text */
+
+h1 {
+ 	font-family: helvetica, sans-serif;
+	font-size: 1.75rem;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+	padding: 0;
+}
+
+h2 {
+	font-family: helvetica, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+	padding: 0;
+}
+
+p {
+	font-family: georgia, serif;
+	font-size: 1.125rem;
+/*	border: 1px dashed purple;*/
+}
+
+/* Links */
+
+info a {
+	display: inline-block;
+	background-color: #ff0066;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	min-width: 0px;
+	padding: 10px 0;
+	border-radius: 50vh; /* How can I ensure a half-round here? */
+/*	border: 1px solid green;*/
+}
+
+
+/* Images */
+
+.thumbnail {
+	max-width: 80px;
+}
+
+.hero {
+	max-width: 100%;
+}
+
+.background-image {
+	position: absolute;
+	width: 150px;
+	left: -10%;
+	top: -12%;
+	opacity: 0.25;
+}
+
+/* Breakpoints */
+
+/* 500PX */
+@media (min-width: 500px) {
+	.background-image {
+		max-width: 300px;
+	}
+
+	.story {
+		flex-direction: row;
+	}
+
+	.story picture {
+		max-width: 50%;
+	}
+}
+
+/* 700PX */
+@media (min-width:700px) {
+	.welcome picture {
+		max-width: 60%;
+	}
+
+	intro {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	bonus {
+		display: inline-block;
+	}
+
+	.stories {
+		padding: 10vh 0 30vh;
+	}
+
+	content-module {
+		flex-direction: row;
+	}
+
+	.story {
+		flex-direction: column;
+		max-width: 50%;
+	}
+
+	.story picture {
+		max-width: 100%;
+	}
+}
+
+/* 900PX */
+@media (min-width: 900px) {
+	intro {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	bonus {
+		display: none;
+	}
+
+	content-module {
+		background-color: #ff0066;
+		gap: 0;
+	}
+
+	.story {
+		flex-direction: row;
+		background-color: rgba(255,255,255,0);
+/*		FIND WAY TO MINIMIZE GAP*/
+	}
+
+	.story h2 {
+		background-color: rgba(255,255,255,0.7);
+		width: 50%;
+		padding: 10px;
+	}
+
+	.story picture {
+		width: 50%;
+	}
+}
+
+/* 1100PX */
+@media (min-width: 1100px) {
+	.stories {
+		padding: 10vh 0 50vh;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
