@@ -1,0 +1,261 @@
+
+/* Site-wide structure */
+
+@import "meyer-reset.css";
+@import "setup.css";
+ 
+/* Site Structure */
+* {
+/*	border: 1px solid #041424;*/
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #727241; /* Costa del Sol */
+/*	border: 1px solid red;*/
+}
+
+.inner-column {
+	max-width: 425px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+/*	border: 1px solid blue;*/
+}
+
+/* Header */
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: inherit;
+	/*backdrop-filter: blur(7px); */
+	box-shadow: 0 0 5px rgba(50,50,50, 0.75);
+}
+
+header-module {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: static;
+	gap: 3vw;
+}
+
+header a img {
+	max-height: 12vw;
+	border-radius: 50%;
+}
+
+/* Welcome */
+.welcome {
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4vh 0 4vh;
+
+}
+
+intro {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+intro img, p {
+	max-width: 80%;
+}
+
+intro gear {
+	display: none;
+}
+
+/* .Stories */
+.stories  {
+	flex-direction: column;
+	position: relative;
+	gap: 10px;
+	padding: 4vh 0 4vh;
+}
+
+.stories a img {
+	max-height: 15vh;
+	border-radius: 50%;
+}
+
+article-layout {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+}
+
+article-text {
+	flex-direction: column;
+}
+
+.stories picture {
+	display: none;
+}
+
+/* Footer */
+footer {
+	background-color: rgba(0,0,0,0.3);
+	padding: 3vh 0 12vh;
+}
+
+footer-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	max-height: 40vh;
+	gap: 10px;
+}
+
+footer a {
+	background-color: #727241;
+	width: 200px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+/* Headings & text */
+h1 {
+ 	font-family: helvetica, sans-serif;
+	font-size: 2rem;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+	padding: 0;
+	color: #A7B392;
+}
+
+h2 {
+	font-family: helvetica, sans-serif;
+	font-size: 1.75rem;
+	line-height: 1.3;
+	letter-spacing: 0.03rem;
+	color: #A7B392;
+}
+
+p {
+	font-family: georgia, serif;
+	font-size: 1.125rem;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.025rem;
+	color: #A7B392;
+}
+
+a {
+	color: #A7B392;
+}
+
+h2 + p {
+	margin-top: 0.5rem;
+}
+
+p + a {
+	margin-top: 0.35rem;
+}
+
+/* Breakpoints */
+/* Medium */
+@media (min-width:600px) {
+
+	.inner-column {
+		max-width: 550px;
+	}
+
+	header a img {
+		max-height: 9vw;
+	}
+
+	intro {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	intro img {
+		max-width: 55%;
+	}
+
+	article {
+		flex-direction: row;
+		gap: 4vw;
+	}
+
+	.stories picture {
+		display: flex;
+		position: absolute;
+		bottom: -6vh;
+		right: -6vw;
+		max-width: 200px;
+		z-index: 0;
+
+	}
+
+	footer-content {
+		flex-direction: row;
+	}
+}
+
+/* Large */
+@media (min-width:900px) {
+
+	.inner-column {
+		max-width: 960px;
+	}
+
+	header a img {
+		max-height: 8vh;
+	}
+
+	article-layout {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	article {
+		flex-direction: column;
+		gap: 1vh;
+	}
+
+	article-text a {
+		display: inline-block;
+		background-color: #333;
+		color: lightgray;
+		padding: 5px 20px;
+		text-decoration: none;
+		border-radius: 3vh;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
