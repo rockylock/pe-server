@@ -1,0 +1,122 @@
+
+/* SITE-WIDE STRUCTURE */
+
+@import "meyer-reset.css";
+@import "setup.css";
+
+main {
+	background-color: #dce1e4; /* Zircon */
+	padding: 10px;
+}
+.inner-column {
+	position: relative;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div {
+/*	border: 1px solid blue;*/
+}
+
+/*  GRID LAYOUT */
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 4.5vw 2vw;
+	background-color: white;
+	padding: 2vw 2vw 25vw;
+/*	border: 1px solid red;*/
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.detail {
+	aspect-ratio: 1 / 1;
+}
+
+.one {
+	grid-column-start: 2;
+}
+
+/* 
+Grid-area selection:
+"If four <grid-line> values are specified, grid-row-start is set to the first value, grid-column-start is set to the second value, grid-row-end is set to the third value, and grid-column-end is set to the fourth value." 
+*/
+
+.name {
+	grid-area: 2 / 2 / auto / 3; 
+}
+
+.info {
+	grid-area: 2 / 4 / auto / span 2; 
+}
+
+/* SECTIONS */
+font-history {
+	display: block;
+}
+
+font-glyphs {
+	display: block;
+	margin-top: 5vh;	
+}
+
+/* HEADINGS AND TEXT */	
+p {
+	font-family: baskerville, serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	letter-spacing: 0.03rem;
+/*	border: 1px solid lime;*/
+}
+
+p + p {
+	margin-top: 30px;
+}
+
+font-glyphs p {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: 0.04rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* SVG */
+.baskerville {
+/*	border: 1px solid purple;*/
+}
+
+/* IMAGES */
+.closeup img {
+	width: 100%;
+}
+
+/* BACKGROUND */
+.background {
+/* 	Why does the background "g" disappear when this is active? */
+	position: absolute;
+/* 	overflow: hidden: */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
