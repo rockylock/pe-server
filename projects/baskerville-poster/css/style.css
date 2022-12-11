@@ -26,9 +26,9 @@ div {
 	grid-template-rows: 1fr;
 	gap: 4.5vw 2vw;
 	background-color: white;
-	padding: 2vw 2vw 25vw;
-/*	border: 1px solid red;*/
+	padding: 2vw 2vw 20vw;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+	/*	border: 1px solid red;*/
 }
 
 .detail {
