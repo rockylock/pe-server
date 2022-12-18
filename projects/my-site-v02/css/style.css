@@ -26,34 +26,33 @@ main {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(13, 1fr);
-	border: 2px solid #041424; /* Black Pearl */
+	background-color: #041424; /* Black Pearl */
+	padding: 1vw; /* allows grid edges to be colored by bg */
+	gap: 1vw;
+}
+
+.title, .project-name, .size, .version, .drawn, .page, .truths-title {
+	background-color: white;
+	padding: 1vw;
 }
 
 /* 
-Grid-area selection:
-"If four <grid-line> values are specified:
-- grid-row-start is set to the first value 
-- grid-column-start is set to the second value
-- grid-row-end is set to the third value 
-- grid-column-end is set to the fourth value." 
-
 grid-area: row start / column start / row end / column end; 
 */
 
 .logo {
-	grid-area: 1 / 1 / span 4 / span 6;
+	grid-area: 1 / 1 / span 4 / span 7;
 	display: flex;
 	justify-content: center;
-	padding: 3vh;
-	border: 1px solid #041424;
+	background-color: white;
 }
 
-.project {
-	grid-area: 5 / 1 / 7 / 7;
+.project-name {
+	grid-area: 5 / 1 / span 1 / span 7;
 }
 
 .title {
-	grid-area: 6 / 1 / span 1 / span 6;
+	grid-area: 6 / 1 / span 1 / span 7;
 }
 
 .size {
@@ -61,7 +60,7 @@ grid-area: row start / column start / row end / column end;
 }
 
 .version {
-	grid-area: 7 / 3 / span 1 / span 4;
+	grid-area: 7 / 3 / span 1 / span 5;
 }
 
 .drawn {
@@ -69,13 +68,12 @@ grid-area: row start / column start / row end / column end;
 }
 
 .page {
-	grid-area: 8 / 5 / span 1 / span 2;
+	grid-area: 8 / 5 / span 1 / span 3;
 }
 
 .gray-box {
-	grid-area: 9 / 1 / span 1 / span 6;
-	background-color: ghostwhite; /* Alabaster */
-	border: 1px solid #041424;	
+	grid-area: 9 / 1 / span 1 / span 7;
+	background-color: ghostwhite; /* maybe Alabaster? */
 }
 
 .truths-title {
@@ -84,12 +82,11 @@ grid-area: row start / column start / row end / column end;
 }
 
 .substack {
-	grid-area: 12 / 2 / span 1 / 6;
-}
-
-.title, .project, .size, .version, .drawn, .page, .truths-title {
-	padding: 1vw;
-	border: 1px solid #041424;
+	grid-area: 11 / 1 / span 3 / span 7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
 }
 
 /* HEADINGS & TEXT */
@@ -117,33 +114,31 @@ h1 + h2 {
 }
 
 /* LINKS */
-.substack {
-	display: flex;
+.substack a {
 	font-family: lato;
 	font-size: 2.25rem;
-	text-decoration: none;
 	text-transform: capitalize;
-	justify-content: center;
-	align-items: center;
+	text-decoration: none;
 	color: white;
 	background-color: #041424;
-	padding: 1vw;
+	padding: 5vw;
 	border-radius: 10px;
 }
 
 /* SVGs */
-svg {
-	width: 80%;
+.title-logo {
+	width: 70%; 
 }
 
 /* PICTURES */
 .hand-project {
-	max-width: 70vw;
+	max-width: 50vw;
 	margin-left: 5vw;
+	z-index: 1;
 }
 
 .hand-title {
-	max-width: 75vw;
+	max-width: 65vw;
 	margin-left: 2vw;
 }
 
@@ -154,12 +149,12 @@ svg {
 }
 
 .hand-version {
-	max-width: 21vw;
+	max-width: 22vw;
 	margin: 2vh 0 0 15vw;
 }
 
 .hand-initials {
-	max-width: 45vw;
+	max-width: 40vw;
 	margin-left: 3vw;
 }
 
