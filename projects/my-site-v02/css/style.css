@@ -1,0 +1,177 @@
+
+/* SITE-WIDE STRUCTURE */
+
+@import "meyer-reset.css";
+@import "setup.css";
+
+body {
+	background-color: white; 
+}
+
+main {
+	padding: 2vh;
+}
+
+.inner-column {
+	display: block;
+	position: relative;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*  GRID LAYOUT */
+
+.title-block {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(13, 1fr);
+	border: 2px solid #041424; /* Black Pearl */
+}
+
+/* 
+Grid-area selection:
+"If four <grid-line> values are specified:
+- grid-row-start is set to the first value 
+- grid-column-start is set to the second value
+- grid-row-end is set to the third value 
+- grid-column-end is set to the fourth value." 
+
+grid-area: row start / column start / row end / column end; 
+*/
+
+.logo {
+	grid-area: 1 / 1 / span 4 / span 6;
+	display: flex;
+	justify-content: center;
+	padding: 3vh;
+	border: 1px solid #041424;
+}
+
+.project {
+	grid-area: 5 / 1 / 7 / 7;
+}
+
+.title {
+	grid-area: 6 / 1 / span 1 / span 6;
+}
+
+.size {
+	grid-area: 7 / 1 / span 1 / span 2;
+}
+
+.version {
+	grid-area: 7 / 3 / span 1 / span 4;
+}
+
+.drawn {
+	grid-area: 8 / 1 / span 1 / span 4;
+}
+
+.page {
+	grid-area: 8 / 5 / span 1 / span 2;
+}
+
+.gray-box {
+	grid-area: 9 / 1 / span 1 / span 6;
+	background-color: ghostwhite; /* Alabaster */
+	border: 1px solid #041424;	
+}
+
+.truths-title {
+	grid-area: 10 / 1 / span 1 / span 7;
+	justify-content: center;
+}
+
+.substack {
+	grid-area: 12 / 2 / span 1 / 6;
+}
+
+.title, .project, .size, .version, .drawn, .page, .truths-title {
+	padding: 1vw;
+	border: 1px solid #041424;
+}
+
+/* HEADINGS & TEXT */
+h1 {
+	font-family: lato, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #041424;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: georgia, serif;
+	font-size: 2rem;
+}
+
+/*
+h1 + h2 {
+	margin-top: 0.5vh;
+}
+*/ 
+
+.truths-title h1 {
+	text-align: center;
+}
+
+/* LINKS */
+.substack {
+	display: flex;
+	font-family: lato;
+	font-size: 2.25rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #041424;
+	padding: 1vw;
+	border-radius: 10px;
+}
+
+/* SVGs */
+svg {
+	width: 80%;
+}
+
+/* PICTURES */
+.hand-project {
+	max-width: 70vw;
+	margin-left: 5vw;
+}
+
+.hand-title {
+	max-width: 75vw;
+	margin-left: 2vw;
+}
+
+.hand-size {
+	max-width: 12vw;
+	margin: 1vh 0 0 6vw;
+	justify-content: center;
+}
+
+.hand-version {
+	max-width: 21vw;
+	margin: 2vh 0 0 15vw;
+}
+
+.hand-initials {
+	max-width: 45vw;
+	margin-left: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
