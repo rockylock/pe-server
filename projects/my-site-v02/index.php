@@ -3,10 +3,10 @@
 
 	<div class="inner-column">
 
-	<!-- 	<section>
-			<svg class="class" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.69 32.18">
+		<!-- <section class="border-arrows">
+			<svg class="arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.69 32.18">
   				<g class="arrow">
-    				<polyline class="arrow-2" data-name="arrow" points="11.35 31.56 .62 13 22.07 13 11.35 31.56 11.35 .62" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.24"/>
+    				<polyline class="arrow-2" data-name="arrow" points="11.35 31.56 .62 13 22.07 13 11.35 31.56 11.35 .62"/>
   				</g>
 			</svg>
 		</section> -->
@@ -72,9 +72,25 @@
 				<h1>truths</h1>
 			</div>
 
-			<!-- <div class="">
-				<h1>truths</h1>
-			</div> -->
+			<div class="truths-nerd">
+				<h1>Ardent nerd</h1>
+			</div>
+
+			<div class="truths-cats">
+				<h1>Friend to all cats</h1>
+			</div>
+
+			<div class="truths-digifab">
+				<h1>Digital Fabricator</h1>
+			</div>
+
+			<div class="truths-svg">
+				<h1>SVG lover</h1>
+			</div>
+
+			<div class="truths-web">
+				<h1>Learning web design for the future</h1>
+			</div>
 
 			<div class="substack">
 				<a href="https://rockylockstep.substack.com" alt="Link to 'Epiphanies and Confusions,' Miguel's Substack page.">substack</a>
