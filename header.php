@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Miguel Vega</title>
+		<title>Welcome | Miguel Vega</title>
 		<meta name="description" content="Miguel Vega's website.">
 		
 		<link rel="stylesheet" href="css/style.css">

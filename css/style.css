@@ -360,6 +360,10 @@ h2 {
 		border-radius: 1vh;
 	}
 
+	a:active {
+		background-color: #f05a28;
+	}
+
 	/* SVGs */
 	.title-logo {
 		width: 40%; 

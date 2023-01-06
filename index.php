@@ -113,15 +113,15 @@
 				</div>
 
 				<div class="substack">
-					<a href="https://rockylockstep.substack.com" alt="Link to 'Epiphanies and Confusions,' Miguel's Substack page.">substack</a>
+					<a href="https://rockylockstep.substack.com" target="_blank" alt="Link to 'Epiphanies and Confusions,' Miguel's Substack page.">substack</a>
 				</div>
 
 				<div class="email">
-					<a href="mailto:hello@miguelvega.dev" alt="Email link where you can reach Miguel: hello@miguelvega.dev">Email</a>
+					<a href="mailto:hello@miguelvega.dev" target="_blank" alt="Email link where you can reach Miguel: hello@miguelvega.dev">Email</a>
 				</div>
 					
 				<div class="github">
-					<a href="https://github.com/rockylock" alt="Link to Miguel's GitHub profile page.">GitHub</a>
+					<a href="https://github.com/rockylock" target="_blank" alt="Link to Miguel's GitHub profile page.">GitHub</a>
 				</div>
 			</section>
 
