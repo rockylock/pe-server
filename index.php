@@ -14,14 +14,10 @@
 		<print-drawing>
 
 			<section class="views">
-				<h1>Views</h1>	
+				<!-- <h1>Welcome</h1>	 -->
 			</section>
 
 			<section class="title-block">
-
-				<!-- <div class="whitespace">
-					<h1>whitespace</h1>
-				</div> -->
 
 				<div class="logo">	
 					<svg class="title-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">

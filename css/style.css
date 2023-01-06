@@ -17,7 +17,7 @@ print-drawing {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	background-color: white;
-	border: 1vh solid #041424;
+	border: 0.75vh solid #041424;
 	padding: 0;
 	gap: 0;
 }
@@ -33,8 +33,6 @@ print-drawing {
 .views {
 	grid-column: span 12;
 	background-color: white;
-	padding: 3vh 0 50vh 0; /* solely to add space--will
-	be content-driven in the future */
 }
 
 .logo, .title, .project-name, .size, .version, .drawn, 
@@ -52,9 +50,10 @@ TO DICTATE HOW THESE ROWS ORGANIZE THEMSELVES. */
 .title-block {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
 	background-color: #041424; /* Black Pearl */
-	padding: 1vh; /* allows grid edges to be colored by bg */
-	gap: 1vh;
+	padding: 0;
+	gap: 0.75vh;
 }
 
 .title, .project-name, .size, .version, .drawn, 
@@ -119,23 +118,13 @@ TO DICTATE HOW THESE ROWS ORGANIZE THEMSELVES. */
 	grid-column: span 12;
 }
 
-.substack, .email {
+.substack, .email, .github {
 	grid-column: span 12;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10vh 0;
+	padding: 5vw 0;
 }
-
-.github {
-	display: hidden;
-}
-
-/*.whitespace {
-	grid-column: 1 / span 3;
-	display: none;
-	background-color: red;
-}*/
 
 /* HEADINGS & TEXT */
 h1 {
@@ -161,7 +150,7 @@ h2 {
 }
 
 /* LINKS */
-.substack a, .email a {
+.substack a, .email a, .github a {
 	font-family: lato;
 	font-size: 2.25rem;
 	text-transform: capitalize;
@@ -231,18 +220,19 @@ h2 {
 /*KEEP TITLE BLOCK GAP AND PADDING, BUT ADD BORDERS*/
 
 @media (min-width: 1000px) {
-	body {
-/*		background-color: red;*/
-	}	
-
 	print-drawing{
 		border: 0.5vh solid #041424;
+	}
+
+	.views {
+		padding: 3vh 0 50vh 0; /* solely to add space--will
+	be content-driven in the future */
 	}
 
 	/*	GRID LAYOUT*/
 	.title-block {
 	grid-column: 6 / span 7; /* columns covered in views grid */
-	padding: 0; /* allows grid edges to be colored by bg */
+	padding: 0;
 	gap: 0.5vh;
 	border-top: 0.5vh solid #041424;
 	border-left: 0.5vh solid #041424;
