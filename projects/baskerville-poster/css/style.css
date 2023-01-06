@@ -4,11 +4,16 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
+body {
+	background-color: #dce1e4; /* Zircon */
+}
+
 main {
 	background-color: #dce1e4; /* Zircon */
-	padding: 10px;
+	padding: 2vh 0 6vh;
 }
 .inner-column {
+	display: block;
 	position: relative;
 	max-width: 960px;
 	margin-left: auto;
@@ -24,9 +29,9 @@ div {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	gap: 4.5vw 2vw;
+	gap: 3.5vh 2vw;
 	background-color: white;
-	padding: 2vw 2vw 20vw;
+	padding: 2vh 2vw 20vw;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 	/*	border: 1px solid red;*/
 }

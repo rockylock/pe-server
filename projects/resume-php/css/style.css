@@ -1,0 +1,81 @@
+
+/*SITE-WIDE STRUCTURE*/
+
+.inner-column {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER */
+.site-header {
+	text-align: center;
+	padding: 20px;
+}
+
+h1 + nav {
+	margin-top: 1vh;
+}
+
+/* NAV */
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	font-family: helvetica, sans-serif;
+	font-size: 1.3em;
+	color: #041424;
+	line-height: 2;
+	letter-spacing: 0.03em;
+	text-decoration: underline;
+	border: 1px solid red;
+}
+
+/* MAIN */
+body {
+	background-color: ghostwhite;
+}
+
+/* HEADINGS AND TEXT */
+h1 {
+	font-family: palatino, serif;
+	color: #041424;
+	font-size: 2.5em;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+h2 {
+	font-family: lato, sans-serif;
+	font-size: 1.7em;
+	text-align: left;
+	text-transform: uppercase;
+	color: #041424;
+	padding: 10px;
+}
+
+.experience, .education, .proficiency, .interests, .contact {
+	background-color: ghostwhite;
+	color: #041424;
+	text-align: left;
+}
+
+.role {
+	background-color: ghostwhite;
+	color: #041424;
+	padding: 10px;
+}
+
+.role ul {
+	background-color: inherit;
+	color: inherit;
+}
+
+.site-footer {
+	background-color: ghostwhite;
+	color: #041424;
+	text-align: center;
+	padding: 10px;
+}

@@ -1,0 +1,27 @@
+
+/*
+@import 'meyer-setup.css';
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid red;
+}
+
+body {
+	background-color: ghostwhite;
+}
+
+.inner-column {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: helvetica;
+	font-size: 2.4em;
+	line-height: 1.5;
+	text-align: center;
+}

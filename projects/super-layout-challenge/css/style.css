@@ -52,8 +52,10 @@ header a img {
 .welcome {
 	flex-direction: column;
 	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	padding: 4vh 0 4vh;
-
 }
 
 intro {
@@ -62,11 +64,11 @@ intro {
 	gap: 1em;
 }
 
-intro img, p {
+intro picture, p {
 	max-width: 80%;
 }
 
-intro gear {
+.welcome .cog {
 	display: none;
 }
 
@@ -74,14 +76,23 @@ intro gear {
 .stories  {
 	flex-direction: column;
 	position: relative;
+	overflow-x: hidden;
+	overflow-y:hidden;
 	gap: 10px;
 	padding: 4vh 0 4vh;
 }
 
-.stories a img {
+article a img {
 	max-height: 15vh;
 	border-radius: 50%;
 }
+
+/* This one doesn't appear to work, but the one above does. What am I missing? */
+/*article .image-link {
+	display: block;
+	max-height: 15vh;
+	border-radius: 50%;	
+}*/
 
 article-layout {
 	display: flex;
@@ -99,7 +110,7 @@ article-text {
 	flex-direction: column;
 }
 
-.stories picture {
+.stories .cog {
 	display: none;
 }
 
@@ -165,10 +176,10 @@ p + a {
 
 /* Breakpoints */
 /* Medium */
-@media (min-width:600px) {
+@media (min-width:700px) {
 
 	.inner-column {
-		max-width: 550px;
+		max-width: 690px;
 	}
 
 	header a img {
@@ -178,10 +189,15 @@ p + a {
 	intro {
 		flex-direction: row;
 		align-items: center;
+		max-height: 45vh;
 	}
 
-	intro img {
-		max-width: 55%;
+	intro picture {
+		width: 60%;
+	}
+
+	intro p {
+		width: 40%;
 	}
 
 	article {
@@ -189,14 +205,13 @@ p + a {
 		gap: 4vw;
 	}
 
-	.stories picture {
+	.stories .cog {
 		display: flex;
 		position: absolute;
 		bottom: -6vh;
 		right: -6vw;
 		max-width: 200px;
 		z-index: 0;
-
 	}
 
 	footer-content {
@@ -205,14 +220,31 @@ p + a {
 }
 
 /* Large */
-@media (min-width:900px) {
+@media (min-width:1200px) {
 
 	.inner-column {
-		max-width: 960px;
+		max-width: 980px;
 	}
 
 	header a img {
 		max-height: 8vh;
+	}
+
+	intro picture {
+		z-index: 1;
+	}
+
+	.welcome .cog {
+		display: flex;
+		position: absolute;
+		bottom: -5vh;
+		left: -4vh;
+		max-width: 175px;
+		opacity: .5;
+	}
+
+	.stories .cog {
+		max-width: 250px;
 	}
 
 	article-layout {
@@ -222,6 +254,7 @@ p + a {
 
 	article {
 		flex-direction: column;
+		width: 33%;
 		gap: 1vh;
 	}
 

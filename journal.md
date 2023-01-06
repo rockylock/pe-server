@@ -228,4 +228,286 @@ I also installed Sublime's Package Control, along with Emmet
 You can use the style abbreviation element to style content. It shows when in hover mode!
 
 
+## 2022-10-17
+
+### Affinity Designer
+
+I wanted to get used to the Pen tool, making sure that it was similar to the Pen tool in Illustrator. When I'm warming up, I want to trace a shape and get a feel for it all. I chose to trace the letter 'S' as it's a good gauge of proficiency. Some lowercase 'p' fonts are also good, as they contain inside corners that can be challenging. 
+
+I soon ran into trouble. When tracing out a shape, I prefer to use Guides, as it can break down complex shapes into digestible node locations. In Affinity, these guides are tied to the artboard; any guides not created on the artboard (Above it in the layers panel) will disappear when working on that artboard. I didn't know this, and spent half of the alloted time testing, taking video, and searching for answers online. 
+
+While I didn't complete more traces, I did gain more understanding around the artboard. I'll need to look into this much more. 
+
+## <div> image behavior
+
+    I had two images within <div>: one random image (portrait or landscape); and one small located within a <p>. 
+
+<div>
+
+  <img src="https://source.unsplash.com/random/" width="300">
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio expedita repellat commodi rerum illum blanditiis pariatur autem ex nemo, quisquam, ut quidem. Suscipit molestiae dolore quasi sint obcaecati! Nihil, harum?</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio expedita repellat commodi rerum illum blanditiis pariatur autem ex nemo, quisquam, ut quidem. Suscipit molestiae dolore quasi sint obcaecati! Nihil, harum?</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio expedita repellat commodi rerum illum blanditiis <img src="https://raw.githubusercontent.com/schochastics/quartocities/main/img/hacker.gif" width="30px"> pariatur autem ex nemo, quisquam, ut quidem. Suscipit molestiae dolore quasi sint obcaecati! Nihil, harum?</p>
+ 
+</div>
+
+    Based on my layout, when random portrait images were added, the two images interacted with one another; this didn't occur with landscape images, as the <p> containing the second image was pushed down beyond the first image. 
+
+## 2022-10-18
+
+### <div>
+
+    It's a generic html element that allows you to divide and group content. With HTML 5, the creators scraped the internet, and saw how <div> was most being used. That's how the new elements <main> <header> <section> <footer> came to be! Cool!
+
+### inline, inline block
+
+    "Inline elements can only have left & right margins and padding and can’t have a width and height set.
+    
+    Inline-block elements can have have margin and padding on all 4 sides, and can have a width and height set.
+
+
+### Hashlinks
+
+    You can have a href that references a section id on the page. 
+
+If 92.6% of users worldwide are using browsers that support it, why shouldn't we use that smooth scrolling behavior? Are there accessibility concerns?
+
+
+
+## 2022-10-19
+
+CSS resets
+
+Ran into an issue with firefox not removing stlying, but Chrome doing so. Weird. 
+
+
+## 2022-10-20
+
+On printing: Linotypes, presses, and the inexhaustible changeover for efficiency
+
+
+Ridiculous amounts of OSHA violations. There's something romantic about it, somethinng special in seeing professional tradespeople at the NYT work on the final hour, of the final day, and their final page form being page 1, the first page of the New York Times. "OK on 1."
+
+"Keep the old machines running"
+
+It's inevitable. 
+
+I trained as a manual machinist. I can run a lathe, vertical mill, and tons of supporting equipment. The Monarch 10EE is sublime. A Bridgeport mill feels like a good friend. 
+
+It's heartbreaking to think of what happened to so many of these machines, sold for scrap. 
+
+"Automation with the hot metal"
+
+From 40lb lead plates to 14oz plastic plates. 
+
+"It all started on a linotype machine upstairs"
+
+Hot type mechanical printing to computerized cold type ; hot type make up to cold type paste up
+
+cold; is it impersonal? does it look 
+
+
+
+    When did they invent the first printing press?
+    When did they invent the Linotype?
+    What are the differences between Linotype printing and laying out typography for The Web?
+
+
+## 2022-10-21
+
+### Testing CodePen across different browsers and modes
+
+2:50
+<br> is for “line breaks” --- and so, only if you want to have a special heading sentence break at a special place —
+2:51
+This is a very rare situation - because you don’t usully get to hard-code the heading. It will be a heading someone else wrote - that is coming from a mysterious database somewhere.
+2:51
+there’s also a new <wbr> element
+2:52
+that’s the “might will break” element  (as I imagine Josh would say it)
+2:52
+“If it’s going to break… we will it to break here” ?? hehe
+2:54
+also horizontal rule <hr>  element! Most of the time, we’ll use borders for this --- but a hr is a meaningful not that you want a page splitter of vignette there ---
+2:54
+--------
+2:54
+It can be hidden - or replaced with other stuff to look different.
+2:54
+That leads to places you aren’t in control of.
+2:54
+Open your article in ‘debug’ mode (in codepen it’s a settings/preview option)
+2:54
+then take that URL and view it in Safari
+2:55
+Start Reader mode - with command + shift + R
+
+
+## 2022-10-22
+
+Do not put display: block elements into display: inline elements. It will break stuff. 
+
+- Child combinators will only target elements one deeper
+
+/*Below is a child combinator. Any link that is child of parent inner-column within the header will have these properties.*/
+
+header inner-column > a {
+    fill: red;
+    max-width: 50px;
+}
+
+
+### CSS Rules
+
+It seems like the goal is to create a robust, modular ruleset that can accommodate unpredicatable behavior.  
+
+### CSS Selectors
+
+- universal *
+- type: elements, and custom elements p {} or a{} or custom elements
+- list p, a 
+- adjacent sibling p + a
+- child combinator P > a
+- descendant combinator   p a
+
+In CSS rules, when creating properties and values in declarations, you can press 'return' immediately after entering the value. You don't have to skip over the ; !!!
+
+### Margins
+
+There will be times when you cannot control content. So, when placing margins, it's better to place margins UP (ex: margin-top: 20px). 
+
+
+## 2022-10-23
+
+### HTML, CSS connection:
+
+The HTML defines the *content*. 
+
+The CSS defines a set of rules (*visual rules*) that can be associated with that now-defined content.
+
+HTML defines content; CSS defines a set of rules that can be tied to that content. 
+
+### one-a-day idea
+
+Neon circle
+
+
+## 2022-10-24
+
+### one-a-day idea
+
+isometric cylinder
+
+### CSS
+
+- For fonts, try font-size: clamp(40px, 10vw, 130px);
+
+- Padding is PART of the element; margin is AROUND element 
+
+### Bill's Revisions
+
+Spent 5 minutes forking, and laying out my screens
+Spent around 15 minutes reading Bill's edits and annotating a new Cleanshot capture. 
+
+
+Object-position for embed https://developer.mozilla.org/en-US/docs/Web/CSS/object-position
+
+
+## 2022-10-25
+
+Blog post idea: similarities between CAD modeling and coding (parameters)
+- maybe CAD and CSS?
+
+
+https://stackoverflow.com/questions/17479912/how-to-change-link-color-when-clicked
+https://stackoverflow.com/questions/42134731/css-change-button-style-after-click
+
+
+
+## 2022-11-11
+
+### SVGs
+
+I'm noticing that SVG code imports have wonky formatting. Tabs, and a couple spaces, weird stuff. How can I automatically clean that up to just use tabs? 
+
+SVGs are read by the parsesr like any other code. I was encountering a layering issue with my SVGs, where I wanted the leaf to be under the rose petals.
+
+If I wanted the leaves underneath, I had to place the HTML code for that element before the rose!
+
+Can I get the stroke and fill to transition at different times without creating a separate object in Affinity? I want the stroke to appear first, then the fill, using a single object. 
+
+
+### SVG kitchen sink
+
+MDN glossary: https://developer.mozilla.org/en-US/docs/Web/SVG/Element
+
+
+- title: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title
+- animate motion! https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion
+
+SVG graph paper background: 
+
+body {
+    background-image: url("https://assets.codepen.io/4543/grid-helper.svg");
+    background-size: 20px;
+}
+
+
+
+
+
+
+# 2022-12-2
+
+Goals, programming
+
+art & programming
+
+set up goals
+    build house on the california coast
+
+## svgs 
+
+    hovers
+    clickable areas beacons    
+
+Journal - get you git squares up.
+
+deploybot - user interface that takes care of things for us. 
+    treat it as a user experience study
+
+crowdsourcing edge cases
+
+
+cultivate your own Command Station - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

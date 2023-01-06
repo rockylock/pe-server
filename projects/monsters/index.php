@@ -32,7 +32,7 @@ include "header.php";
 	];
 
 	$limabean = [
-		"portrait" => "images/limabean.jpg",
+		"portrait" => "images/limabean-m.jpg",
 		"id" => 4998,
 		"name" => "Limabean",
 		"favoriteFood" => "churros",
@@ -59,7 +59,7 @@ include "header.php";
 	];
 
 	$orangina = [
-		"portrait" => "images/orangina.jpg",
+		"portrait" => "images/orangina-m.jpg",
 		"id" => 5073,
 		"name" => "Orangina",
 		"favoriteFood" => "dirt",
