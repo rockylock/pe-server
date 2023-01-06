@@ -1,0 +1,404 @@
+
+/* SITE-WIDE STRUCTURE */
+
+@import "meyer-reset.css";
+@import "setup.css";
+
+main {
+	padding: 2vh;
+}
+
+body {
+	background-color: white; 
+/*	border: 1vh solid #041424;*/
+}
+
+print-drawing {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	background-color: white;
+	border: 1vh solid #041424;
+	padding: 0;
+	gap: 0;
+}
+
+.inner-column {
+	display: block;
+	position: relative;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.views {
+	grid-column: span 12;
+	background-color: white;
+	padding: 3vh 0 50vh 0; /* solely to add space--will
+	be content-driven in the future */
+}
+
+.logo, .title, .project-name, .size, .version, .drawn, 
+.page, .truths-title, .truths-nerd, .truths-cats, 
+.truths-digifab, .truths-svg, .truths-web, .substack,
+.email, .whitespace, .github {
+	background-color: white;
+}
+
+/*  GRID LAYOUT */
+
+/* AVOID ROWS UNTIL YOU HAVE TO USE THEM. ALLOW ELEMENTS 
+TO DICTATE HOW THESE ROWS ORGANIZE THEMSELVES. */
+
+.title-block {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	background-color: #041424; /* Black Pearl */
+	padding: 1vh; /* allows grid edges to be colored by bg */
+	gap: 1vh;
+}
+
+.title, .project-name, .size, .version, .drawn, 
+.page, .truths-title {
+	padding: 1vh;
+}
+
+.logo, .project-name, .title {
+	grid-column: span 12; 
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	padding: 4vh;
+/*	consider adding max-width as it scales*/
+}
+
+.size, .page {
+	grid-column: span 4;
+}
+
+.version, .drawn {
+	grid-column: span 8;
+}
+
+.gray-box {
+	grid-column: span 12;
+	grid-row: span 1;
+	background-color: ghostwhite; /* maybe Alabaster? */
+	padding: 30px;
+}
+
+.truths-title {
+	grid-column: span 12;
+	justify-content: center;
+	padding: 1vh;
+}
+
+.truths-nerd, .truths-cats, .truths-digifab, 
+.truths-svg, .truths-web {
+	padding: 0.75vh;
+}
+
+.truths-nerd {
+	grid-column: span 5;
+}
+
+.truths-cats {
+	grid-column: span 7;
+}
+
+.truths-digifab {
+	grid-column: span 6;
+}
+
+.truths-svg {
+	grid-column: span 6;
+}
+
+.truths-web {
+	grid-column: span 12;
+}
+
+.substack, .email {
+	grid-column: span 12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10vh 0;
+}
+
+.github {
+	display: hidden;
+}
+
+/*.whitespace {
+	grid-column: 1 / span 3;
+	display: none;
+	background-color: red;
+}*/
+
+/* HEADINGS & TEXT */
+h1 {
+	font-family: lato, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #041424;
+}
+
+h2 {
+	font-family: georgia, serif;
+	font-size: 2rem;
+	color: #041424;
+}
+
+.truths-title h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.truths-nerd h1 {
+	text-transform: none;
+}
+
+/* LINKS */
+.substack a, .email a {
+	font-family: lato;
+	font-size: 2.25rem;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	background-color: #041424;
+	padding: 5vw;
+	border-radius: 10px;
+}
+
+/* SVGs */
+.title-logo {
+	width: 70%; 
+	fill: #041424;
+}
+
+.arrows {
+	display: flex;
+	width: 4%;
+	fill: none; 
+	stroke: #041424;
+	stroke-linecap: round;
+ 	stroke-linejoin: round; 
+ 	stroke-width: 1.25;
+ 	justify-content: center;
+}
+
+/* PICTURES */
+.hand-project {
+	max-width: 50vw;
+	margin-left: 5vw;
+	z-index: 1;
+}
+
+.hand-title {
+	max-width: 65vw;
+	margin-left: 2vw;
+}
+
+.hand-size-small {
+	max-width: 12vw;
+	margin: 1vh 0 0 6vw;
+	justify-content: center;
+}
+
+.hand-size-medium, .hand-size-large {
+	display: none;
+}
+
+.hand-version {
+	max-width: 22vw;
+	margin: 2vh 0 0 15vw;
+}
+
+.hand-initials {
+	max-width: 40vw;
+	margin-left: 3vw;
+}
+
+/* BREAKPOINTS */
+/*@media (min-width: 768px) {
+	body {
+		background-color: blue;
+	}
+}*/
+
+/*KEEP TITLE BLOCK GAP AND PADDING, BUT ADD BORDERS*/
+
+@media (min-width: 1000px) {
+	body {
+/*		background-color: red;*/
+	}	
+
+	print-drawing{
+		border: 0.5vh solid #041424;
+	}
+
+	/*	GRID LAYOUT*/
+	.title-block {
+	grid-column: 6 / span 7; /* columns covered in views grid */
+	padding: 0; /* allows grid edges to be colored by bg */
+	gap: 0.5vh;
+	border-top: 0.5vh solid #041424;
+	border-left: 0.5vh solid #041424;
+	}
+
+	.title, .project-name, .size, .version, .drawn, 
+	.page, .truths-title {
+		padding: 0.5vh;
+	}
+
+	.logo {
+		grid-column: 1 / span 4;
+		grid-row: span 3;
+	}
+
+	.project-name, .title {
+		grid-column: span 8; 
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		padding: 1vh;
+	/*	consider adding max-width as it scales*/
+	}
+
+	.size {
+		grid-column: 5 / span 1;
+	}
+
+	.page {
+		grid-column: span 1;
+	}
+
+	.version {
+		grid-column: span 2;
+	}
+
+	.drawn {
+		grid-column: span 4;
+	}
+
+	.gray-box {
+		display: none;
+	}
+	
+	.truths-title {
+		grid-column: 1 / span 12;
+		justify-content: center;
+		background-color: ghostwhite;
+		padding: 1vh;
+	}
+
+	.truths-nerd, .truths-cats, .truths-digifab, 
+	.truths-svg, .truths-web {
+		padding: 0.75vh;
+	}
+
+	.truths-nerd {
+		grid-column: 1 / span 2;
+	}
+
+	.truths-cats {
+		grid-column: span 2;
+	}
+
+	.truths-digifab {
+		grid-column: span 2;
+	}
+
+	.truths-svg {
+		grid-column: span 2;
+	}
+
+	.truths-web {
+		grid-column: span 4;
+	}
+
+	.substack, .email, .github {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1vh 0;
+	}
+
+	.substack {
+		grid-column: 1 / span 5;
+	}
+
+	.email {
+		grid-column: span 4;
+	}
+
+	.github {
+	grid-column: span 3;
+	padding: 1vw;
+}
+
+	/*	 LINKS */
+	.substack a, .email a, .github a {
+		font-family: lato;
+		font-size: 1.5rem;
+		text-transform: capitalize;
+		text-decoration: underline;
+		color: #041424;
+		background-color: white;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	/* SVGs */
+	.title-logo {
+		width: 40%; 
+		fill: #041424;
+	}
+
+	/* PICTURES */
+	.hand-project {
+		max-width: 20vh;
+		margin-left: 5vw;
+	}
+
+	.hand-title {
+		max-width: 25vh;
+		margin-left: 4vw;
+	}
+
+	.hand-size-large {
+		display: block;
+		max-width: 4vh;
+		margin: 2vh 0 0 0.5vw;
+	}
+
+	.hand-size-small, .hand-size-medium {
+		display: none;
+	}
+
+	.hand-version {
+		max-width: 7vh;
+		margin: 2vh 0 0 1vw;
+	}
+
+	.hand-initials {
+		max-width: 20vh;
+		margin-left: 3vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
