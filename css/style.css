@@ -10,16 +10,6 @@ main {
 
 body {
 	background-color: white; 
-/*	border: 1vh solid #041424;*/
-}
-
-print-drawing {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	background-color: white;
-	border: 0.75vh solid #041424;
-	padding: 0;
-	gap: 0;
 }
 
 .inner-column {
@@ -28,11 +18,6 @@ print-drawing {
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.views {
-	grid-column: span 12;
-	background-color: white;
 }
 
 .logo, .title, .project-name, .size, .version, .drawn, 
@@ -46,6 +31,25 @@ print-drawing {
 
 /* AVOID ROWS UNTIL YOU HAVE TO USE THEM. ALLOW ELEMENTS 
 TO DICTATE HOW THESE ROWS ORGANIZE THEMSELVES. */
+
+print-drawing {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	background-color: white;
+	border: 0.75vh solid #041424;
+	padding: 0;
+	gap: 0;
+}
+
+.views {
+	display: grid;
+	grid-column: span 12;
+	background-color: white;
+}
+
+.hello {
+	display: grid;
+}
 
 .title-block {
 	display: grid;
@@ -221,26 +225,30 @@ h2 {
 
 @media (min-width: 1000px) {
 	print-drawing{
-		border: 0.5vh solid #041424;
+		border: 0.25vh solid #041424;
 	}
 
 	.views {
-		padding: 3vh 0 50vh 0; /* solely to add space--will
-	be content-driven in the future */
+
 	}
 
 	/*	GRID LAYOUT*/
+
+	.hello {
+		grid-column-end: 12;
+	}
+
 	.title-block {
 	grid-column: 6 / span 7; /* columns covered in views grid */
 	padding: 0;
-	gap: 0.5vh;
-	border-top: 0.5vh solid #041424;
-	border-left: 0.5vh solid #041424;
+	gap: 0.25vh;
+	border-top: 0.25vh solid #041424;
+	border-left: 0.25vh solid #041424;
 	}
 
 	.title, .project-name, .size, .version, .drawn, 
 	.page, .truths-title {
-		padding: 0.5vh;
+		padding: 0.25vh;
 	}
 
 	.logo {
@@ -315,7 +323,7 @@ h2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 1vh 0;
+		padding: 1.5vh;
 	}
 
 	.substack {
@@ -328,7 +336,6 @@ h2 {
 
 	.github {
 	grid-column: span 3;
-	padding: 1vw;
 }
 
 	/*	 LINKS */
@@ -339,8 +346,17 @@ h2 {
 		text-decoration: underline;
 		color: #041424;
 		background-color: white;
-		padding: 0;
+		padding: 1.4vh;
 		border-radius: 0;
+	}
+
+	a:hover {
+		font-size: 1.6rem;
+		background-color: #041424;
+		color: white;
+		text-decoration: none;
+		padding: 1vh;
+		border-radius: 1vh;
 	}
 
 	/* SVGs */
@@ -350,13 +366,18 @@ h2 {
 	}
 
 	/* PICTURES */
+
+	.hello {
+		max-width: 50vw;
+		padding: 2vh;
+	}
 	.hand-project {
-		max-width: 20vh;
+		max-width: 18vh;
 		margin-left: 5vw;
 	}
 
 	.hand-title {
-		max-width: 25vh;
+		max-width: 24vh;
 		margin-left: 4vw;
 	}
 
@@ -371,12 +392,12 @@ h2 {
 	}
 
 	.hand-version {
-		max-width: 7vh;
+		max-width: 6vh;
 		margin: 2vh 0 0 1vw;
 	}
 
 	.hand-initials {
-		max-width: 20vh;
+		max-width: 17vh;
 		margin-left: 3vw;
 	}
 }

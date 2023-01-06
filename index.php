@@ -14,7 +14,12 @@
 		<print-drawing>
 
 			<section class="views">
-				<!-- <h1>Welcome</h1>	 -->
+				
+				<picture class="hello">
+					<img src="images/hello-world.png" alt="An image showing base and projected views
+					of the text, 'Hello, world!'">
+				</picture>
+
 			</section>
 
 			<section class="title-block">
@@ -28,7 +33,7 @@
 				</div>
 
 				<div class="project-name">
-					<h1>project</h1>
+					<h1>PROJECT</h1>
 
 					<picture class="hand-project">
 						<img src="images/project.png" alt="Picture of handwritten note, 'miguelvega.dev.'">
@@ -36,7 +41,7 @@
 				</div>
 
 				<div class="title">
-					<h1>title</h1>
+					<h1>TITLE</h1>
 
 					<picture class="hand-title">
 						<img src="images/title.png">
@@ -44,7 +49,7 @@
 				</div>
 
 				<div class="size">
-					<h1>size</h1>
+					<h1>SIZE</h1>
 
 					<picture class="hand-size-small">
 						<img src="images/s.png">
@@ -60,7 +65,7 @@
 				</div>
 
 				<div class="version">
-					<h1>version</h1>
+					<h1>VERSION</h1>
 
 					<picture class="hand-version">
 						<img src="images/version.png">
@@ -68,7 +73,7 @@
 				</div>
 
 				<div class="drawn">
-					<h1>drawn</h1>
+					<h1>DRAWN</h1>
 
 					<picture class="hand-initials">
 						<img src="images/drawn.png">
@@ -77,7 +82,7 @@
 				</div>
 
 				<div class="page">
-					<h1>page</h1>
+					<h1>PAGE</h1>
 					<h2>1/1</h2>
 				</div>
 
