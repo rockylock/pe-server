@@ -48,7 +48,7 @@ print-drawing {
 }
 
 .hello {
-	display: grid;
+	display: none; /* add small hello-world.png version and return to display: grid */
 }
 
 .title-block {
@@ -235,6 +235,7 @@ h2 {
 	/*	GRID LAYOUT*/
 
 	.hello {
+		display: grid;
 		grid-column-end: 12;
 	}
 
