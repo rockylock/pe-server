@@ -35,7 +35,7 @@
 			</section>
 
 			<?php 
-				$pageName = "goals";
+				$pageName = "goals"; 
 				include("title-block.php"); 
 			?>
 
