@@ -488,7 +488,27 @@ cultivate your own Command Station -
 
 
 
+## 2023-01-06
 
+### Goals
+
+Short-term (3 months)
+
+- Have a website I'm proud to share
+- Competency in HTML/CSS/PHP/JS
+- A shareable portfolio 
+
+Mid-term (6 months)
+
+- Employment as a front-end developer
+- Completion of my truck
+- Learning Python to further digital fabrication projects
+
+Long term (5 years)
+
+- Own land on oro near the California coast
+- Series of small homes built
+- 
 
 
 

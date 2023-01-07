@@ -1,4 +1,6 @@
 
+<!-- GOALS PAGE -->
+
 <?php include("header.php"); ?>
 
 	<div class="inner-column">
@@ -11,25 +13,29 @@
 			</svg>
 		</section> -->
 
+
 		<print-drawing>
-			
+
 			<section class="views">
 				
-				<picture class="hello">
-					<img src="images/hello-world.png" alt="An image showing base and projected views
-					of the text, 'Hello, world!'">
+				<picture class="goals-small">
+					<img src="images/goals-small.png" alt="An image showing the text, 'Goals'.">
+				</picture>
+
+				<picture class="goals-large">
+					<img src="images/goals-large.png" alt="An image showing the text, 'Goals'.">
 				</picture>
 
 			</section>
 
 			<section class="content">
 				
-				<?php //include("modules/welcome.php"); ?>
+				<?php include("modules/goals-list.php"); ?>
 
 			</section>
 
 			<?php 
-				$pageName = "home";
+				$pageName = "goals";
 				include("title-block.php"); 
 			?>
 
