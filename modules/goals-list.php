@@ -5,24 +5,25 @@
 		[
 			"heading" => "Short-term (within 3 months)",
 			"tasks" => [
-				"Have a website I'm proud to share.",
-				"Earn compenency in HTML/CSS/PHP/JS.",
-				"Assemble a shareable portfolio.",
+				"Have a website I'm proud to share with friends, prospective clients, and recruiters.",
+				"Earn competency in HTML/CSS/PHP/JS.",
+				"Assemble a shareable portfolio with 5 projects.",
 			],
 		],
 		[
 			"heading" => "Mid-term (within 6 months)",
 			"tasks" => [
-				"Gain employment as a front-end freelancer.",
-				"Complete the interior of my truck.",
-				"Begin learning Python to further my digital fabrication projects.",
+				"Build a website for the makerspace I help lead.",
+				"Gain two clients as a front-end freelancer.",
+				"Complete the interior of my truck, Sally. They're great, but their seat sure ain't!",
+				"Learn Python basics well enough to augment one digital fabrication project. ",
 			],
 		],
 		[
 			"heading" => "Long-term (within 5 years)",
 			"tasks" => [
 				"Own land on the Northern California coast.",
-				"Build a small series of homes on the property.",
+				"Build a small series of small structures on the property.",
 			],
 		],
 	];

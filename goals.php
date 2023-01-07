@@ -30,12 +30,17 @@
 
 			<section class="content">
 				
-				<?php include("modules/goals-list.php"); ?>
+				<?php 
+					include("modules/goals-list.php");
+				?> 
+
+				<?php 
+					include("menu.php");
+				?>
 
 			</section>
 
-			<?php 
-				$pageName = "goals"; 
+			<?php  
 				include("title-block.php"); 
 			?>
 

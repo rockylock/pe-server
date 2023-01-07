@@ -42,9 +42,8 @@
 				</div>
 
 				<div class="version">
-					<h1>VERSION<span><?=$pageName?></span></h1> 
-					<!-- this span adds the $pageName = "goals"; info from goals.php -->
-
+					<h1>VERSION</h1> 
+				
 					<picture class="hand-version">
 						<img src="images/version.png">
 					</picture>
@@ -102,9 +101,6 @@
 					<a href="https://github.com/rockylock" target="_blank">GitHub</a>
 				</div>
 
-				<div class="goals">
-					<a href="goals.php">Goals</a>	
-				</div>
 			</section>
 
 

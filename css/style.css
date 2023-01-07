@@ -20,6 +20,12 @@ body {
 	margin-right: auto;
 }
 
+.menu {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2vh;
+}
+
 .logo, .title, .project-name, .size, .version, .drawn, 
 .page, .truths-title, .truths-nerd, .truths-cats, 
 .truths-digifab, .truths-svg, .truths-web, .substack,
@@ -33,7 +39,8 @@ body {
 TO DICTATE HOW THESE ROWS ORGANIZE THEMSELVES. */
 
 print-drawing {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	background-color: white;
 	border: 0.75vh solid #041424;
 	padding: 0;
@@ -53,7 +60,7 @@ print-drawing {
 /*GOALS*/
 
 .goals-list {
-	padding: 0 0 2vh 5vw;
+	padding: 0 5vw 2vh;
 }
 
 .goals-small {
@@ -190,7 +197,7 @@ h2 {
 }
 
 /* LINKS */
-.substack a, .email a, .github a, .goals a {
+.substack a, .email a, .github a {
 	font-family: lato;
 	font-size: 2.25rem;
 	text-transform: capitalize;

@@ -29,7 +29,6 @@
 			</section>
 
 			<?php 
-				$pageName = "home";
 				include("title-block.php"); 
 			?>
 
