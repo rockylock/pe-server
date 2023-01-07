@@ -103,7 +103,7 @@
 				</div>
 
 				<div class="goals">
-					<a href="/goals.php" alt="Link to Miguel's GitHub profile page.">Goals</a>	
+					<a href="goals.php">Goals</a>	
 				</div>
 			</section>
 
