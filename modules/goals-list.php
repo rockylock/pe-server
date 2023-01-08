@@ -23,7 +23,7 @@
 			"heading" => "Long-term (within 5 years)",
 			"tasks" => [
 				"Own land on the Northern California coast.",
-				"Build a small series of small structures on the property.",
+				"Build a series of small structures on the property.",
 			],
 		],
 	];
@@ -31,7 +31,6 @@
 ?>
 
 <section class="goals-list">
-	<!-- <div class="inner-column"> -->
 		
 		<?php foreach($sections as $section) { ?>
 		
@@ -49,8 +48,7 @@
 		</div>
 
 		<?php } ?>
-
-	<!-- </div> -->
+		
 </section>
 
 

@@ -24,17 +24,15 @@
 
 			<section class="content">
 				
-				<?php //include("modules/welcome.php"); ?>
+				<?php include("modules/welcome.php"); ?>
 
 			</section>
 
-			<?php 
-				include("title-block.php"); 
+			<?php include("title-block.php"); 
 			?>
 
 		</print-drawing>
 	</div>
-</section>
 
  <?php include("footer.php"); ?>
 

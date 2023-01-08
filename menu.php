@@ -1,7 +1,5 @@
 
 <section class="menu">
-	<ul>
-		<li><a href="index.php">Home</li>
-		<li><a href="goals.php">Goals</li>	
-	</ul>
+	<a href="index.php">Home</a>
+	<a href="goals.php">Goals</a>
 </section>

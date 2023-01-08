@@ -74,7 +74,7 @@
 				</div>
 
 				<div class="truths-cats">
-					<h1>Friend to all cats</h1>
+					<h1>Friend to <wbr>all cats</h1>
 				</div>
 
 				<div class="truths-digifab">
@@ -86,7 +86,7 @@
 				</div>
 
 				<div class="truths-web">
-					<h1>Learning web design for the future</h1>
+					<h1>Learning web design <wbr>for the future</h1>
 				</div>
 
 				<div class="substack">
