@@ -193,29 +193,31 @@ print-drawing {
 /* HEADINGS & TEXT */
 h1 {
 	font-family: lato, sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
+	font-size: 2.25rem;
+	font-weight: 300;
 	color: #041424;
 }
 
 h2 {
-	font-family: georgia, serif;
-	font-size: 2rem;
-	color: #041424;
+	font-family: lato, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #041424
 }
 
-.truths-title h1 {
+.truths-title h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.truths-nerd h1 {
+.truths-nerd h2 {
 	text-transform: none;
 }
 
-.welcome h1 {
-	font-size: 2.25rem;
-	font-weight: 300;
+.page p {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 1vh;
 }
 
 .welcome p {
@@ -451,6 +453,10 @@ p + p {
 		text-decoration: none;
 		padding: 1vh;
 		border-radius: 1vh;
+	}
+
+	a:active {
+		background-color: #f05a28;
 	}
 }
 

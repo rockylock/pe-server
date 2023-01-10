@@ -10,7 +10,7 @@
 				</div>
 
 				<div class="project-name">
-					<h1>PROJECT</h1>
+					<h2>PROJECT</h2>
 
 					<picture class="hand-project">
 						<img src="images/project.png" alt="Picture of handwritten note, 'miguelvega.dev.'">
@@ -18,75 +18,75 @@
 				</div>
 
 				<div class="title">
-					<h1>TITLE</h1>
+					<h2>TITLE</h2>
 
 					<picture class="hand-title">
-						<img src="images/title.png">
+						<img src="images/title.png" alt="Picture of handwritten note, 'personal-website.'">
 					</picture>
 				</div>
 
 				<div class="size">
-					<h1>SIZE</h1>
+					<h2>SIZE</h2>
 
 					<picture class="hand-size-small">
-						<img src="images/s.png">
+						<img src="images/s.png" alt="Picture of handwritten letter, 'S.'">
 					</picture>
 
 					<picture class="hand-size-medium">
-						<img src="images/m.png">
+						<img src="images/m.png" alt="Picture of handwritten letter, 'M.'">
 					</picture>
 
 					<picture class="hand-size-large">
-						<img src="images/l.png">
+						<img src="images/l.png" alt="Picture of handwritten letter, 'L.'">
 					</picture>
 				</div>
 
 				<div class="version">
-					<h1>VERSION</h1> 
+					<h2>VERSION</h2> 
 				
 					<picture class="hand-version">
-						<img src="images/version.png">
+						<img src="images/version.png" alt="Picture of handwritten note for the site version, '0.2.'">
 					</picture>
 				</div>
 
 				<div class="drawn">
-					<h1>DRAWN</h1>
+					<h2>DRAWN</h2>
 
 					<picture class="hand-initials">
-						<img src="images/drawn.png">
+						<img src="images/drawn.png" alt="Picture of handwritten note, showing initials and the last site update: 'MV 12/17/22.'">
 					</picture>
 
 				</div>
 
 				<div class="page">
-					<h1>PAGE</h1>
-					<h2>1/1</h2>
+					<h2>PAGE</h2>
+					<p>1/1</p>
 				</div>
 
 				<div class="gray-box"></div>
 
 				<div class="truths-title">
-					<h1>truths</h1>
+					<h2>truths</h2>
 				</div>
 
 				<div class="truths-nerd">
-					<h1>Ardent nerd</h1>
+					<h2>Ardent nerd</h2>
 				</div>
 
 				<div class="truths-cats">
-					<h1>Friend to <wbr>all cats</h1>
+					<h2>Friend to <wbr>all cats</h2>
 				</div>
 
 				<div class="truths-digifab">
-					<h1>Digital Fabricator</h1>
+					<h2>Digital Fabricator</h2>
 				</div>
 
 				<div class="truths-svg">
-					<h1>SVG lover</h1>
+					<h2>SVG lover</h2>
 				</div>
 
 				<div class="truths-web">
-					<h1>Learning web design <wbr>for the future</h1>
+					<h2>Learning web design <wbr>for the future</h2>
 				</div>
 
 				<div class="substack">
