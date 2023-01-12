@@ -12,6 +12,8 @@
 
 		<title>Workshop Materials</title>
 
+		<link rel="shortcut icon" href="favicon.ico">
+
 		<meta name="google" content="notranslate"> 
 	</head>
 		
