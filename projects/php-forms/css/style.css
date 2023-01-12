@@ -1,0 +1,47 @@
+
+	body {
+		background-color: ghostwhite;
+	}
+
+	label, input, button {
+		display: block;
+	}
+
+	form {
+		max-width: 350px;
+		margin-left: 10px;
+	}
+
+	.field {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.field label, .field input, button[type="submit"], .feedback, h1 {
+		font-family: helvetica, sans-serif;
+		color: #041424;
+	}
+
+	.field label {
+		font-size: 1.125rem;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.field input {
+		font-size: 1.125 rem;
+	}
+
+	button[type="submit"] {
+		font-size: 1.125rem;
+		margin-top: 10px;
+	}
+
+	.feedback {
+		color: green;
+	}
+
+	h1 {
+		font-size: 2rem;
+		padding: 0 0 0 5px;
+	}
