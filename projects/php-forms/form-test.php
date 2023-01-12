@@ -1,14 +1,16 @@
 
 <?php 
 
+//initialize, set defaults
 	$users = 0;
 	$ply = 0;
+	$dump = $_POST;
 
-	if ( isset($_POST["submitted"]) ) {
+	if ( isset($_POST["submitted"]) ) { // check if data was submitted
 		
-		if ( isset($_POST["users"]) ) {
-			if ( $_POST["users"] >= 0 ) {
-				$users = $_POST["users"];
+		if ( isset($_POST["users"]) ) { // check if data was submitted
+			if ( $_POST["users"] >= 0 ) { // check if data >= 0
+				$users = $_POST["users"];  // organize data for later use
 			}
 		}
 
@@ -23,7 +25,7 @@
 		echo "<p class='feedback'>$totalPly plywood pieces will be needed for the workshop.</p>";
 	}
 
-	// var_dump($stuff);
+	// var_dump($dump);
 
 ?>
 

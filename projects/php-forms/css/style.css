@@ -19,22 +19,26 @@
 
 	.field label, .field input, button[type="submit"], .feedback, h1 {
 		font-family: helvetica, sans-serif;
-		color: #041424;
+		color: #041424; /* Black Pearl */
 	}
 
 	.field label {
 		font-size: 1.125rem;
 		margin-top: 15px;
-		margin-bottom: 10px;
 	}
 
 	.field input {
 		font-size: 1.125 rem;
+		margin-top: 10px;
 	}
 
 	button[type="submit"] {
 		font-size: 1.125rem;
-		margin-top: 10px;
+		background-color: #729274; /* Laurel */
+		color: white;
+		margin-top: 15px;
+		border-radius: 5px;
+		padding: 4px 6px;
 	}
 
 	.feedback {
@@ -43,5 +47,4 @@
 
 	h1 {
 		font-size: 2rem;
-		padding: 0 0 0 5px;
 	}
