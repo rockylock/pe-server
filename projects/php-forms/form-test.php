@@ -4,6 +4,7 @@
 //initialize, set defaults
 	$users = 0;
 	$ply = 0;
+
 	$dump = $_POST;
 
 	if ( isset($_POST["submitted"]) ) { // check if data was submitted
@@ -22,35 +23,45 @@
 
 		$totalPly = floatval($users) * floatval($ply);
 
-		echo "<p class='feedback'>$totalPly plywood pieces will be needed for the workshop.</p>";
+		if($totalPly == 1) {
+			$piece = "piece";
+		} else {
+			$piece = "pieces";
+		}
+
+		$message = "<p class='feedback'>$totalPly plywood $piece will be needed for the workshop.</p>";
 	}
 
 	// var_dump($dump);
 
 ?>
+<div class="inner-column">
+	<form method="POST">
 
-<form method="POST">
+		<h1>Workshop Materials</h1>
 
-	<h1>Workshop materials</h1>
+		<div class="field">
+			<label>Users attending workshop:</label>
+			<input type="number" name="users" min="0" value="<?=$users?>"/>
+		</div>
 
-	<div class="field">
-		<label>Users attending workshop:</label>
-		<input type="number" name="users" min="0" value="<?=$users?>">
-	</div>
+		<div class="field">
+			<label>Plywood pieces per user:</label>
+			<input type="number" name="ply" min="0" value="<?=$ply?>">
+		</div>
 
-	<div class="field">
-		<label>Plywood pieces per user:</label>
-		<input type="number" name="ply" min="0" value="<?=$ply?>">
-	</div>
+		<button type="submit" name="submitted">Submit</button>
 
-	<button type="submit" name="submitted">Submit</button>
+	</form>
 
-</form>
+<?php 
 
+	if( isset($_POST["submitted"]) ) {
+		echo $message;
+	}
 
-
-
-
+ ?>
+</div>
 
 
 
