@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,85 +8,6 @@
 		<title>Character Counter</title>
 		<meta name="description" content="This is a chacter counter form from 'Exercise for Programmers', made to practice HTML forms and PHP." />
 	</head>
-
-	<body>
-
-		<?php 
-
-		/*
-		'Exercise for Programmers' challenge: 
-		Counting the Number of Characters
-		(Chapter 2, Exercise 2)
-		*/
-
-		// #1: Initialize
-		$userInput = "";
-		$characterCount = "";
-		$message = "";
-		$inputLabel = "Enter your information below.";
-
-		/*
-		If a user's submitted data, and there's user input in the field, 
-		we want to set and store that input. Otherwise, we'll set 
-		the input label to reinforce the behavior. 
-		*/
-
-		// isset submission, or prompt
-		if ( isset($_POST["submitted"]) ) {
-			if ($_POST["userInput"]) {
-				$userInput = $_POST["userInput"];
-			} else {
-				$inputLabel = "Enter information below, then submit.";
-			}
-		}
-
-		// php character counter
-		$str = $userInput;
-
-		// message creation
-		$message = "You entered: " . "'" . $userInput . "'." . "<br>" . "Character count: " . strlen($str) . " characters in total.";
-
-		// Message delivery
-		// Change colors of text by class (class="initial"; class="error";)
-		function outputMessage($value) {
-			if ( isset($_POST["submitted"]) ) {
-				echo $value;
-			} 	
-		}
-
-		 ?>
-
-		<div class="inner-column">
-
-			<section class="info">
-				<h1>Character Counter</h1>
-				<h2>No fingers. No toes.</h2>
-			</section>
-
-			<form method="POST">
-			 	
-				<div class="field">
-					<label for="userInput"><?=$inputLabel?></label>
-					<input type="text" name="userInput" placeholder="Type here">
-				</div>
-
-				<button class="submit" name ="submitted">
-					<p>Submit</p>
-				</button>
-
-				<button class="reset" name ="resetInput">
-					<a href="?">Reset</a>
-				</button>
-
-			</form>
-
-			<div class="output">
-				<?=outputMessage($message)?>
-			</div>
-
-		</div>
-
-	</body>
 
 	<!-- STYLING -->
 	 <style>
@@ -128,7 +50,6 @@
 		}
 
 	/*	OUTPUT */
-
 		.output {
 			margin: 20px 0 60px;
 		}
@@ -140,7 +61,6 @@
 		}
 
 	/* HEADINGS & TEXT */
-
 	h1, h2, p {
 		font-family: helvetica, sans-serif;
 	}
@@ -166,15 +86,99 @@
 
 	button[class="submit"] {
 		background-color: #729274;
+/*		border-color: #729274;*/
 		color: ghostwhite;
+
 	}
 
-	button[class="reset"] {
+	button[class="reset"]  {
 		background-color: #ef3e01;
 		color: ghostwhite;
 	}
+
+	button[class="reset"] a {
+		color: ghostwhite;
+	}
+
 	</style>
 
+	<body>
+
+		<?php 
+
+		/*
+		'Exercise for Programmers' challenge: 
+		Counting the Number of Characters
+		(Chapter 2, Exercise 2)
+		*/
+
+		// #1: Initialize
+		$userInput = "";
+		$characterCount = "";
+		$message = "";
+		$inputLabel = "Enter your information below.";
+
+		/*
+		If a user's submitted data, and there's user input in the field, 
+		we want to set and store that input. Otherwise, we'll set 
+		the input label to reinforce the behavior. 
+		*/
+
+		if ( isset($_POST["submitted"]) ) {
+			if ($_POST["userInput"]) {
+				$userInput = $_POST["userInput"];
+			} else {
+				$inputLabel = "Enter information below, then submit.";
+			}
+		}
+
+		// php character counter
+		$str = $userInput;
+
+		// message creation
+		$message = "You entered: " . "'" . $userInput . "'." . "<br>" . "Character count: " . strlen($str) . " characters in total.";
+
+		// Message delivery
+		// To add: change colors of text by class (class="initial"; class="error";)
+		function outputMessage($value) {
+			if ( isset($_POST["submitted"]) ) {
+				echo $value;
+			} 	
+		}
+
+		 ?>
+
+		<div class="inner-column">
+
+			<section class="info">
+				<h1>Character Counter</h1>
+				<h2>No fingers. No toes.</h2>
+			</section>
+
+			<form method="POST">
+			 	
+				<div class="field">
+					<label for="userInput"><?=$inputLabel?></label>
+					<input type="text" name="userInput" placeholder="Type here">
+				</div>
+
+				<button class="submit" name ="submitted">
+					<p>Submit</p>
+				</button>
+
+				<button class="reset" name ="resetInput">
+					<a href="?">Reset</a>
+				</button>
+
+			</form>
+
+			<div class="output">
+				<?=outputMessage($message)?>
+			</div>
+
+		</div>
+
+	</body>
 </html>
 
 
