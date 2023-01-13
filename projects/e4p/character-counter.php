@@ -95,6 +95,7 @@ function outputMessage($value) {
 
 	body {
 		background-color: ghostwhite;
+		margin-top: 40px;
 		padding: 10px;
 	}
 
