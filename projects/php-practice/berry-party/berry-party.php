@@ -33,3 +33,15 @@ $message = $guests . " " . $singularPlural . " will be attending the party. Each
 
 echo $message;
 
+
+function singleOrPlural($count, $word) {
+    if ($count == 1) {
+        return $word;
+    } else {
+        return $word . "s";
+    }
+}
+
+echo singleOrPlural(3, "guest");
+
+

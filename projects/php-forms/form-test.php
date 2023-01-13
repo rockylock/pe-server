@@ -5,9 +5,9 @@
 	$users = 0;
 	$ply = 0;
 
-	$dump = $_POST;
+	$submitted = isset($_POST["submitted"]);
 
-	if ( isset($_POST["submitted"]) ) { // check if data was submitted
+	if ( $submitted ) { // check if data was submitted
 		
 		if ( isset($_POST["users"]) ) { // check if data was submitted
 			if ( $_POST["users"] >= 0 ) { // check if data >= 0
@@ -32,9 +32,10 @@
 		$message = "<p class='feedback'>$totalPly plywood $piece will be needed for the workshop.</p>";
 	}
 
-	// var_dump($dump);
+	 // var_dump($dump);
 
 ?>
+
 <div class="inner-column">
 	<form method="POST">
 
@@ -42,12 +43,12 @@
 
 		<div class="field">
 			<label>Users attending workshop:</label>
-			<input type="number" name="users" min="0" value="<?=$users?>"/>
+			<input type="number" name="users" min="0" value="<?=$users?>" required>
 		</div>
 
 		<div class="field">
 			<label>Plywood pieces per user:</label>
-			<input type="number" name="ply" min="0" value="<?=$ply?>">
+			<input type="number" name="ply" min="0" value="<?=$ply?>" required>
 		</div>
 
 		<button type="submit" name="submitted">Submit</button>
