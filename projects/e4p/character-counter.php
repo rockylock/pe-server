@@ -1,180 +1,181 @@
-<!-- 
-Display information so that users can understand the form’s purpose. Include instructions if needed.
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-Provide a way for users to enter their response(s).
+		<title>Character Counter</title>
+		<meta name="description" content="This is a chacter counter form from 'Exercise for Programmers', made to practice HTML forms and PHP." />
+	</head>
 
-Provide clear input for users to submit their response(s).
+	<body>
 
-Display error if no characters are present upon submission. Persist until user entry is valid.
+		<?php 
 
-Record characters the user entered into the field. This includes letters, numbers, special characters, and spaces (what else can users input?).
+		/*
+		'Exercise for Programmers' challenge: 
+		Counting the Number of Characters
+		(Chapter 2, Exercise 2)
+		*/
 
-Use built-in function to determine the length of the string as an integer.
+		// #1: Initialize
+		$userInput = "";
+		$characterCount = "";
+		$message = "";
+		$inputLabel = "Enter your information below.";
 
-Display the initial string, as well as the character count in a single output. 
--->
+		/*
+		If a user's submitted data, and there's user input in the field, 
+		we want to set and store that input. Otherwise, we'll set 
+		the input label to reinforce the behavior. 
+		*/
 
-<!-- what if the input field was a string/text, and we used floatval? -->
+		// isset submission, or prompt
+		if ( isset($_POST["submitted"]) ) {
+			if ($_POST["userInput"]) {
+				$userInput = $_POST["userInput"];
+			} else {
+				$inputLabel = "Enter information below, then submit.";
+			}
+		}
 
-<?php 
+		// php character counter
+		$str = $userInput;
 
-// #1: Initialize
-$userInput = "";
-$characterCount = "";
-$message = "";
-$inputLabel = "Enter your information below.";
+		// message creation
+		$message = "You entered: " . "'" . $userInput . "'." . "<br>" . "Character count: " . strlen($str) . " characters in total.";
 
-/*
-If a user's submitted data, and there's user input in the field, 
-we want to set and store that input. Otherwise, we'll set 
-the input label to reinforce the behavior. 
-*/
+		// Message delivery
+		// Change colors of text by class (class="initial"; class="error";)
+		function outputMessage($value) {
+			if ( isset($_POST["submitted"]) ) {
+				echo $value;
+			} 	
+		}
 
-// isset submission, or prompt
-if ( isset($_POST["submitted"]) ) {
-	if ($_POST["userInput"]) {
-		$userInput = $_POST["userInput"];
-	} else {
-		$inputLabel = "Enter information below, then submit.";
-	}
-}
+		 ?>
 
-// php character counter
-$str = $userInput;
+		<div class="inner-column">
 
-// message creation
-$message = "You entered: " . "'" . $userInput . "'." . "<br>" . "Character count: " . strlen($str) . " characters in total.";
+			<section class="info">
+				<h1>Character Counter</h1>
+				<h2>No fingers. No toes.</h2>
+			</section>
 
-// Message delivery
-// Change colors of text by class (class="initial"; class="error";)
-function outputMessage($value) {
-	if ( isset($_POST["submitted"]) ) {
-		echo $value;
-	} 	
-}
+			<form method="POST">
+			 	
+				<div class="field">
+					<label for="userInput"><?=$inputLabel?></label>
+					<input type="text" name="userInput" placeholder="Type here">
+				</div>
 
- ?>
+				<button class="submit" name ="submitted">
+					<p>Submit</p>
+				</button>
 
-<div class="inner-column">
+				<button class="reset" name ="resetInput">
+					<a href="?">Reset</a>
+				</button>
 
-	<section class="info">
-		<h1>Character Counter</h1>
-		<h2>No fingers. No toes.</h2>
-	</section>
+			</form>
 
-	<form method="POST">
-	 	
-		<div class="field">
-			<label for="userInput"><?=$inputLabel?></label>
-			<input type="text" name="userInput" placeholder="Type here">
+			<div class="output">
+				<?=outputMessage($message)?>
+			</div>
+
 		</div>
 
-		<button class="submit" name ="submitted">
-			<p>Submit</p>
-		</button>
+	</body>
 
-		<button class="reset" name ="resetInput">
-			<a href="?">Reset</a>
-		</button>
+	<!-- STYLING -->
+	 <style>
+		
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
 
-	</form>
+		body {
+			background-color: ghostwhite;
+			margin-top: 40px;
+			padding: 10px;
+		}
 
-	<div class="output">
-		<?=outputMessage($message)?>
-	</div>
+		.inner-column {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #fcfafd;
+			box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			padding: 10px;
+		}
 
-</div>
+	/* FORM */
+		.field {
+			display: grid;
+			gap: 15px;
+			margin-top: 20px;
+		}
 
-<!-- STYLING -->
- <style>
-	
-	* {
-		box-sizing: border-box;
-		margin: 0;
+		form button {
+			justify-self: start;
+			margin-top: 10px;
+		}
+
+		form .emptyField {
+			color: red;
+		}
+
+	/*	OUTPUT */
+
+		.output {
+			margin: 20px 0 60px;
+		}
+
+	/* LINKS */
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+	/* HEADINGS & TEXT */
+
+	h1, h2, p {
+		font-family: helvetica, sans-serif;
 	}
 
-	body {
-		background-color: ghostwhite;
-		margin-top: 40px;
-		padding: 10px;
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 300;
 	}
 
-	.inner-column {
-		max-width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #fcfafd;
-		box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 500;
+		letter-spacing: 0.025rem;
+		line-height: 1.3;
+	}
+
+	/* BUTTONS */
+	button {
+		padding: 5px 10px;
 		border-radius: 5px;
-		padding: 10px;
+		gap: 10px;
 	}
 
-/* FORM */
-	.field {
-		display: grid;
-		gap: 15px;
-		margin-top: 20px;
+	button[class="submit"] {
+		background-color: #729274;
+		color: ghostwhite;
 	}
 
-	form button {
-		justify-self: start;
-		margin-top: 10px;
+	button[class="reset"] {
+		background-color: #ef3e01;
+		color: ghostwhite;
 	}
+	</style>
 
-	form .emptyField {
-		color: red;
-	}
-
-/*	OUTPUT */
-
-	.output {
-		margin: 20px 0 60px;
-	}
-
-/* LINKS */
-	a {
-		color: black;
-		text-decoration: none;
-	}
-
-/* HEADINGS & TEXT */
-
-h1, h2, p {
-	font-family: helvetica, sans-serif;
-}
-
-h1 {
-	font-size: 2.5rem;
-	font-weight: 300;
-}
-
-h2 {
-	font-size: 1.25rem;
-	font-weight: 500;
-	letter-spacing: 0.025rem;
-	line-height: 1.3;
-}
-
-/* BUTTONS */
-button {
-	padding: 5px 10px;
-	border-radius: 5px;
-	gap: 10px;
-}
-
-button[class="submit"] {
-	background-color: #729274;
-	color: ghostwhite;
-}
-
-button[class="reset"] {
-	background-color: #ef3e01;
-	color: ghostwhite;
-}
-</style>
-
-
-
+</html>
 
 
 
