@@ -508,7 +508,133 @@ Long term (5 years)
 
 - Own land on oro near the California coast
 - Series of small homes built
-- 
+
+
+## 2023-01-13
+
+// POST collects form data after submitting an HTML form 
+
+### PHP built-in functions
+
+#### isset()
+
+- Determine if a variable is declared and is different than null. (Boolean)
+
+- only works with variables as passing anything else will result in a parse error
+
+- Returns true if var exists and has any value other than null. false otherwise. 
+
+- array_key_exists($var); to check for NULL key values
+
+#### unset()
+
+- Destroys the specified variables. 
+
+- The behavior of unset() inside of a function can vary depending on what type of variable you are attempting to destroy.
+
+- If a globalized variable is unset() inside of a function, only the local variable is destroyed. The variable in the calling environment will retain the same value as before unset() was called. 
+
+#### strlen()
+
+- Returns the length of the given string. 
+- returns the number of bytes rather than the number of characters in a string. 
+
+- See mb_strlen() and iconv_strlen(), as they can return the number of characters in a string
+
+#### strrev() 
+
+- Reverse a string
+
+#### strtolower()
+
+- Make a string lowercase
+
+#### round()
+
+- returns the rounded value of num to specified precision. 
+
+#### trim()
+
+- Strip whitespace (or other characters) from the beginning and end of a string
+- Stripped characters can also be specified using the characters parametere. 
+
+#### explode()
+
+- Returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string separator. 
+
+#### join() aka implode()
+
+- Join array elements with a string 
+
+#### substr()
+
+- Returns part of a string specified by the offset and length parameters.
+
+#### count()
+
+- Counts all elements in an array of in a Countable object.
+
+#### array_push() 
+
+- Push one or more elements onto the end of an array
+
+#### array_rand()
+
+- picks one or more randon entries out of an array, and returns the key (or keys) of the random entries. 
+
+#### array_reverse() 
+
+- Return an array with elements in reverse order
+
+#### array_slice()
+
+- Extract a slice of the array
+
+#### array_unique()
+
+- removes duplicate values from an array
+
+#### date()
+
+- Format a Unix timestamp
+- Unix timestamps don't handle timezones.  
+
+#### mail()
+
+- Send mail! 
+- set to, subject, message, headers (from, Cc, Bcc), parameters, etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
