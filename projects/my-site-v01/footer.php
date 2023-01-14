@@ -1,5 +1,0 @@
-
-		<!-- Content -->
-		</main>	
-	</body>
-</html>

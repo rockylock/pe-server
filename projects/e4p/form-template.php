@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width,
 		initial-scale=1">
 
-		<meta name="description" content="Form test: Workshop Materials">		
+		<meta name="description" content="[[CONTENT]]">		
 		<link rel="stylesheet" href="css/style.css">
 
-		<title>Workshop Materials</title>
+		<title>[[TITLE]]</title>
 
 		<link rel="shortcut icon" href="favicon.ico">
 
@@ -18,6 +18,10 @@
 	</head>
 		
 	<body>
-		<?php include ('form-test.php'); ?>
+		<?php 
+
+
+
+		?>
 	</body>
 </html>

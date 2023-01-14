@@ -3,21 +3,24 @@
 
 @import "meyer-reset.css";
 @import "setup.css";
+@import "forms.css";
 
 main {
 	padding: 2vh;
 }
 
 body {
+	display: flex;
+	align-items: center;
 	background-color: white; 
 }
 
 .inner-column {
 	display: block;
-	position: relative;
-	max-width: 1600px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px;
 }
 
 /* HEADINGS & TEXT */
