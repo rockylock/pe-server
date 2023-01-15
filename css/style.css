@@ -23,19 +23,24 @@ body {
 .menu {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 2vh;
 }
 
 .menu a {
+	margin: 2vw;
+}
+
+/* LINKS */
+.substack a, .email a, .github a, .menu a {
 	font-family: lato;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	text-transform: capitalize;
 	text-decoration: none;
 	color: white;
 	background-color: #041424;
-	padding: 4vw;
-	margin: 2vw;
+	padding: 7px;
 	border-radius: 10px;
 }
 
@@ -182,7 +187,7 @@ print-drawing {
 	grid-column: span 12;
 }
 
-.substack, .email, .github, .goals{
+.substack, .email, .github {
 	grid-column: span 12;
 	display: flex;
 	justify-content: center;
@@ -234,18 +239,6 @@ h1 + p {
 
 p + p {
 	margin-top: 1rem;
-}
-
-/* LINKS */
-.substack a, .email a, .github a {
-	font-family: lato;
-	font-size: 2rem;
-	text-transform: capitalize;
-	text-decoration: none;
-	color: white;
-	background-color: #041424;
-	padding: 4vw;
-	border-radius: 10px;
 }
 
 /* SVGs */
