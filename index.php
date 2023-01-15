@@ -1,5 +1,5 @@
 
-<?php include("header.php"); ?>
+<?php include("header.php")?>
 
 	<div class="inner-column">
 
@@ -15,7 +15,12 @@
 			
 			<section class="views">
 				
-				<picture class="hello">
+				<picture class="hello-small">
+					<img src="images/hello.png" alt="An image showing base and projected views
+					of the text, 'Hello'">
+				</picture>
+
+				<picture class="hello-large">
 					<img src="images/hello-world.png" alt="An image showing base and projected views
 					of the text, 'Hello, world!'">
 				</picture>
@@ -23,18 +28,19 @@
 			</section>
 
 			<section class="content">
+
+				<?php include("modules/nav.php")?> 
 				
-				<?php include("modules/welcome.php"); ?>
+				<?php include("modules/welcome.php")?>
 
 			</section>
 
-			<?php include("title-block.php"); 
-			?>
+			<?php include("title-block.php")?>
 
 		</print-drawing>
 	</div>
 
- <?php include("footer.php"); ?>
+ <?php include("footer.php")?>
 
 
 

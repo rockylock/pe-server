@@ -1,4 +1,6 @@
 
+<!-- RESUME PAGE -->
+
 <?php include("header.php")?>
 
 	<div class="inner-column">
@@ -16,23 +18,21 @@
 
 			<section class="views">
 				
-				<picture class="projects-small">
-					<img src="images/projects-small.png" alt="An image showing the text, 'Projects'.">
+				<picture class="resume-small">
+					<img src="images/resume-small.png" alt="An image showing the text, 'Resume'.">
 				</picture>
 
-				<picture class="projects-large">
-					<img src="images/projects-large.png" alt="An image showing the text, 'Projects'.">
+				<picture class="resume-large">
+					<img src="images/resume-large.png" alt="An image showing the text, 'Resume'.">
 				</picture>
 
 			</section>
 
 			<section class="content">
 				
-				<?php include("modules/nav.php")?>
+				<?php include("modules/nav.php")?> 
 
-				<a href="projects/e4p">Forms</a>
-				<a href="?">Mock Client (placeholder)</a>
-				<a href="?">Responsive Layout (placeholder)</a>
+				<?php include("modules/resume-list.php")?> 
 
 			</section>
 
@@ -43,3 +43,18 @@
 </section>
 
  <?php include("footer.php")?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

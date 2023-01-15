@@ -20,8 +20,29 @@ body {
 	margin-right: auto;
 }
 
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+/*	flex-wrap: wrap;*/
+	gap: 10px;
+	padding: 10px;
+}
+
+nav a {
+	font-family: lato;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	background-color: #041424;
+	padding: 7px;
+	border-radius: 10px;
+}
+
 .menu {
 	display: flex;
+	background-color: white;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -31,6 +52,10 @@ body {
 .menu a {
 	margin: 2vw;
 }
+
+.resume { 
+	padding: 10px;
+ }
 
 /* LINKS */
 .substack a, .email a, .github a, .menu a {
@@ -44,10 +69,15 @@ body {
 	border-radius: 10px;
 }
 
+a:active {
+		background-color: #f05a28;
+	}
+
 .logo, .title, .project-name, .size, .version, .drawn, 
 .page, .truths-title, .truths-nerd, .truths-cats, 
 .truths-digifab, .truths-svg, .truths-web, .substack,
-.email, .whitespace, .github, .goals {
+.email, .whitespace, .github, .goals, .menu, .home, .goals,
+.projects, .resume {
 	background-color: white;
 }
 
@@ -60,9 +90,13 @@ print-drawing {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-	border: 0.75vh solid #041424;
+	border: 0.5vh solid #041424;
 	padding: 0;
 	gap: 0;
+}
+
+.title-block {
+	border-top: 0.5vh solid #041424;
 }
 
 .views {
@@ -71,46 +105,42 @@ print-drawing {
 	background-color: white;
 }
 
-.hello {
-	display: none; /* add small hello-world.png version and return to display: grid */
-}
-
 .welcome {
-	padding: 2vw 1vw;
+	padding: 10px;
 }
 
-/*GOALS*/
+/*GOALS, RESUME*/
 
 .goals-list {
 	padding: 0 5vw 2vh;
 }
 
-.goals-small, .projects-small, .about-small, .resume-small {
+.hello-small, .goals-small, .projects-small, .about-small, .resume-small {
 	padding: 3vw;
 /*	set size*/
 }
 
-.goals-large, .about-large, .projects-large, .resume-large {
+.hello-large, .goals-large, .about-large, .projects-large, .resume-large {
 	display: none;  /*hidden or none; swap on larger screen sizes*/
 }
 
-.goals-list h1 {
+.goals-list, .resume-list, h1 {
 	font-size: 1.75rem;
 	margin-top: 1em;
 }
 
-.goals-list ul {
+.goals-list ul, .resume-list ul {
 	list-style: square inside;
 }
 
-.goals-list li {
+.goals-list li, .resume-list li {
 	font-family: georgia, serif;
 	line-height: 1.5;
 	font-size: 1.25rem;
 	color: #041424;
 }
 
-.goals-list h1 + ul {
+.goals-list h1 + ul, .resume-list h1 + ul {
 	margin-top: 1em;
 }
 
@@ -120,9 +150,8 @@ print-drawing {
 	grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
 	background-color: #041424; /* Black Pearl */
-	border-top: 0.75vh solid #041424;
 	padding: 0;
-	gap: 0.75vh;
+	gap: 0.5vh;
 }
 
 .title, .project-name, .size, .version, .drawn, 
@@ -188,11 +217,11 @@ print-drawing {
 }
 
 .substack, .email, .github {
-	grid-column: span 12;
+	grid-column: span 4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5vw 0;
+	padding: 2vw 0;
 }
 
 /* HEADINGS & TEXT */
@@ -428,10 +457,10 @@ p + p {
 	}
 
 	/*	 LINKS */
-	.substack a, .email a, .github a, .menu a {
+	nav a, .substack a, .email a, .github a, .menu a {
 		font-family: lato;
 		font-size: 1.5rem;
-		text-transform: capitalize;
+		text-transform: capitalihttps://rockylockstep.substack.com/ze;
 		text-decoration: underline;
 		color: #041424;
 		background-color: white;
@@ -464,10 +493,14 @@ p + p {
 		grid-column: 2 / 3; 
 	}
 
+	.menu {
+		grid-column: 1 / 2;
+		grid-row: 1 / span 1;
+	}
+
 	.content {
 		grid-column: 1 / 2;
 		grid-row: 1 / 3;
-/*		background-color: red;*/
 	}
 
 	/*	GRID LAYOUT*/
@@ -589,7 +622,7 @@ p + p {
 	}
 
 	a:hover {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		background-color: #041424;
 		color: white;
 		text-decoration: none;

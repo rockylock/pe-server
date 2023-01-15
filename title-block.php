@@ -101,6 +101,19 @@
 					<a href="https://github.com/rockylock" target="_blank">GitHub</a>
 				</div>
 
+			<!-- Original menu layout
+				<div class="substack">
+					<a href="https://rockylockstep.substack.com" target="_blank">substack</a>
+				</div>
+
+				<div class="email">
+					<a href="mailto:hello@miguelvega.dev" target="_blank">Email</a>
+				</div>
+					
+				<div class="github">
+					<a href="https://github.com/rockylock" target="_blank">GitHub</a>
+				</div> 
+			-->
 			</section>
 
 

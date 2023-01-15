@@ -7,6 +7,5 @@
 	<p>Web design is the next skill set I'm focusing on and putting to work.</p>
 </section>
 
-<?php include("menu.php"); ?>
 
 

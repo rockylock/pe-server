@@ -1,7 +1,7 @@
 
 <!-- GOALS PAGE -->
 
-<?php include("header.php"); ?>
+<?php include("header.php")?>
 
 	<div class="inner-column">
 
@@ -30,25 +30,19 @@
 
 			<section class="content">
 				
-				<?php 
-					include("modules/goals-list.php");
-				?> 
+				<?php include("modules/nav.php")?> 
 
-				<?php 
-					include("menu.php");
-				?>
+				<?php include("modules/goals-list.php")?> 
 
 			</section>
 
-			<?php  
-				include("title-block.php"); 
-			?>
+			<?php include("title-block.php")?>
 
 		</print-drawing>
 	</div>
 </section>
 
- <?php include("footer.php"); ?>
+ <?php include("footer.php")?>
 
 
 
