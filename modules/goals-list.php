@@ -43,7 +43,7 @@
 					<li> 
 						<?=$task?>
 					</li>
-				<?php }?>
+				<?php } ?>
 			</ul>
 		</div>
 

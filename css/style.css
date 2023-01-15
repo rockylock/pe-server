@@ -80,12 +80,12 @@ print-drawing {
 	padding: 0 5vw 2vh;
 }
 
-.goals-small {
+.goals-small, .projects-small, .about-small, .resume-small {
 	padding: 3vw;
 /*	set size*/
 }
 
-.goals-large {
+.goals-large, .about-large, .projects-large, .resume-large {
 	display: none;  /*hidden or none; swap on larger screen sizes*/
 }
 

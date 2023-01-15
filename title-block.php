@@ -1,5 +1,5 @@
 
-			<section class="title-block">
+			<section class="title-block"> 
 
 				<div class="logo">	
 					<svg class="title-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">

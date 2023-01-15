@@ -34,7 +34,7 @@
 		}
 
 	/* FORM */
-		.field {
+		form, .field {
 			display: grid;
 			gap: 15px;
 			margin-top: 20px;

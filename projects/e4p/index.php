@@ -18,10 +18,26 @@
 	</head>
 		
 	<body>
-		<?php // include ('berry-party.php'); ?>
+		
+		<section class="forms-list"></section>
+			<ul>
+				<li>
+					<a href="character-counter.php">Character Counter</a>
+				</li>
+				<li>
+					<a href="simple-math.php">Simple Math</a>
+				</li>
+				<li>
+					<a href="printing-quotes.php">Printing Quotes</a>
+				</li>
+				<li>
+					<a href="workshop-materials.php">Workshop Materials</a>
+				</li>
+				<li>
+					<a href="berry-party.php">Berry Party</a>
+				</li>
+			</ul>
+		</section>
 
-		<!-- 
-			Add all forms here 
-		 -->
 	</body>
 </html>
