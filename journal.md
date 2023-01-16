@@ -484,7 +484,7 @@ cultivate your own Command Station -
 
 
 
-
+===================================================
 
 
 
@@ -605,6 +605,8 @@ Long term (5 years)
 - set to, subject, message, headers (from, Cc, Bcc), parameters, etc.
 
 
+=================================================
+
 
 ### Exercise for Programmers: Simple Math (Chapter 2, Exercise 5)
 
@@ -635,18 +637,44 @@ Don’t allow the user to proceed if the value entered is not numeric.
 Don’t allow the user to enter a negative number.
 
 INPUTS
+- $numberOne
+- $numberTwo
 
 
 PROCESSES
 
+- Create form with two string input fields and a submit button
+- Once data is collected, check that the entries are numbers
+- Convert strings to numbers
+- Carry out math
+- Create output message 
+- Display output message
+
+
 
 OUTPUTS
-
+- $numberSum
+- $numberDifference
+- $numberProduct
+- $numberQuotient
+- $mathOutput
 
 STEPS
 
 
 
+
+## 2023-01-15
+
+I've built a monster. 
+
+In its current state, I find it unmaintainable. Organization is lacking. The structure is haphazard, and the results show. 
+
+In this moment, I fee like a failure. This site does not satisfy the baseline, and it frustrates me. 
+
+The site is driving, and I feel a reset is in order for this to make sense. 
+
+At this moment, I feel like I've traded earned intuition for novelty. I don't have the skill to control my site vision. That's rough. 
 
 
 

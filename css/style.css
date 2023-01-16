@@ -53,6 +53,13 @@ nav a {
 	margin: 2vw;
 }
 
+projects  {
+	display: flex;
+	margin-top: 20px;
+	gap: 20px;
+	padding: 0 0 0 10px;
+}
+
 .resume { 
 	padding: 10px;
  }
@@ -96,6 +103,7 @@ print-drawing {
 }
 
 .title-block {
+	margin-top: 10px;
 	border-top: 0.5vh solid #041424;
 }
 
@@ -288,6 +296,7 @@ p + p {
 }
 
 /* PICTURES */
+
 .hand-project {
 	max-width: 50vw;
 	margin-left: 5vw;
@@ -466,6 +475,12 @@ p + p {
 		background-color: white;
 		padding: 1vh;
 		border-radius: 0;
+	}
+
+	a {
+		font-size: 1.3rem;
+		line-height: 1.5;
+
 	}
 
 	a:hover {
