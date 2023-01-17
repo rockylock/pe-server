@@ -27,9 +27,13 @@
 	<body>
 
 		<header>
-			<section class="page-section site-header">
-				<?php include("site-menu.php")?>
-			</section>
+			<inner-column>
+
+				<section class="page-section site-header">
+					<?php include("site-menu.php")?>
+				</section>
+
+			<inner-column>
 		</header>
 
 		<main>
@@ -44,13 +48,18 @@
 				if ($page == "details") {
 					include("details.php");
 				}
+				// how do we call specific pages?
 			?> 
 		</main>
 
 		<footer>
-			<section class="page-section site-header">
-				<p>Footer</p>
-			</section>
+			<inner-column>
+
+				<section class="page-section site-header">
+					<p>Footer</p>
+				</section>
+
+			<inner-column>	
 		</footer>
 
 	</body>

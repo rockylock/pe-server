@@ -15,8 +15,8 @@ inner-column {
 	max-width: 960px; /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;
-	padding: 30px 10px; /* a loose default */
-	border: 1px solid red;
+	padding: 10px; /* a loose default */
+	border: 1px solid green;
 }
 
 .site-header {
