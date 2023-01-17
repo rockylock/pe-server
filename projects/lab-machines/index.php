@@ -41,6 +41,9 @@
 				if ($page == "machines") {
 					include("machines.php");
 				}
+				if ($page == "details") {
+					include("details.php");
+				}
 			?> 
 		</main>
 

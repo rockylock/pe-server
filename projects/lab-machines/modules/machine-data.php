@@ -14,11 +14,13 @@
 			"name" => "Cutter/Plotter",
 			"teaser" => "Use the pen to draw outlines for posters, or textile patterns, then cut them out!"
 		],
+
 		$m003 = [
 			"image" => "../images/square.jpg",
 			"name" => "Dye Sublimation Printer",
 			"teaser" => "Print any image out, then use a heat press to transfer it onto fabric, ceramic, metal, glass, and more."
 		],
+		
 		$m004 = [
 			"image" => "../images/square.jpg",
 			"name" => "Laser Cutter",

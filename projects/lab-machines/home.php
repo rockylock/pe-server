@@ -20,7 +20,8 @@
 			<img src="images/square.jpg">	
 		</picture>
 
-		<a href="?page=machines">View all machines</a>
+		<a href="?page=machines"><p>View all machines</p></a>
+
 	</machine-teaser>
 
 </inner-column>
