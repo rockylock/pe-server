@@ -2,13 +2,15 @@
 <inner-column>
 
 	<machine-list>
-		
+
 		<intro>
 			<picture>
 				<img src="images/square.jpg">	
 			</picture>
 
-			<h1>Machines Page</h1>
+			<intro-text>
+				<h1>Machines Page</h1>
+			</intro-text>
 
 			<?php include("modules/machine-card.php") ?>
 
