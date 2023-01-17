@@ -1,0 +1,91 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* be at least a full viewport height */
+} 
+
+main {
+	flex-grow: 1; /* fill up available space + push the footer down */
+}
+
+inner-column {
+	display: block;
+/*	width: 98%;*/
+	max-width: 960px; /* could be a variable in settings */
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px 10px; /* a loose default */
+	border: 1px solid red;
+}
+
+.site-header {
+	position: sticky;
+	display: flex;
+	flex-direction: row;
+	top: 0;
+/*	z-index: 5;*/
+	border: 2px solid blue;
+}
+
+.site-footer {
+	padding: 10px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+intro {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 10px;
+}
+
+intro-text {
+/*	display: block;*/
+	align-items: left;
+	margin-top: 1em;
+}
+
+machine-teaser {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid purple;
+}
+
+machine-card {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		border: 1px solid black;
+		margin-top: 1em;
+}
+
+card-text {
+	display: flex;
+	flex-direction: column;
+
+}
+
+machine-list {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
