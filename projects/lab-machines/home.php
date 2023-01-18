@@ -8,7 +8,7 @@
 		</picture>
 
 		<intro-text>
-			<h1>Digital Fabrication MachinesSSS</h1>
+			<h1>Digital Fabrication Machines</h1>
 			<p>Make things, by using computers to control machines</p>
 		</intro-text>
 
