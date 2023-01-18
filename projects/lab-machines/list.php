@@ -12,7 +12,8 @@
 				<h1>Machines Page</h1>
 			</intro-text>
 
-			<?php include("modules/machine-card.php") ?>
+			<?php include("machine-card.php") ?>
+		</intro>
 
 	</machine-list>
 

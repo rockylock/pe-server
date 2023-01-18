@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 
+<?php include("machine-data.php"); ?>
+
 <?php 
 
 	/* Router */
@@ -33,7 +35,7 @@
 					<?php include("site-menu.php")?>
 				</section>
 
-			<inner-column>
+			</inner-column>
 		</header>
 
 		<main>
@@ -42,11 +44,11 @@
 				if ($page == "home") {
 					include("home.php");
 				}
-				if ($page == "machines") {
-					include("machines.php");
+				if ($page == "list") {
+					include("list.php");
 				}
-				if ($page == "details") {
-					include("details.php");
+				if ($page == "detail") {
+					include("detail.php");
 				}
 				// how do we call specific pages?
 			?> 
@@ -59,7 +61,7 @@
 					<p>Footer</p>
 				</section>
 
-			<inner-column>	
+			</inner-column>	
 		</footer>
 
 	</body>

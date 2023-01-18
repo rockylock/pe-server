@@ -11,25 +11,18 @@ main {
 
 inner-column {
 	display: block;
-/*	width: 98%;*/
 	max-width: 960px; /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px; /* a loose default */
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 }
 
-.site-header {
-	position: sticky;
-	display: flex;
-	flex-direction: row;
-	padding: 10px;
-	top: 0;
-/*	z-index: 5;*/
-	border: 2px solid blue;
+header, footer {
+	background-color: #0e4c90;
 }
 
-.site-footer {
+.site-header, .site-footer {
 	padding: 10px;
 }
 
@@ -42,22 +35,27 @@ nav {
 intro {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	gap: 10px;
+	padding: 10px;
+	border: 3px solid #0e4c90;
+	border-radius: 5px;
 }
 
 intro-text {
-/*	display: block;*/
-	align-items: left;
+	align-items: right;
 	margin-top: 1em;
 }
 
 machine-teaser {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 10px;
+	padding: 10px;
+	border: 3px solid #0e4c90;
+	border-radius: 5px;
 	margin-top: 15px;
-	border: 2px solid purple;
 }
 
 machine-card {
@@ -65,9 +63,10 @@ machine-card {
 		flex-direction: column;
 		background-color: white;
 		margin-top: 1em;
+		gap: 10px;
 		padding: 10px;
-		border: 1px solid black;
-		
+		border: 3px solid #0e4c90;
+		border-radius: 5px;
 }
 
 card-text {
@@ -80,6 +79,23 @@ machine-list {
 	display: flex;
 	flex-direction: column;
 }
+
+
+/* BREAKPOINTS */
+
+@media (min-width: 600px) {
+
+	.intro-home {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	machine-teaser {
+		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+}
+
 
 
 

@@ -677,6 +677,34 @@ The site is driving, and I feel a reset is in order for this to make sense.
 At this moment, I feel like I've traded earned intuition for novelty. I don't have the skill to control my site vision. That's rough. 
 
 
+## 2023-01-17
+
+We're working with PHP query strings now. 
+
+Started with a home, list, and detail page. I initially changed the names to machine, machine-detail, but what happens when I'm not listing machines? So, I reverted to the original name structure. 
+
+
+"slug" is a unique identifier
+
+Today, PHP string queries made my head spin. So, in an effort to solidify parts of this learning, I'm going to write down some things. 
+
+The end goal is to use templates that can be populated with data, allowing sites to grow at scale. Once a template's made, we use data (currently, in the form of associated arrays) to deliver the content. 
+
+### Create base file
+- create, then include php partials
+
+### Creating/locating/including data files
+
+### Router to understand where we are
+
+### Select which template that will be rendered
+
+### Using string queries in links to directs us to desired pages.  
+
+### Using loops to populate elements/cards/templates with data
+
+### Using if/else logic to render data or display errors
+
 
 
 

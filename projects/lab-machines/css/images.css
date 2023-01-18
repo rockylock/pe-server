@@ -1,12 +1,13 @@
 
 intro picture {
-	max-width: 300px;
+	max-width: 400px;
+	border-radius: 2px;
 }
 
 machine-card picture {
-	max-width: 300px;
+	max-width: 400px;
 }
 
 machine-teaser picture {
-	max-width: 300px;
+	max-width: 400px;
 }
