@@ -87,7 +87,7 @@ machine-list {
 
 /* FORMS */
 
- @media (max-width: 499px) {
+ @media (min-width: 300px) {
 
  	.form-section {
 		display: flex;
@@ -175,9 +175,10 @@ machine-list {
 
 /* FORMS */
 
-	/*field + field {
-		margin-top: 0;
-	}*/
+ 	/*.form-section {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;*/
 
 
 
