@@ -9,7 +9,13 @@
 			"name" => "Vinyl Cutter",
 			"teaser" => "Cut thin materials to make stickers, heat-transfer designs for shirts, and more!",
 			"manufacturer" => "Roland",
-			"model" => "GS-24"
+			"model" => "GS-24", 
+			"description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		],
 		[
 			"id" => 1,
@@ -17,7 +23,8 @@
 			"name" => "Cutter/Plotter",
 			"teaser" => "Use the pen to draw outlines for posters, or textile patterns, then cut them out!",
 			"manufacturer" => "Graphtec",
-			"model" => "CE5000-120AP"
+			"model" => "CE5000-120AP", 
+			"description" => ""
 		],
 		[
 			"id" => 2,
@@ -25,7 +32,8 @@
 			"name" => "Dye Sublimation Printer",
 			"teaser" => "Print any image out, then use a heat press to transfer it onto fabric, ceramic, metal, glass, and more.",
 			"manufacturer" => "Roland",
-			"model" => "RT-640"
+			"model" => "RT-640", 
+			"description" => ""
 		],
 		[
 			"id" => 3,
@@ -33,7 +41,8 @@
 			"name" => "Laser Cutter",
 			"teaser" => "Use lasers to engrave and cut all kinds of materials!",
 			"manufacturer" => "Universal Laser Systems",
-			"model" => "ILS 9.150D"
+			"model" => "ILS 9.150D", 
+			"description" => ""
 		],
 		[
 			"id" => 4,
@@ -41,7 +50,8 @@
 			"name" => "Printer/Cutter",
 			"teaser" => "Want to make high-quality, full-color stickers, heat transfers, posters, or canvases? This machine can do that!",
 			"manufacturer" => "Roland",
-			"model" => "BN-20"
+			"model" => "BN-20", 
+			"description" => ""
 		],
 		[
 			"id" => 5,
@@ -49,7 +59,8 @@
 			"name" => "Waterjet",
 			"teaser" => "Use high pressure water and garnet to cut through most things under 1 inch thick. Perfect for thin metal, like earrings and keychains!",
 			"manufacturer" => "Wazer",
-			"model" => "V1.5"
+			"model" => "V1.5", 
+			"description" => ""
 		]
 	]
 

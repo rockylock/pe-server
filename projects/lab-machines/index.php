@@ -1,19 +1,7 @@
 
 <!DOCTYPE html>
 
-<?php include("machine-data.php"); ?>
-
-<?php 
-
-	/* Router */
-	$page = null;
-	if ( isset($_GET["page"]) ) { //if we're getting page info from the url
-		$page = $_GET["page"]; // then use it: url?page=string . 
-	} else { 
-		$page = "home"; // if not, set page to our default, "home".
-	}
-	
-?>
+<?php require("router.php"); ?>
 
 <html>
 
@@ -39,19 +27,9 @@
 		</header>
 
 		<main>
-		<!-- setting up page templates -->	
-			<?php 
-				if ($page == "home") {
-					include("home.php");
-				}
-				if ($page == "list") {
-					include("list.php");
-				}
-				if ($page == "detail") {
-					include("detail.php");
-				}
-				// how do we call specific pages?
-			?> 
+		
+		<?php getTemplate($page); ?>
+
 		</main>
 
 		<footer>

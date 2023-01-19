@@ -1,4 +1,6 @@
 
+<?php include("machine-data.php"); ?>
+
 <!-- Machine card generator -->
 <?php foreach($machineData as $machine) {  
 	$image = $machine["image"];

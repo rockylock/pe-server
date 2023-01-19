@@ -12,7 +12,7 @@
 				<h1>Machines Page</h1>
 			</intro-text>
 
-			<?php include("machine-card.php") ?>
+			<?php include("machine-card.php"); ?>
 		</intro>
 
 	</machine-list>

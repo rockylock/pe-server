@@ -15,11 +15,15 @@ inner-column {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px; /* a loose default */
-/*	border: 1px solid green;*/
+/*	border: 12px solid green;*/
 }
 
 header, footer {
 	background-color: #0e4c90;
+}
+
+footer {
+	padding-bottom: 40px;
 }
 
 .site-header, .site-footer {
@@ -29,6 +33,7 @@ header, footer {
 nav {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 15px;
 }
 
@@ -80,10 +85,81 @@ machine-list {
 	flex-direction: column;
 }
 
+/* FORMS */
+
+ @media (max-width: 499px) {
+
+ 	.form-section {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+/*		gap: 10px;*/
+/*		border: 1px solid blue;*/
+ 	}
+
+	form-page h1 {
+		padding: 0 0 0 10px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 15px;
+		font-family: helvetica, sans-serif;
+		font-size: 1rem;
+		background-color: white;
+		padding: 30px 12px;
+		border-radius: 5px;
+		border: 3px solid #e3e8f4;
+		margin: 10px 0 25px;
+	}
+
+	field {
+/*		border: 1px solid red;*/
+	}
+
+	/* :is means, "if it is a label or input inside a field" */
+	field :is(label, input) {
+		display: block; 
+	}
+
+	field + field {
+		margin-top: 15px;
+	}
+
+	label + input {
+		margin-top: 3px;
+	}
+
+	input, textarea {
+		padding: 5px;
+	}
+
+	input, textarea, fieldset {
+		border: 2px solid #686868;
+		border-radius: 5px;
+	}
+
+	fieldset {
+		display: block;
+		background-color: white;
+		padding: 2px 12px 10px 5px;
+	}
+
+	legend {
+		padding: 5px;
+		margin-left: 5px;
+	}
+
+	button {
+		margin-top: 10px;
+	}
+}
 
 /* BREAKPOINTS */
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
 	.intro-home {
 		flex-direction: row;
@@ -96,6 +172,12 @@ machine-list {
 	}
 }
 
+
+/* FORMS */
+
+	/*field + field {
+		margin-top: 0;
+	}*/
 
 
 

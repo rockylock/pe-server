@@ -684,6 +684,7 @@ We're working with PHP query strings now.
 Started with a home, list, and detail page. I initially changed the names to machine, machine-detail, but what happens when I'm not listing machines? So, I reverted to the original name structure. 
 
 
+
 "slug" is a unique identifier
 
 Today, PHP string queries made my head spin. So, in an effort to solidify parts of this learning, I'm going to write down some things. 
@@ -704,7 +705,6 @@ The end goal is to use templates that can be populated with data, allowing sites
 ### Using loops to populate elements/cards/templates with data
 
 ### Using if/else logic to render data or display errors
-
 
 
 

@@ -1,4 +1,6 @@
 
+<?php include("machine-data.php"); ?>
+
 <?php 
 
 	if ( isset($_GET["machine"]) ) {
