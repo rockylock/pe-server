@@ -21,6 +21,9 @@
 /* Images */
 @import "images.css";
 
+/* Forms */
+@import "forms.css";
+
 /* Components */
 /*@import "components.css";*/
 
@@ -34,7 +37,7 @@ body {
 	background-color: ghostwhite;
 }
 
-/*.my-fantastic-image {
-	max-width: 300px;
-	border-bottom-right-radius: 30px;
-}*/
+
+
+
+

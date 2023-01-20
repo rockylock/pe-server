@@ -1,8 +1,31 @@
 
 <?php 
+	
+	// initialize
+	$name = null;
+	$teaser = "";
+	$manufacturer = "";
+	$model = "";
+	$status = "";
+	$description = "";
+
+	$nameLabel = "Name";
 
 	if ( isset($_POST["submitted"]) ) {
-		//echo "You entered the following: <br>" . $_POST["name"]; 	
+		if ( isset($_POST["name"]) ) {
+			$name = $_POST["name"];
+		} else $nameLabel = "Error";
+	} 
+
+	// Message creation
+
+		$message = "Name: " . $name . "."; 
+
+	// Message delivery
+	function outputMessage($value) {
+		if ( isset( $_POST["submitted"]) ) {
+			echo $value;
+		}
 	}
 
  ?>
@@ -17,25 +40,25 @@
 			
 			<div class="form-section">	
 				<field>
-					<label>Name</label>
-					<input type="string" name="name" required>
+					<label><?=$nameLabel?></label>
+					<input type="string" name="name" value="<?=$name?>"> <!-- required -->
 				</field>
 			
 				<field>
 					<label>Teaser</label>
-					<textarea name="description" columns="35" rows ="2"></textarea>
+					<textarea name="teaser" columns="35" rows ="2"></textarea>
 				</field>
 			</div>
 
 			<div class="form-section">	
 				<field>
 					<label>Manufacturer</label>
-					<input type="string">
+					<input type="string" name="manufacturer">
 				</field>
 			
 				<field>
 					<label>Model</label>
-					<input type="string">
+					<input type="string" name="model">
 				</field>
 			</div>
 				
@@ -65,7 +88,12 @@
 				</button>
 			</div>
 
+			<div class="message">
+				<?php outputMessage($message); ?>	
+			</div>
+
 		</form>
+
 	</form-page>
 
 </inner-column>

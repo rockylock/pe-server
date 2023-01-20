@@ -23,14 +23,14 @@
 	<detail>
 		<?php if ( isset($detail) ) { ?>
 
-			<h1><?=$detail["name"]?></h1>
-			<h2><?=$detail["manufacturer"]?></h2>
-			<h3><?=$detail["model"]?></h3>
+			<h1 class="name"><?=$detail["name"]?></h1>
+			<h2 class="manufacturer"><?=$detail["manufacturer"]?></h2>
+			<h3 class="model"><?=$detail["model"]?></h3>
 
 		<?php } else { ?>
 
-			<h1>Machine not found.</h1>
-			<a href="?page=list">Back to machines</a>
+			<h1 class="error">Machine not found.</h1>
+			<a href="?page=list" class="link">Back to machines</a>
 
 		<?php } ?>
 	</detail>
