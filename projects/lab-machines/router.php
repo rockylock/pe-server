@@ -1,7 +1,7 @@
 
 <?php 
 	 /* Router */
-	 
+
 	$page = null;
 
 	if ( isset($_GET["page"]) ) { 

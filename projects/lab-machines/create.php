@@ -62,7 +62,7 @@
 					<label>Description</label>
 					<textarea name="description" rows="5"></textarea>
 				</field>
-				
+
 				<fieldset>
 				    <legend>Current machine status</legend>
 
@@ -74,6 +74,16 @@
 
 				    <input type="radio" name="status">
 				    <label>Offline</label> <br>
+			  </fieldset>
+
+			  <fieldset>
+				    <legend>Requirements</legend>
+
+				    <input type="checkbox" name="certification">
+				    <label>Requires certification</label> <br>
+
+				    <input type="checkbox" name="supervision">		    
+				    <label>Requires supervision</label> <br>
 			  </fieldset>
 
 			  <div class="button">

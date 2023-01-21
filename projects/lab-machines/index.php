@@ -4,7 +4,7 @@
 <?php require("router.php"); ?>
 
 <!-- Bring in data -->
-<?php include("machine-data.php"); ?>
+<?php //include("machine-data.php"); ?>
 
 
 <html>
