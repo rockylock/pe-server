@@ -3,15 +3,7 @@
 
 @import "range.css";
 
-@media (min-width: 300px) {
-
- 	.form-section {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-/*		gap: 10px;*/
-/*		border: 1px solid blue;*/
- 	}
+@media (min-width: 200px) {
 
 	form-page h1 {
 		padding: 0 0 0 10px;
@@ -21,27 +13,24 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		gap: 15px;
+		gap: 10px;
+		max-width: 600px;
 		font-family: helvetica, sans-serif;
 		font-size: 1rem;
 		background-color: white;
 		padding: 30px 12px;
 		border-radius: 5px;
 		border: 3px solid #e3e8f4;
-		margin: 10px 0 25px;
+/*		margin: 10px 0 25px;*/
 	}
 
 	field {
-/*		border: 1px solid red;*/
+/*		border: 1px solid blue;*/
 	}
 
 	/* :is means, "if it is a label or input inside a field" */
 	field :is(label, input) {
 		display: block; 
-	}
-
-	field + field {
-		margin-top: 15px;
 	}
 
 	label + input {
@@ -71,6 +60,7 @@
 	button {
 		font-family: inherit;
 		font-size: inherit;
+		padding: 5px 8px;
 		margin-top: 10px;
 		border: 2px solid #686868;
 		border-radius: 5px;
@@ -90,9 +80,54 @@
 
 @media (min-width: 500px) {
 
- 	/*.form-section {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;*/
+ 	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.teaser, .description {
+		grid-column: 1 / span 2;
+	}
+
+	.button {
+		grid-column: 1;
+	}
+}
+
+@media (min-width: 700px) {
+
+ 	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.teaser, .description {
+		grid-column: 1 / span 2;
+	}
+
+	.button {
+		grid-column: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -38,38 +38,31 @@
 
 		<form method="post">
 			
-			<div class="form-section">	
 				<field>
 					<label><?=$nameLabel?></label>
 					<input type="string" name="name" value="<?=$name?>"> <!-- required -->
 				</field>
-			
-				<field>
-					<label>Teaser</label>
-					<textarea name="teaser" columns="35" rows ="2"></textarea>
-				</field>
-			</div>
 
-			<div class="form-section">	
-				<field>
+				<field class="manufacturer">
 					<label>Manufacturer</label>
 					<input type="string" name="manufacturer">
 				</field>
 			
-				<field>
+				<field class="model">
 					<label>Model</label>
 					<input type="string" name="model">
 				</field>
-			</div>
 				
-			<div class="form-section">	
-				<field>
-					<label>Description</label>
-					<textarea name="description" columns="35" rows ="5"></textarea>
+				<field class="teaser">
+					<label>Teaser</label>
+					<textarea name="teaser" rows ="2"></textarea>
 				</field>
-			</div>
 
-			<div class="form-section">	
+				<field class="descriptio">
+					<label>Description</label>
+					<textarea name="description" rows="5"></textarea>
+				</field>
+
 				<fieldset>
 				    <legend>Current machine status</legend>
 
@@ -83,10 +76,11 @@
 				    <label>Offline</label> <br>
 			  </fieldset>
 
-				<button type="submit" name="submitted">
-					Submit
-				</button>
-			</div>
+			  <div class="button">
+					<button type="submit" name="submitted">
+						Submit
+					</button>
+				</div>
 
 			<div class="message">
 				<?php outputMessage($message); ?>	

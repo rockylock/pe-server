@@ -9,7 +9,7 @@
 			</picture>
 
 			<intro-text>
-				<h1>Machines Page</h1>
+				<h1>Lab Machines</h1>
 			</intro-text>
 
 			<?php include("machine-card.php"); ?>
