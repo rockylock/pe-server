@@ -58,11 +58,11 @@
 					<textarea name="teaser" rows ="2"></textarea>
 				</field>
 
-				<field class="descriptio">
+				<field class="description">
 					<label>Description</label>
 					<textarea name="description" rows="5"></textarea>
 				</field>
-
+				
 				<fieldset>
 				    <legend>Current machine status</legend>
 
