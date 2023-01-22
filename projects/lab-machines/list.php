@@ -3,17 +3,15 @@
 
 	<machine-list>
 
-		<intro>
-			<picture>
+			<!-- <picture>
 				<img src="images/square.jpg">	
-			</picture>
+			</picture> -->
 
 			<intro-text>
-				<h1>Lab Machines</h1>
+				<h1>Lab machines</h1>
 			</intro-text>
 
 			<?php include("machine-card.php"); ?>
-		</intro>
 
 	</machine-list>
 

@@ -3,13 +3,13 @@
 
 <!-- Machine card generator -->
 
-<ul>
+<!-- <ul> -->
 	<?php foreach($machineData as $machine) {
 		$image = $machine["image"];
 		$name = $machine["name"];
 		$teaser = $machine["teaser"]; 
 	 ?>
-		<li>
+		<!-- <li> -->
 				<machine-card>
 					<picture class="image">
 						<img src="images/<?=$image?>">
@@ -21,9 +21,9 @@
 						<a href="?page=detail&machine=<?=$machine["id"]?>">Learn more</a>
 					</card-text>	
 				</machine-card>
-		</li>
+		<!-- </li> -->
 	<?php } ?>
-</ul>
+<!--  </ul> -->
 
 
 

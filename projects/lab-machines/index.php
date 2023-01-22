@@ -3,10 +3,6 @@
 
 <?php require("router.php"); ?>
 
-<!-- Bring in data -->
-<?php //include("machine-data.php"); ?>
-
-
 <html>
 
 	<head>
@@ -40,7 +36,7 @@
 			<inner-column>
 
 				<section class="page-section site-header">
-					<p>Footer</p>
+					<p>&copy 2023 Miguel Vega. All rights reserved.</p>
 				</section>
 
 			</inner-column>	

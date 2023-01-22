@@ -39,6 +39,13 @@ h1 + p, h1 + a {
 	margin-top: 1em;
 }
 
+h1 + h2{
+	margin-top: .125em;
+}
+
+h2 + h2 {
+	margin-top: 0.125em;
+}
 p + p {
 	margin-top: 1em;
 }
@@ -59,6 +66,7 @@ h1 {
  	font-family: helvetica, sans-serif;
 	/*min. font size: 36px, max: 72px; start scaling @ 320px vw, stop @ 960px vw*/
 	font-size: 2rem;
+	font-weight: 300;
 /*	font-size: clamp(2.25rem, 5.625vw + 1.125rem, 4.5rem);*/
 	line-height: 1.2;
 	letter-spacing: 0.03rem;
@@ -68,6 +76,7 @@ h1 {
 h2 {
 	font-family: helvetica, sans-serif;
 	font-size: 1.5rem;
+	font-weight: 300;
 	line-height: 1.2;
 	letter-spacing: 0.03rem;
 	padding: 0;

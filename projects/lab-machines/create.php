@@ -1,20 +1,72 @@
 
 <?php 
 	
+	// get the machine json file
+	$machineData = file_get_contents("machines.json");
+
+	// show it to the screen
+	// var_dump($machineData);
+
 	// initialize
-	$name = null;
+	$name = "";
 	$teaser = "";
 	$manufacturer = "";
 	$model = "";
 	$status = "";
 	$description = "";
-
+	
 	$nameLabel = "Name";
 
+	$hasName = false;
+	$nameError = false;
+
+	/*
+
+	If a user's submitted data, 
+	and there's user input in the field, 
+	we want to set and store that input. 
+	Otherwise, we'll change the input label 
+
 	if ( isset($_POST["submitted"]) ) {
-		if ( isset($_POST["name"]) ) {
+		if ($_POST["name"]) {
 			$name = $_POST["name"];
-		} else $nameLabel = "Error";
+		} else {
+			$nameLabel = "Please enter a name";
+		}
+	} 
+	*/
+
+	// video example
+	if ( isset($_POST["submitted"]) ) {
+		if ($_POST["name"]) {
+			$name = $_POST["name"];
+			
+			// if the string length > 0, set $hasName to true
+			// and create a new associative array
+			if (strlen($name) > 0 ) {
+				$hasName = true;
+
+				// Create machine name
+				$newMachine = [
+					"name" => "$name",
+				];
+
+				//echo "<pre>";
+				var_dump($newMachine);
+				//echo "<pre>";
+			}
+
+			// Pull up JSON file
+
+			$machineJson = json_encode($newMachine);
+
+			// Save machine name
+
+			file_put_contents("machines.json", $machineJson);
+
+		} else {
+			$nameLabel = "Please enter a name";
+		}
 	} 
 
 	// Message creation
@@ -64,7 +116,7 @@
 				</field>
 
 				<fieldset>
-				    <legend>Current machine status</legend>
+				    <legend>Machine status</legend>
 
 				    <input type="radio" name="status">
 				    <label>Online</label> <br>

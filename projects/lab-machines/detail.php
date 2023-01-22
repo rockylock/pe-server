@@ -20,12 +20,23 @@
 
 <inner-column>	
 	
-	<detail>
+	<detail-card>
 		<?php if ( isset($detail) ) { ?>
+			<picture>
+				<img src="images/<?=$detail["image"]?>">
+			</picture>
 
-			<h1 class="name"><?=$detail["name"]?></h1>
-			<h2 class="manufacturer"><?=$detail["manufacturer"]?></h2>
-			<h3 class="model"><?=$detail["model"]?></h3>
+			<detail-heading class="heading">
+				<h1 class="name"><?=$detail["name"]?></h1>
+				<h2 class="manufacturer"><?=$detail["manufacturer"]?></h2>
+				<h2 class="model"><?=$detail["model"]?></h2>
+				<p class="status"><?=$detail["status"]?></p>
+			</detail-heading>
+
+			<detail-text class="info">
+				<p class="description"><?=$detail["description"]?></p>
+				<a href="?page=list" class="link">Back to machines</a>
+			</detail-text>
 
 		<?php } else { ?>
 
@@ -33,6 +44,6 @@
 			<a href="?page=list" class="link">Back to machines</a>
 
 		<?php } ?>
-	</detail>
+	</detail-card>
 
 </inner-column>
