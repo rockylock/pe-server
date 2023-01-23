@@ -42,11 +42,10 @@
 			$name = $_POST["name"];
 			
 			// if the string length > 0, set $hasName to true
-			// and create a new associative array
+			// and create a new associative array with names
 			if (strlen($name) > 0 ) {
 				$hasName = true;
 
-				// Create machine name
 				$newMachine = [
 					"name" => "$name",
 				];
@@ -141,6 +140,10 @@
 			  <div class="button">
 					<button type="submit" name="submitted">
 						Submit
+					</button>
+
+					<button class="reset" name ="resetInput">
+					<a href="?page=create">Clear form</a>
 					</button>
 				</div>
 

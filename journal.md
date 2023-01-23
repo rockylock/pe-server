@@ -706,7 +706,9 @@ The end goal is to use templates that can be populated with data, allowing sites
 
 ### Using if/else logic to render data or display errors
 
-
+We're merging our time to make one thing, a singular thing made of our 
+  
+simple-yet-extremely-effective-portfolio-pieces-p3
 
 
 

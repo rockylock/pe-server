@@ -11,7 +11,7 @@
 
 	// If we find a matching machine ID in our data
 	foreach ($machineData as $machine) {
-		if ( $target_machine_id == $machine["id"] ) {
+		if ( $target_machine_id == $machine["slug"] ) {
 			$detail = $machine;
 		}
 	}

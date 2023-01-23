@@ -1,7 +1,7 @@
 
 <inner-column>
 	
-	<intro class="intro-home">
+<!-- 	<intro class="intro-home">
 
 		<picture>
 			<img src="images/square.jpg">	
@@ -9,10 +9,10 @@
 
 		<intro-text>
 			<h1>Digital Fabrication Machines</h1>
-			<p>Make things, by using computers to control machines</p>
+			<p>Make things, using computers to control machines</p>
 		</intro-text>
 
-	</intro>
+	</intro> -->
 
 	<machine-teaser>
 		

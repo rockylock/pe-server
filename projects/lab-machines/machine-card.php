@@ -18,7 +18,7 @@
 					<card-text>
 						<h2 class="name"><?=$name?></h2>
 						<p class="teaser"><?=$teaser?></p>
-						<a href="?page=detail&machine=<?=$machine["id"]?>">Learn more</a>
+						<a href="?page=detail&machine=<?=$machine["slug"]?>">Learn more</a>
 					</card-text>	
 				</machine-card>
 		<!-- </li> -->
