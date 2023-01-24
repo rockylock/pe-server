@@ -8,19 +8,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title><?=$page?></title>
-		<meta name="description" content="Theming Challenge | ">
+		<title>Theming Challenge | <?=$page?></title>
+		<meta name="description" content="This is a Theming Challenge, where we work to replicate a provided mock site layout.">
 		
 		<link rel="stylesheet" href="css/site.css">
-		<link rel="icon" type="image/x-icon" href="[[Insert favicon.ico]]">
-
+		
 		<!-- Open Graph Image -->
-		<meta property="og:image" content="[[insert meta image source]]">
+		<!-- <meta property="og:image" content="[[insert meta image source]]">
 		<meta property="og:image:secure_url" content="[[insert meta image source]]">
 		<meta property="og:image:type" content="image/jpeg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
-		<meta property="og:image:alt" content="[[insert OG image alt content]]">
+		<meta property="og:image:alt" content="[[insert OG image alt content]]"> -->
 	</head>
 
 	<body class="<?=$page?>">
@@ -41,7 +40,7 @@
 
 		<footer>
 			<inner-column>
-				
+
 				<?php include("footer.php")?>
 
 			</inner-column>	
