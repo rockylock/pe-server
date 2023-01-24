@@ -1,7 +1,4 @@
 
-		<header>
-			<inner-column>
-
 				<mast-head>
 					<nav>
 						<a href="?">LOGO</a>
