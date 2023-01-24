@@ -1,5 +1,5 @@
 
-<welcome-module>
+<welcome-module> <!-- convert to section --a11y -->
 	<inner-column>
 
 		<welcome-diptych>

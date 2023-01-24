@@ -711,6 +711,12 @@ We're merging our time to make one thing, a singular thing made of our
 simple-yet-extremely-effective-portfolio-pieces-p3
 
 
+## 2023-01-23
+
+- Note that all real elements are <oneword>  - so, for many reasons - you probably want to make your custom elements have <a-dash>
+
+- Why should we employ site.css over style.css?
+
 
 
 

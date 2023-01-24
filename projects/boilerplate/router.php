@@ -11,7 +11,7 @@
 	}
 
 	function getTemplate($page) {
-			include($page . ".php");
-		}
+		include($page . ".php");
+	}
 	
 ?>

@@ -13,10 +13,3 @@
 						<a href="?">Sign In</a>
 					</nav>
 				</mast-head>
-
-			</inner-column>
-		</header>
-
-		<main> 
-
-	<!-- CONTENT -->

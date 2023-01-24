@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title><?=$page?></title>
-		<meta name="description" content="[[insert description]]">
+		<meta name="description" content="Theming Challenge | ">
 		
 		<link rel="stylesheet" href="css/site.css">
 		<link rel="icon" type="image/x-icon" href="[[Insert favicon.ico]]">
@@ -25,11 +25,29 @@
 
 	<body class="<?=$page?>">
 
-		<?php include("header.php")?>
+		<header>
+			<inner-column>
+
+				<?php include("header.php")?>
+
+			</inner-column>
+		</header>
+
+		<main> 
 		
 		<?php getTemplate($page)?>
 
-		<?php include("footer.php")?>
+		</main>	
+
+		<footer>
+			<inner-column>
+				
+				<?php include("footer.php")?>
+
+			</inner-column>	
+		</footer>
+	</body>
+</html>
 
 
 
