@@ -1,0 +1,28 @@
+
+/* CALL TO ACTION ONE AND TWO */
+
+cta-module {
+	display: block;
+}
+
+.one, .two {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+ /* change to margin-top for h1, p, a */
+	border: var(--border-standard);
+	padding: 64px var(--padding-standard) 42px;
+}
+
+call-to-action h1 + p {
+	margin-top: 38px;
+}
+
+call-to-action p + a {
+	margin-top: 18px;
+}
+
+/* Breakpoints */
+@media (min-width: 660px) {
+	
+}

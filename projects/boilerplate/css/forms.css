@@ -1,0 +1,156 @@
+
+/* FORMS */
+
+@import "range.css";
+
+@media (min-width: 200px) {
+
+	form-page {
+		padding: 1em;
+	}
+
+	form-page h1 {
+		text-align: center;
+/*		padding: 0 0 20px 10px;*/
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 10px;
+		font-family: helvetica, sans-serif;
+		font-size: 1rem;
+		background-color: white;
+		padding: 30px 12px;
+		margin-top: 1em;
+		border-radius: 5px;
+		border: 3px solid #e3e8f4;
+	}
+
+	/* :is means, "if it is a label or input inside a field" */
+	field :is(label, input) {
+		display: block; 
+	}
+
+	label + input, label + textarea {
+		margin-top: 3px;
+	}
+
+	input, textarea {
+		padding: 5px;
+	}
+
+	field input, textarea {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	input, textarea, fieldset {
+		border: 2px solid #686868;
+		border-radius: 5px;
+	}
+
+	fieldset {
+		display: block;
+		background-color: white;
+		padding: 2px 12px 10px 5px;
+	}
+
+	legend {
+		padding: 5px;
+		margin-left: 5px;
+	}
+
+	button {
+		font-family: inherit;
+		font-size: inherit;
+		padding: 5px 8px;
+		margin-top: 10px;
+		border: 2px solid #686868;
+		border-radius: 5px;
+	}
+
+	button a {
+		color: #686868;
+		text-decoration: none;
+	}
+
+	.reset {
+		background-color: white;
+	}
+	
+	button:hover {
+		border: 2px solid #0e4c90;
+		color: #0e4c90;
+	}
+
+	button:hover a {
+			color: black;
+	}
+
+	button:active {
+		background-color: #0e4c90;
+		border: 2px solid #0e4c90;
+		color: white;	
+	}
+
+	button:active a {
+		color: white;
+	}
+}
+
+@media (min-width: 500px) {
+
+ 	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.teaser, .description {
+		grid-column: 1 / span 2;
+	}
+
+	.button {
+		grid-column: 1;
+	}
+}
+
+@media (min-width: 700px) {
+
+ 	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.teaser, .description {
+		grid-column: 1 / span 3;
+	}
+
+	.button {
+		grid-column: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

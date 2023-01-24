@@ -1,0 +1,32 @@
+
+/* Footer */
+
+.site-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 28px var(--padding-standard);
+	border: var(--border-standard);
+}
+
+site-map, site-map nav {
+	border: var(--border-standard);
+	padding: var(--padding-standard);
+}
+
+site-map {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 42px var(--padding-standard) 118px;
+}
+
+site-map nav {
+	display: block;
+}
+
+site-map nav a {
+	border: var(--border-standard);
+	padding: var(--padding-standard);	
+}

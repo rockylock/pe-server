@@ -1,0 +1,36 @@
+
+/* COLORS */
+
+:root {
+	--header-bg-color: #a1d4b4; /* Turquoise Green */
+	--welcome-bg-color: #a1d9e5; /* Charlotte */
+	--cta-one-bg-color: #d793c0; /* Shocking */
+	--articles-bg-color: #fac38c; /* Macaroni and Cheese */
+	--cta-two-bg-color: #fe878c; /* Tulip */
+	--footer-bg-color: #f7eede; /* Bianca */
+}
+
+header {
+	background-color: var(--header-bg-color);
+}
+
+welcome-module {
+	background-color: var(--welcome-bg-color);
+}
+
+/* CTAs */
+.cta-one {
+	background-color: var(--cta-one-bg-color);
+}
+
+.cta-two {
+	background-color: var(--cta-two-bg-color);
+}
+
+articles-module {
+	background-color: var(--articles-bg-color);
+}
+
+footer {
+	background-color: var(--footer-bg-color);
+}

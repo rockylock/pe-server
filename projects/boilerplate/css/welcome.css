@@ -1,0 +1,44 @@
+
+/* WELCOME */
+
+welcome-module {
+	display: block;
+}
+
+.welcome-image, welcome-diptych, welcome-text {
+	display: flex;
+	flex-direction: column;
+}
+
+welcome-diptych, .welcome-image, picture, welcome-text, h1, h2, p {
+	border: var(--border-standard);
+	padding: var(--padding-standard);
+}
+
+welcome-diptych {
+	padding: 68px var(--padding-standard) 50px;
+}
+welcome-text {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	padding: 30px var(--padding-standard) ;
+}
+
+/* Breakpoints */
+
+@media (min-width: 670px) {
+	welcome-diptych { 
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	welcome-text p {
+		font-size: 1em;
+	}
+
+	welcome-text {
+		min-width: 52%;
+	}
+}

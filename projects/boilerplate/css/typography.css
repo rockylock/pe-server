@@ -1,0 +1,98 @@
+
+/* Should we pull in @fonts here? */
+/* don't think you can... might have to be higher up (the top of) the food chain! */
+
+.loud-voice	{
+	font-family: sans-serif;
+	font-size: clamp(36px, 5vw, 60px);
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+.attention-voice	{
+	font-family: sans-serif;
+	font-size: 30px;
+}
+
+.calm-voice, p, li {
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+:is(.calm-voice, p) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p) strong {
+	font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+/* or smaller group of article-like styles such as a <text-content> custom element */
+
+
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+
+/* Headings & text */
+
+
+h1, h2, p {
+	border: var(--border-standard);
+	padding: var(--padding-standard);
+}
+
+h1 {
+ 	font-family: helvetica, sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+}
+
+h2 {
+	font-family: helvetica, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.03rem;
+}
+
+p {
+	font-family: helvetica, serif;
+	font-size: 1.125rem;
+	text-align: left;
+}
+
+a {
+	font-family: helvetica, serif;
+	font-size: 1rem;
+}
+
+call-to-action > a, articles-module a {
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	padding: var(--padding-standard);
+}
+
+
+
+
+
+
+
+
+
+
+
+
