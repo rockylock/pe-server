@@ -97,6 +97,7 @@ print-drawing {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
+	height: 96vh;
 	border: 0.5vh solid #041424;
 	padding: 0;
 	gap: 0;
@@ -501,6 +502,7 @@ p + p {
 	print-drawing {
 		display: grid;
 		grid-template-columns: 40% 60%;
+		grid-template-rows: 50% 50%;
 		border: 0.25vh solid #041424;
 	}
 
@@ -525,7 +527,9 @@ p + p {
 	}
 
 	.title-block {
-	grid-column: 2 / 3; /* columns covered in views grid */
+	grid-column: 2 / span 1; /* columns covered in views grid */
+	justify-self: end;
+	align-self: end;
 	padding: 0;
 	gap: 0.25vh;
 	border-top: 0.25vh solid #041424;
@@ -534,7 +538,7 @@ p + p {
 
 	.title, .project-name, .size, .version, .drawn, 
 	.page, .truths-title {
-		padding: 0.25vh;
+		padding: 0px;
 	}
 
 	.logo {
@@ -609,7 +613,7 @@ p + p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 1vh;
+		padding: 0;
 	}
 
 	.substack {
@@ -632,7 +636,7 @@ p + p {
 		text-decoration: underline;
 		color: #041424;
 		background-color: white;
-		padding: 1.4vh;
+		padding: 0.5vh;
 		border-radius: 0;
 	}
 
@@ -641,7 +645,7 @@ p + p {
 		background-color: #041424;
 		color: white;
 		text-decoration: none;
-		padding: 1vh;
+		padding: 10pxvh;
 		border-radius: 1vh;
 	}
 
@@ -651,7 +655,7 @@ p + p {
 
 	/* SVGs */
 	.title-logo {
-		width: 40%; 
+		max-width: 125px; 
 		fill: #041424;
 	}
 
@@ -663,19 +667,21 @@ p + p {
 /*		padding: 2vh;*/
 	}
 	.hand-project {
-		max-width: 18vh;
-		margin-left: 5vw;
+		max-width: 140px;
+		padding-bottom: 5px;
+		margin-left: 75px;
 	}
 
 	.hand-title {
-		max-width: 24vh;
-		margin-left: 4vw;
+		max-width: 165px;
+		margin-left: 55px;
+		padding-bottom: 3px;
 	}
 
 	.hand-size-large {
 		display: block;
-		max-width: 4vh;
-		margin: 2vh 0 0 0.5vw;
+		max-width: 40px;
+		padding: 10px 0 0 10px;
 	}
 
 	.hand-size-small, .hand-size-medium {
@@ -683,13 +689,13 @@ p + p {
 	}
 
 	.hand-version {
-		max-width: 6vh;
-		margin: 2vh 0 0 1vw;
+		max-width: 50px;
+		margin: 10px 0 0 15px;
 	}
 
 	.hand-initials {
-		max-width: 17vh;
-		margin-left: 3vw;
+		max-width: 140px;
+		margin-left: 50px;
 	}
 }
 
