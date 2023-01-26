@@ -6,7 +6,7 @@
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-		<title>Theme test challenge | Car Share</title>
+		<title>Theme challenge | Car Share</title>
 		<meta name='description' content='Theme challenge to emulate a Car Share website.'>
 		<meta property='og:image' content='Can you research emulate a website for a specific niche industry?'>
 
