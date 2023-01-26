@@ -1,0 +1,29 @@
+@import "forms.css";
+
+/* buttons and icons and smaller reusable bits here */
+
+.button {
+	display: block;
+
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4;
+	padding: 0.5em 1em;
+	background-color: var(--color);
+	color: var(--white);
+	min-width: 120px;
+	text-align: center;
+}
+
+.nav-button {
+	border: 1.5px solid var(--color);
+	background-color: var(--paper);
+	color: var(--color);
+}
+
+.nav-button:focus {
+	border: 1.5px solid var(--color);
+	background-color: var(--color;
+	color: var(--paper);
+}

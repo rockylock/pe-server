@@ -1,0 +1,65 @@
+/* Should we pull in @fonts here? */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;500&display=swap');
+
+/*
+	font-family: 'Abril Fatface', cursive;
+
+	font-family: 'Poppins', sans-serif;
+ */
+
+.loud-voice	{
+	font-family: "Abril Fatface", serif;
+	font-size: clamp(36px, 5vw, 60px);
+	letter-spacing: 0.03em;
+	line-height: 1.2;
+}
+
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 500;
+	}
+}
+
+.attention-voice	{
+	font-family: "Abril Fatface", serif;
+	font-size: 30px;
+	letter-spacing: 0.03em;
+}
+
+.strong-voice	{
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size:  1rem;
+}
+
+.calm-voice, p, li {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+:is(.calm-voice, p, li) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+p + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}

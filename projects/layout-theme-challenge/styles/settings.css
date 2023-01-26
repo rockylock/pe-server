@@ -1,0 +1,31 @@
+
+html {
+	--black: #121214;
+	--white: #ffffff;
+
+	--neutral-stuffs: gray;
+
+	--color: #d83b95; /* Cerise */
+	--highlight: #aadee9; /* used for CTA-2 background */
+
+	--shadow: rgba(0,0,0,.8);
+
+	--corners: 10px; /* or whatevers */
+
+	--paper: var(--white);
+	--ink: var(--black);
+	--
+
+	--standard: 1140px;
+	--tight: 800px;
+}
+
+/*
+Dark mode disabled
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #121214; 
+		--ink: #ffffff; 
+	}
+	*/
+}
