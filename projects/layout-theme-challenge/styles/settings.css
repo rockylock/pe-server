@@ -1,20 +1,21 @@
 
 html {
-	--black: #121214;
-	--white: #ffffff;
+	--black: #121214; /* Bunker */
+	--white: #ffffff; /* White */
 
-	--neutral-stuffs: gray;
+	--gray: #f4f4f4; /* Wild Sand */
 
 	--color: #d83b95; /* Cerise */
 	--highlight: #aadee9; /* used for CTA-2 background */
 
-	--shadow: rgba(0,0,0,.8);
+	--shadow: rgba(0,0,0,0.2);
 
 	--corners: 10px; /* or whatevers */
+	
+	--section-padding-top: 5vh;
 
 	--paper: var(--white);
 	--ink: var(--black);
-	--
 
 	--standard: 1140px;
 	--tight: 800px;

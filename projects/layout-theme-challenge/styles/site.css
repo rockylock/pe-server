@@ -38,7 +38,7 @@ section:is(.sign-up, .get-involved) inner-column {
 }
 
 section.get-involved {
-	background-color: var(--highlight);
+	background-color: var(--white);
 }
 
 section.get-involved .button {

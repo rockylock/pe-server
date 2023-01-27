@@ -26,3 +26,8 @@ inner-column.tight {
 	top: 0;
 	z-index: 5;
 }*/
+
+footer {
+	background-color: var(--gray);
+	margin-top: 50px;
+}

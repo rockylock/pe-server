@@ -2,7 +2,7 @@
 <graphic-diptych>
 
 	<picture>
-		<img src='https://peprojects.dev/images/landscape.jpg' alt='$todo'>
+		<img src='modules/graphic-diptych/images/lr-grant-ritchie.jpg' alt='An image of a white Land Rover parked on a snow-covered plain, the sun rising over the mountains in the distance.'>
 	</picture>
 	
 	<text-content>

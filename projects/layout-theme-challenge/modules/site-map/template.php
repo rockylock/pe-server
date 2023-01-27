@@ -23,23 +23,25 @@
 	<nav class='x-menu'>
 		<h3 class='strong-voice'>Menu heading here</h3>
 
-		<ul>
-			<li>
-				<a href='#'>Some page</a>
-			</li>
+		<!-- <details> -->
+			<ul>
+				<li>
+					<a href='#'>Some page</a>
+				</li>
 
-			<li>
-				<a href='#'>Some page</a>
-			</li>
+				<li>
+					<a href='#'>Some page</a>
+				</li>
 
-			<li>
-				<a href='#'>Some other page</a>
-			</li>
+				<li>
+					<a href='#'>Some other page</a>
+				</li>
 
-			<li>
-				<a href='#'>Some page</a>
-			</li>
-		</ul>
+				<li>
+					<a href='#'>Some page</a>
+				</li>
+			</ul>
+		<!-- </details> -->
 	</nav>
 
 	<nav class='x-menu'>

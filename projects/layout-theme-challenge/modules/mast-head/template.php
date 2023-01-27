@@ -14,7 +14,7 @@
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Some page</a>
 			</li>
 		</ul>
 	</nav>

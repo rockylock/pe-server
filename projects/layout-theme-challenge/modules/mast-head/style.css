@@ -1,11 +1,13 @@
 
 mast-head {
 	display: block;
-	/*border: 4px solid blue;*/
+	padding: 20px 0;
+/*	border: 4px solid blue;*/
 }
 
 mast-head .logo {
-	max-width: 180px;
+	max-width: 150px;
+	margin-right: 20px;
 }
 
 mast-head .logo * {
@@ -20,10 +22,17 @@ mast-head nav ul {
 
 mast-head nav .home {
 	padding: 10px 0;
+/*	margin-bottom: 10px;*/
+/*	border: 1px solid red;*/
 }
 
 mast-head nav a:not(.home) {
-	padding: .5em 1em;
+	padding: .5em .5em;
+/*	border: 1px solid red;*/
+}
+
+.optional {
+	display: none;
 }
 
 @media (min-width:  600px) {
@@ -33,4 +42,5 @@ mast-head nav a:not(.home) {
 		justify-content: space-between;
 		align-items: center;
 	}
+
 }

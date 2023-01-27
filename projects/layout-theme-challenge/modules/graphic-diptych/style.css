@@ -4,7 +4,20 @@ graphic-diptych {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding: 10vh 0;
+	padding: 0 0 var(--section-padding-top) 0;
+}
+
+graphic-diptych picture {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+text-content {
+	text-align: center;
 }
 
 graphic-diptych p {
@@ -13,11 +26,54 @@ graphic-diptych p {
 
 @media (min-width:  700px) {
 	graphic-diptych {
-		flex-direction: row;
-		align-items: center;
+		position: relative;
+/*		flex-direction: row;*/
+/*		align-items: center;*/
+	}
+
+	graphic-diptych picture {
+		max-height: 500px;
+		overflow: hidden;
+	}
+
+	graphic-diptych picture img {
+		transform: translateY(-10%);
 	}
 
 	graphic-diptych :is(picture, text-content) {
-		flex-basis: 50%;
+/*		flex-basis: 50%;*/
+	}
+
+	graphic-diptych text-content {
+/*		position: absolute;*/
+/*		text-align: left;*/
+/*		top: 30px;*/
 	}
 }
+
+@media (min-width:  900px) {
+
+	graphic-diptych picture img {
+		transform: translateY(-20%);
+}
+
+@media (min-width:  1200px) {
+
+	graphic-diptych picture img {
+		transform: translateY(-30%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 
 .loud-voice	{
 	font-family: "Abril Fatface", serif;
-	font-size: clamp(36px, 5vw, 60px);
+	font-size: 60px;
 	letter-spacing: 0.03em;
 	line-height: 1.2;
 }
@@ -25,6 +25,8 @@
 	font-family: "Abril Fatface", serif;
 	font-size: 30px;
 	letter-spacing: 0.03em;
+	line-height: 1.6;
+	text-align: center;
 }
 
 .strong-voice	{
@@ -55,7 +57,7 @@ p + p {
 }
 
 h2 + p {
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 code {
