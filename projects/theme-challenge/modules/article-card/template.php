@@ -5,7 +5,7 @@
 	$thumbnail = $article['thumbnail'];
 ?>
 
-<a href="?">
+<a href="?" class="article-link">
 	<article class='article-card'>
 		<picture>
 			<img src='images/<?=$thumbnail?>' alt='$todo'>

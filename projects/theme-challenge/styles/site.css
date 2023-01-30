@@ -33,18 +33,6 @@ body {
 	color: var(--ink);
 }
 
-section:is(.sign-up, .get-involved) inner-column {
-	max-width: var(--tight);
-}
-
-section.get-involved {
-	background-color: var(--white);
-}
-
-section.get-involved .button {
-	background-color: var(--color);
-	color: var(--white);
-}
 /* Dark mode disabled
 @media (prefers-color-scheme: dark) {
 	section.sign-up {

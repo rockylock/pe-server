@@ -4,31 +4,31 @@ $articles = [
 	[
 		"heading" => "Article or product",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "bmw.png",
 	],
 	[
 		"heading" => "Destination or option",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "ferves.png",
 	],
 	[
 		"heading" => "Story or something",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "bus.png",
 	],
 	[
 		"heading" => "Banana tandori",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "pea.png",
 	],
 	[
 		"heading" => "Bar B Q",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "911.png",
 	],
 	[
 		"heading" => "Marsala",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "e30.png",
 	],
 ];

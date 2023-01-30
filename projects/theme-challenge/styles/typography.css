@@ -10,7 +10,7 @@
 
 .loud-voice	{
 	font-family: "Abril Fatface", serif;
-	font-size: 60px;
+	font-size: 80px;
 	letter-spacing: 0.03em;
 	line-height: 1.2;
 }
@@ -48,6 +48,10 @@
 
 :is(.calm-voice, p, li) strong {
 	font-weight: 700;
+}
+
+.nav-button {
+	font-family: serif;
 }
 
 /* these would be scoped to section or to an article element */

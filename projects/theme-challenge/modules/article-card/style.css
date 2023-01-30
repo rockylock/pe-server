@@ -1,7 +1,7 @@
 html {
 
 /*	Set for top corners*/
-	--picture-radius: 20px;
+	--picture-radius: 4px;
 	--card-padding: 0px;
 	--card-corners: calc( var(--card-padding) + var(--picture-radius) );
 }
@@ -12,17 +12,17 @@ html {
 	align-items: center;
 	background-color: var(--white);
 	padding: var(--card-padding);
-	border-radius: var(--card-corners);
+	border-radius: var(--picture-radius);
 /*	border: 1px solid red;*/
-	box-shadow: 0 2px 5px 1px var(--shadow);
+	box-shadow: 0 1px 1px 1px var(--shadow);
 }
 
 .article-card text-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px 10px var(--card-corners);
-	margin-top: 10px;
+	padding: 15px 10px;
+	margin-top: 0px;
 }
 
 .article-card picture {
@@ -42,5 +42,6 @@ html {
 	margin: 25px 0;
 }
 
-
-
+.article-link:hover {
+	color: var(--color);
+}

@@ -28,3 +28,11 @@ article-grid ul:nth-of-type(5) {
 }
 
 /*Use nth-of-type to expand one article to two columns*/
+
+@media (min-width:900px) {
+	article-grid ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px 15px;
+}
+}
