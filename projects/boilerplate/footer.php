@@ -1,11 +1,4 @@
 
-<!-- CONTENT -->	
-
-		</main>	
-
-		<footer>
-			<inner-column>
-
 				<section class="page-section site-footer">
 					<h2>This is the site footer and it has a "site-map" module in it. </h2>
 					<p>Pretty standard type of thing, right?</p>
@@ -41,10 +34,5 @@
 					</nav>
 
 				</site-map>
-
-			</inner-column>	
-		</footer>
-	</body>
-</html>
 
 
