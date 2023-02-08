@@ -13,6 +13,10 @@
 
 		<print-drawing>
 			
+			<section class="site-menu">
+				<?php include("modules/nav.php")?> 
+			</section>
+
 			<section class="views">
 				
 				<picture class="hello-small">
@@ -28,8 +32,6 @@
 			</section>
 
 			<section class="content">
-
-				<?php include("modules/nav.php")?> 
 				
 				<?php include("modules/welcome.php")?>
 
