@@ -1,23 +1,19 @@
 
 <?php include("header.php")?>
 
-	<div class="inner-column">
 
-		<!-- <section class="border-arrows">
-			<svg class="arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.69 32.18">
-  				<g class="arrow">
-    				<polyline class="arrow-2" data-name="arrow" points="11.35 31.56 .62 13 22.07 13 11.35 31.56 11.35 .62"/>
-  				</g>
-			</svg>
-		</section> -->
+<section class="border-arrows">
 
+	<?php //include('templates/components/border-arrows.php'); ?>
+
+</section>
+
+
+<section class="print-drawing">
+	<inner-column>
 
 		<print-drawing>
-
-			<section class="site-menu">
-				<?php include("modules/nav.php")?> 
-			</section>
-
+		
 			<section class="views">
 				
 				<picture class="projects-small">
@@ -31,19 +27,36 @@
 			</section>
 
 			<section class="content">
-
-				<projects>		
-					<a href="projects/e4p">PHP forms</a>
-					<a href="projects/speed-and-spoke">Mock client</a>
-					<a href="projects/super-layout-challenge">Responsive Layout</a>
-				</projects>
+				
+				<?php include("templates/modules/projects-list.php")?>
 
 			</section>
 
-			<?php include("title-block.php")?>
+			<section class="title-block"> 
+				
+				<?php include("templates/components/title-block.php")?>
+			
+			</section>
 
 		</print-drawing>
-	</div>
+
+	</inner-column>
 </section>
 
+
  <?php include("footer.php")?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

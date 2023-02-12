@@ -1,37 +1,4 @@
 
-/* SITE-WIDE STRUCTURE */
-
-@import "meyer-reset.css";
-@import "setup.css";
-
-html {
-	--line-weight: 2px;
-	--underline: 1px;
-	--color: #041424;
-	--white: white;  /* #f2f2f2 */
-	--highlight: #f05a28;
-}
-
-main {
-	padding: 2vh;
-}
-
-body {
-	background-color: var(--white); 
-}
-
-.inner-column {
-	display: block;
-	position: relative;
-	max-width: 1600px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.site-menu {
-/*	display: flex;*/
-
-}
 nav {
 	display: flex;
 	flex-direction: row;
@@ -80,20 +47,12 @@ a:active {
 		background-color: var(--highlight);
 	}
 
-.logo, .title, .project-name, .size, .version, .drawn, 
-.page, .truths-title, .truths-nerd, .truths-cats, 
-.truths-digifab, .truths-svg, .truths-web, .substack,
-.email, .whitespace, .github, .goals, .menu, .home, .goals,
-.projects, .resume {
-	background-color: var(--white);
-}
-
 /*  GRID LAYOUT */
 print-drawing {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--white);
-	border: var(--line-weight) solid var(--color);
+/*	background-color: var(--white);*/
+/*	border: var(--line-weight) solid var(--color);*/
 	padding: 0;
 	gap: 0;
 }
@@ -101,6 +60,15 @@ print-drawing {
 .title-block {
 	margin-top: 10px;
 	gap: var(--line-weight);
+	border-top: var(--line-weight) solid var(--color);
+}
+
+.logo, .title, .project-name, .size, .version, .drawn, 
+.page, .truths-title, .truths-nerd, .truths-cats, 
+.truths-digifab, .truths-svg, .truths-web, .substack,
+.email, .whitespace, .github, .goals, .menu, .home, .goals,
+.projects, .resume {
+	background-color: var(--white);
 }
 
 .views {
@@ -326,8 +294,9 @@ p + p {
 
 /* BREAKPOINTS */
 @media (min-width: 650px) {
+
 	print-drawing {
-		border: var(--line-weight) solid var(--color);
+/*		border: var(--line-weight) solid var(--color);*/
 	}
 
 	.views {
@@ -487,31 +456,45 @@ p + p {
 	.email a:hover, 
 	.github a:hover, 
 	.menu a:hover {
-		text-decoration: underline var(--underline) solid var(--highlight);
-		text-decoration-thickness: 3px;
+		text-decoration: underline var(--underline) solid var(--color);
+		text-decoration-thickness: 2px;
 /*		transition: 0.3s;*/
 	}
 
 	nav a:active, 
 	a:active {
 			background-color: var(--white);
-			color: var(--highlight);
+			text-decoration: underline 2px dashed var(--color);
 		}
 }
 
 @media (min-width: 1100px) {
-	print-drawing {
-		display: grid;
-		height: 96vh;
-		grid-template-columns: 40% 60%;
-		grid-template-rows: 50px 1fr 1fr;
-		border: var(--line-weight) solid var(--color);
+
+	body {
+		border: none;
+	}
+
+	main {
+		/*display: flex;
+		flex-direction: column;*/
+		
 	}
 
 	nav {
+		border-top: var(--line-weight) solid var(--color);
+		border-left: var(--line-weight) solid var(--color);
 		border-right: var(--line-weight) solid var(--color);
+		border-bottom: none;
 		justify-content: flex-start;
 		padding: 4px 10px 10px;
+	}
+
+	print-drawing {
+		display: grid;
+		height: 91vh;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50px 1fr 1fr;
+		border: var(--line-weight) solid var(--color);
 	}
 
 	.views {

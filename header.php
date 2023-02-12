@@ -10,7 +10,7 @@
 		<title>Welcome | Miguel Vega</title>
 		<meta name="description" content="Miguel Vega's website.">
 		
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/site.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,15 @@
 
 	<body>
 		<header class="page-section site-header">
-		
+
+				<section class="site-menu">
+					<inner-column>
+
+					<?php include("templates/components/nav.php")?>
+
+					</inner-column>
+				</section>
+				
 		</header>
 		
 		<main> 

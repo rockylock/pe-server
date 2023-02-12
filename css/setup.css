@@ -1,36 +1,41 @@
 
-/* Site-wide structure */
-
 html {
-	font-size: 100%;
+  box-sizing: border-box;
 }
-
-* {
-	box-sizing: border-box;
-}
-
-/* Links */
+*, *:before, *:after {
+  box-sizing: inherit;
+} /* https://www.paulirish.com/2012/box-sizing-border-box-ftw */
 
 a {
 	display: block;
-	list-style: none;
+	text-decoration: none;
 	color: inherit;
 }
 
 p a {
-	display: inline-block;
-	list-style: underline;
+	display: inline;
 	color: blue;
+	text-decoration: underline;
 }
-
-/* Images */
 
 picture {
 	display: block;
+	overflow: hidden;
 }
 
-picture img {
+img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
+
+
+// selects for custom elements
+:where(:not(:defined)) {
+	display: block;
 }
