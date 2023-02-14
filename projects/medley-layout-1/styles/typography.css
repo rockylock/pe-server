@@ -1,0 +1,61 @@
+/* Should we pull in @fonts here? */
+/* don't think you can... might have to be higher up (the top of) the food chain! */
+
+.loud-voice	{
+	font-family: helvetica, sans-serif;
+	font-size: clamp(36px, 5vw, 60px);
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+.attention-voice	{
+	font-family: helvetica, sans-serif;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.calm-voice, p, li {
+	font-family: helvetica, sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 0.024rem;
+	line-height: 1.4;
+}
+
+:is(.calm-voice, p) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p) strong {
+	font-weight: 700;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 8px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+
+h3 {
+	font-family: helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+h3 + p {
+	margin-top: 0.5em;
+}
+
+heading-3 p {
+	font-size: 1rem;
+}

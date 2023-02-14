@@ -1,0 +1,18 @@
+
+html {
+	--black: #111111;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--color: hsla(206, 66%, 77%, 1.00);
+	--highlight: hsla(190, 90%, 60%, 1.00);
+
+	--shadow: rgba(0,0,0,.8);
+
+	--corners: 10px; /* or whatevers */
+	--gap: 15px;
+
+	--paper: hsla(0, 0%, 96%, 1.00); /*whitesmoke*/
+	--ink: hsla(217, 6%, 17%, 1.00);  /*bunker*/
+}
