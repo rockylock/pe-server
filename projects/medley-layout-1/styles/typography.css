@@ -1,19 +1,13 @@
-/* Should we pull in @fonts here? */
-/* don't think you can... might have to be higher up (the top of) the food chain! */
 
 .loud-voice	{
 	font-family: helvetica, sans-serif;
-	font-size: clamp(36px, 5vw, 60px);
-}
-@media (min-width: 600px) {
-	.loud-voice {
-		font-weight: 700; /* or variable font */
-	}
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 1.09rem + 1.88vw, 2.5rem);
 }
 
 .attention-voice	{
 	font-family: helvetica, sans-serif;
-	font-size: 1.4rem;
+	font-size: var(--h2-size);
 	font-weight: 700;
 }
 
@@ -56,6 +50,27 @@ h3 + p {
 	margin-top: 0.5em;
 }
 
-heading-3 p {
-	font-size: 1rem;
+heading-2 p {
+	max-width: 50ch;
 }
+
+footer p {
+	font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

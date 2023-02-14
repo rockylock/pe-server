@@ -11,7 +11,9 @@ html {
 	--shadow: rgba(0,0,0,.8);
 
 	--corners: 10px; /* or whatevers */
-	--gap: 15px;
+	--gap: 16px;
+	--row-gap: calc(var(--gap) + 8px);
+	--h2-size: 1.5rem;
 
 	--paper: hsla(0, 0%, 96%, 1.00); /*whitesmoke*/
 	--ink: hsla(217, 6%, 17%, 1.00);  /*bunker*/

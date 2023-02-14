@@ -16,35 +16,27 @@
 
 	<body>
 		<header>
-			<!-- <h1 class='loud-voice'>Medley Layout 1</h1> -->
+			<inner-column>
+				<h1 class='loud-voice'>Medley Layout 1</h1>
+			</inner-column>
 		</header>
 
 		<main>
 
-			<section class='page-section heading-2'>
+			<section class='page-section grid-medley'>
 				<inner-column>
 					
-					<heading-2>						
-						<h2 class="attention-voice">Heading level 2 small</h2>
+					<grid-module>
+						<heading-2>						
+							<h2 class="attention-voice">Heading level 2</h2>
 
-						<p class="calm-voice">This is some body text. This is some body text. This is some body text. This is some body text.</p>
-					</heading-2>
+							<p class="calm-voice">This is some body text. This is some body text. This is some body text. This is some body text.</p>
+						</heading-2>
 
-				</inner-column>
-			</section>
+						<?php include("modules/h3-grid.php"); ?>
 
-			<section class="page-section heading-3">
-				<inner-column>
-
-					<?php include("modules/h3-grid.php"); ?>
-
-				</inner-column>
-			</section>
-
-			<section class="page-section images">
-				<inner-column>
-
-					<?php include("modules/image-grid.php"); ?>
+						<?php include("modules/image-grid.php"); ?>
+					</grid-module>
 
 				</inner-column>
 			</section>
@@ -52,7 +44,9 @@
 		</main>
 
 		<footer>
-			<!-- <h2>Footer</h2> -->
+			<inner-column>
+				<p><?php echo date('Y'); ?> Miguel Vega</p>
+			</inner-column>
 		</footer>
 	</body>
 
