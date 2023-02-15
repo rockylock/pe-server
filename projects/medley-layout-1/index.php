@@ -17,7 +17,9 @@
 	<body>
 		<header>
 			<inner-column>
+
 				<h1 class='loud-voice'>Medley Layout 1</h1>
+
 			</inner-column>
 		</header>
 
@@ -45,7 +47,9 @@
 
 		<footer>
 			<inner-column>
+
 				<p><?php echo date('Y'); ?> Miguel Vega</p>
+				
 			</inner-column>
 		</footer>
 	</body>

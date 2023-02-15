@@ -30,6 +30,11 @@ body {
 
 header {
 	border-bottom: 2px solid var(--ink);
+	padding: 20px 10px;
+}
+
+h1 {
+	padding: 0 var(--padding);
 }
 
 main {
@@ -44,13 +49,13 @@ h2::after, h3::after {
 	content: ' small';
 }
 
-hr {
-	height: 5px;
+.h3-grid li {
+	border-top: 1px solid var(--ink);
 }
 
 .h3-grid {
 	display: block;
-	margin-top: 10px;
+	margin-top: 40px;
 }
 
 .image-grid {
@@ -63,6 +68,10 @@ hr {
 footer {
 	margin-top: 30px;
 	margin-bottom: 100px;
+}
+
+footer p {
+	padding: 0 var(--padding);
 }
 
 @media (min-width: 600px) {
@@ -84,7 +93,7 @@ footer {
 	}
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1100px) {
 	h2::after, h3::after {
 	content: ' large';
 }
