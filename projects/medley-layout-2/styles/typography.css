@@ -1,0 +1,84 @@
+
+.loud-voice	{
+	font-family: helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 0.95rem + 2.76vw, 2.5rem);
+}
+
+.attention-voice	{
+	font-family: helvetica, sans-serif;
+	font-size: var(--h2-regular);
+	font-weight: 700;
+}
+
+@media(min-width: 850px) {
+	.attention-voice {
+		font-size: var(--h2-large);
+	}
+}
+
+.calm-voice, p, li {
+	font-family: helvetica, sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 0.024rem;
+	line-height: 1.4;
+}
+
+:is(.calm-voice, p) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p) strong {
+	font-weight: 700;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 8px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+
+h3 {
+	font-family: helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+h3 + p {
+	margin-top: 0.5em;
+}
+
+li p {
+	max-width: 50ch;
+}
+
+footer p {
+	font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

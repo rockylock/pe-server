@@ -1,0 +1,52 @@
+/* Preset */
+@import 'preset.css';
+
+/* Setup */
+@import 'setup.css';
+
+/* Settings */
+@import 'settings.css';
+@import 'developer-styles.css';
+
+/* Structure */
+@import 'structure.css';
+
+/* Typography */
+@import 'typography.css';
+
+/* Components */
+@import 'components.css';
+
+/* Stuff (modules) */
+@import 'modules.css';
+
+/* Sections and more stuff */
+
+/* then other contextual styles */
+
+header {
+	border-bottom: 1px solid var(--ink);
+	padding: 16px 0 16px var(--padding);
+}
+
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+}
+
+footer {
+	padding: 24px var(--padding);	
+	border-top: 1px solid var(--ink);
+}
+
+@media(min-width: 550px) {
+	body {
+		background-color: gainsboro;
+	}
+}
+	
+
+
+
+
+

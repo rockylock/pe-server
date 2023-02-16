@@ -1,0 +1,38 @@
+
+/* intro-module */
+
+.article-intro {
+	background-color: var(--black);
+}
+
+intro-module {
+	display: block;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 72px var(--padding) 16px;
+/*	border: 1px solid blue;	*/
+}
+
+intro-module p {
+	max-width: 60ch;
+}
+
+h2::after {
+	content: " small";
+}
+
+@media (min-width: 850px) {
+	h2::after {
+		content: " large";
+	}	
+}
+
+@media(min-width: 550px) {
+	intro-module {
+		padding: 80px var(--padding) 120px;
+	}
+
+	intro-module p {
+		max-width: 50ch;
+	}
+}	

@@ -1,0 +1,21 @@
+
+html {
+	--black: #222222;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--color: hsla(323, 100%, 50%, 1.00); /* Fashion Fushsia, #ff009e */
+	--highlight: hsla(190, 90%, 60%, 1.00);
+
+	--shadow: rgba(0,0,0,.8);
+
+	--padding: 10px; /* or whatevers */
+	--gap: 16px;
+	--row-gap: calc(var(--gap) + 8px);
+	--h2-regular: 1.5rem;
+	--h2-large: 1.7rem;
+
+	--paper: hsla(0, 0%, 96%, 1.00); /*whitesmoke*/
+	--ink: hsla(217, 6%, 17%, 1.00);  /*bunker*/
+}
