@@ -1,7 +1,7 @@
 
 <nav>
-	<a href="index.php">Home</a>
-	<a href="goals.php">Goals</a>
-	<a href="projects.php">Projects</a>
-	<a href="resume.php">Resume</a>
+	<a href="?page=home">Home</a>
+	<a href="?page=goals">Goals</a>
+	<a href="?page=projects">Projects</a>
+	<a href="?page=resume">Resume</a>
 </nav>

@@ -10,7 +10,7 @@ nav {
 }
 
 nav a {
-	font-family: lato;
+	font-family: lato, sans-serif;
 	font-size: 1.3rem;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -31,9 +31,28 @@ projects  {
 	padding: 10px;
  }
 
+.experience {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+role-detail {
+	display: block;
+}
+
+.resume-list {
+/*	list-style: square inside;*/
+}
+
+li + li {
+	margin-top: 0.4em;
+}
+
+
 /* LINKS */
 .substack a, .email a, .github a, .menu a {
-	font-family: lato;
+	font-family: lato, sans-serif;
 	font-size: 1.6rem;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -96,16 +115,16 @@ print-drawing {
 	display: none;  /*hidden or none; swap on larger screen sizes*/
 }
 
-.goals-list, .resume-list, h1 {
+.goals-list, {
 	font-size: 1.75rem;
 	margin-top: 1em;
 }
 
-.goals-list ul, .resume-list ul {
+.goals-list ul {
 	list-style: square inside;
 }
 
-.goals-list li, .resume-list li {
+.goals-list li {
 	font-family: georgia, serif;
 	line-height: 1.5;
 	font-size: 1.25rem;
@@ -197,26 +216,13 @@ print-drawing {
 }
 
 /* HEADINGS & TEXT */
-h1 {
-	font-family: lato, sans-serif;
-	font-size: 2.25rem;
-	font-weight: 300;
-	color: var(--color)
-}
 
-h2 {
-	font-family: lato, sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
-	color: var(--color)
-}
-
-.truths-title h2 {
+.truths-title h4 {
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.truths-nerd h2 {
+.truths-nerd h4 {
 	text-transform: none;
 }
 
@@ -232,14 +238,6 @@ h2 {
 	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
-}
-
-h1 + p {
-	margin-top: 1rem;
-}
-
-p + p {
-	margin-top: 1rem;
 }
 
 /* SVGs */
@@ -674,7 +672,24 @@ p + p {
 		max-width: 140px;
 		margin-left: 50px;
 	}
+
+	.resume {
+		overflow-y: scroll;
+		height: 85.25vh;
+		paddding-bottom: 100px;
+	/*	border: 1px solid red;*/
+	}
+
+	.resume-list li p {
+		max-width: 68ch;
+	}
+
+	.resume-list {
+		margin-top: 0.9rem;
+	}
 }
+
+
 
 
 

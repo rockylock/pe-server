@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="project-name">
-		<h2>PROJECT</h2>
+		<h4>PROJECT</h4>
 
 		<picture class="hand-project">
 			<img src="images/project.png" alt="Picture of handwritten note, 'miguelvega.dev.'">
@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="title">
-		<h2>TITLE</h2>
+		<h4>TITLE</h4>
 
 		<picture class="hand-title">
 			<img src="images/title.png" alt="Picture of handwritten note, 'personal-website.'">
@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="size">
-		<h2>SIZE</h2>
+		<h4>SIZE</h4>
 
 		<picture class="hand-size-small">
 			<img src="images/s.png" alt="Picture of handwritten letter, 'S.'">
@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="version">
-		<h2>VERSION</h2> 
+		<h4>VERSION</h4> 
 	
 		<picture class="hand-version">
 			<img src="images/version.png" alt="Picture of handwritten note for the site version, '0.2.'">
@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="drawn">
-		<h2>DRAWN</h2>
+		<h4>DRAWN</h4>
 
 		<picture class="hand-initials">
 			<img src="images/drawn.png" alt="Picture of handwritten note, showing initials and the last site update: 'MV 12/17/22.'">
@@ -57,34 +57,34 @@
 	</div>
 
 	<div class="page">
-		<h2>PAGE</h2>
+		<h4>PAGE</h4>
 		<p>1/1</p>
 	</div>
 
 	<div class="gray-box"></div>
 
 	<div class="truths-title">
-		<h2>truths</h2>
+		<h4>truths</h4>
 	</div>
 
 	<div class="truths-nerd">
-		<h2>Ardent nerd</h2>
+		<h4>Ardent nerd</h4>
 	</div>
 
 	<div class="truths-cats">
-		<h2>Friend to <wbr>all cats</h2>
+		<h4>Friend to <wbr>all cats</h4>
 	</div>
 
 	<div class="truths-digifab">
-		<h2>Digital Fabricator</h2>
+		<h4>Digital Fabricator</h4>
 	</div>
 
 	<div class="truths-svg">
-		<h2>SVG lover</h2>
+		<h4>SVG lover</h4>
 	</div>
 
 	<div class="truths-web">
-		<h2>Learning web design <wbr>for the future</h2>
+		<h4>Learning web design <wbr>for the future</h4>
 	</div>
 
 	<div class="substack">

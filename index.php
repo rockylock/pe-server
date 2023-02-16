@@ -1,5 +1,5 @@
 
-<?php include("header.php")?>
+<?php include("header.php"); ?>
 
 
 <section class="border-arrows">
@@ -29,14 +29,37 @@
 			</section>
 
 			<section class="content">
-				
-				<?php include("templates/modules/welcome.php")?>
+
+				<?php 
+				if ( isset ( $_GET["page"] ) ) {
+					$page = $_GET["page"];
+
+					if ($page == "home") {
+						include("templates/modules/welcome.php");
+					}
+
+					if ($page == "goals") {
+						include("templates/modules/goals-list.php");
+					}
+
+					if ($page == "projects") {
+						include("templates/modules/projects-list.php");
+					}
+
+					if ($page == "resume") {
+						include("templates/modules/resume-list.php");
+					}
+				} 
+				else { 
+					include("templates/modules/welcome.php"); 
+				}	
+				?> 
 
 			</section>
 
 			<section class="title-block"> 
 				
-				<?php include("templates/components/title-block.php")?>
+				<?php include("templates/components/title-block.php"); ?>
 			
 			</section>
 
@@ -46,7 +69,7 @@
 </section>
 
 
- <?php include("footer.php")?>
+ <?php include("footer.php"); ?>
 
 
 
