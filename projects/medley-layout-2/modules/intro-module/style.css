@@ -17,6 +17,17 @@ intro-module p {
 	max-width: 60ch;
 }
 
+.teaser + h2 {
+	margin-top: 8px;
+}
+
+.teaser {
+	display: none;
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: var(--color);
+}
+
 h2::after {
 	content: " small";
 }
@@ -36,3 +47,9 @@ h2::after {
 		max-width: 50ch;
 	}
 }	
+
+@media(min-width: 850px) {
+	.teaser {
+		display: block;
+	}
+}
