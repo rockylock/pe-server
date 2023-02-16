@@ -40,12 +40,6 @@ h3::after {
 	content: " small";
 }
 
-/*@media (min-width: 850px) {
-	h3::after {
-		content: " large";
-	}	
-}*/
-
 /* Breakpoints */
 
 @media(min-width: 550px) {
@@ -70,10 +64,6 @@ h3::after {
 		grid-column: span 6;
 	}
 
-	.article-list li:nth-of-type(even) {
-		grid-column: span 6;
-	}
-
 	li + li {
 		margin-top: 0;
 	}
@@ -81,11 +71,7 @@ h3::after {
 
 @media(min-width: 1100px) {
 
-	.article-list li:nth-of-type(odd) {
-		grid-column: span 4;
-	}
-
-	.article-list li:nth-of-type(even) {
+	.article-list li {
 		grid-column: span 4;
 	}
 }
