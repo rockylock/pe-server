@@ -1,4 +1,5 @@
 
+<?php include("functions.php"); ?>
 <?php include("header.php"); ?>
 
 
@@ -35,23 +36,23 @@
 					$page = $_GET["page"];
 
 					if ($page == "home") {
-						include("templates/modules/welcome.php");
+						include("templates/pages/home.php");
 					}
 
 					if ($page == "goals") {
-						include("templates/modules/goals-list.php");
+						include("templates/pages/goals.php");
 					}
 
 					if ($page == "projects") {
-						include("templates/modules/projects-list.php");
+						include("templates/pages/projects.php");
 					}
 
 					if ($page == "resume") {
-						include("templates/modules/resume-list.php");
+						include("templates/pages/resume.php");
 					}
 				} 
 				else { 
-					include("templates/modules/welcome.php"); 
+					include("templates/pages/home.php"); 
 				}	
 				?> 
 
@@ -59,7 +60,7 @@
 
 			<section class="title-block"> 
 				
-				<?php include("templates/components/title-block.php"); ?>
+				<?php include("templates/components/title-block/template.php"); ?>
 			
 			</section>
 

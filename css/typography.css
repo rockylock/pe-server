@@ -78,8 +78,31 @@ p + p {
 	margin-top: 1rem;
 }
 
+li + li {
+	margin-top: 0.4em;
+}
+
 code {
 	font-family: monospace;
 	font-size: 1.1em;
 	color: green;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

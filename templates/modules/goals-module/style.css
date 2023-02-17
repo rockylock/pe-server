@@ -1,0 +1,30 @@
+
+/* goals-module */
+
+.goals-list {
+	padding: 0 5vw 2vh;
+}
+
+.goals-list, {
+	font-size: 1.75rem;
+	margin-top: 1em;
+}
+
+.goals-list ul {
+	list-style: square inside;
+}
+
+.goals-list li {
+	font-family: georgia, serif;
+	line-height: 1.5;
+	font-size: 1.25rem;
+	color: var(--color);
+}
+
+.goals-list p {
+	display: inline;
+}
+
+.goals-list h1 + ul {
+	margin-top: 1em;
+}

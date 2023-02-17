@@ -25,7 +25,7 @@
 				<section class="site-menu">
 					<inner-column>
 
-					<?php include("templates/components/nav.php")?>
+					<?php include("templates/components/nav/template.php"); ?>
 
 					</inner-column>
 				</section>

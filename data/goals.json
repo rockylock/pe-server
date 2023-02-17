@@ -1,0 +1,27 @@
+
+[
+	{
+		"timeframe": "Short-term (within 3 months)",
+		"goals": [
+			"Have a website I'm proud to share with friends, prospective clients, and recruiters.",
+			"Earn competency in HTML/CSS/PHP/JS.",
+			"Assemble a shareable portfolio with 5 projects."
+		]
+	},
+	{
+		"timeframe": "Mid-term (within 6 months)",
+		"goals": [
+			"Build a website for the makerspace I help lead.",
+			"Gain two clients as a front-end freelancer.",
+			"Complete the interior of my truck, Sally. They're great, but their seat sure ain't!",
+			"Learn Python basics well enough to augment one digital fabrication project. "
+		]
+	},
+	{
+		"timeframe": "Long-term (within 5 years)",
+		"goals": [
+			"Own land on the Northern California coast.",
+			"Build a series of small structures on the property."
+		]
+	}
+]

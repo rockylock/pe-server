@@ -1,0 +1,27 @@
+
+experience-module {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-bottom: 150px;
+}
+
+role-detail {
+	display: block;
+}
+
+.resume-list {
+	list-style: square inside;
+	margin-top: 0.9rem;
+}
+
+.resume-list p {
+	display: inline;
+}
+
+/* BREAKPOINTS */
+@media (min-width: 650px) {
+	.resume-list li {
+		max-width: 76ch;
+	}
+}

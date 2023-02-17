@@ -1,0 +1,502 @@
+
+/* Title Block */
+
+/* LAYOUT */
+.title-block {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+	background-color: var(--color); /* Black Pearl */
+	gap: var(--line-weight);
+	padding: 0;
+	margin-top: 10px;
+	border-top: var(--line-weight) solid var(--color);	
+}
+
+.logo, .title, .project-name, .size, .version, .drawn, 
+.page, .truths-title, .truths-nerd, .truths-cats, 
+.truths-digifab, .truths-svg, .truths-web, .substack,
+.email, .whitespace, .github, .goals {
+	background-color: var(--white);
+}
+
+.title, .project-name, .size, .version, .drawn, 
+.page, .truths-title {
+	padding: 1vh;
+}
+
+.logo, .project-name, .title {
+	grid-column: span 12; 
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	padding: 4vh;
+/*	consider adding max-width as it scales*/
+}
+
+.size, .page {
+	grid-column: span 4;
+}
+
+.version, .drawn {
+	grid-column: span 8;
+}
+
+.gray-box {
+	grid-column: span 12;
+	grid-row: span 1;
+	background-color: ghostwhite;
+	padding: 30px;
+}
+
+.truths-title {
+	grid-column: span 12;
+	justify-content: center;
+	padding: 1vh;
+}
+
+.truths-nerd, .truths-cats, .truths-digifab, 
+.truths-svg, .truths-web {
+	padding: 0.75vh;
+}
+
+.truths-nerd {
+	grid-column: span 5;
+}
+
+.truths-cats {
+	grid-column: span 7;
+}
+
+.truths-digifab {
+	grid-column: span 6;
+}
+
+.truths-svg {
+	grid-column: span 6;
+}
+
+.truths-web {
+	grid-column: span 12;
+}
+
+.substack, .email, .github {
+	grid-column: span 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vw 0;
+}
+
+/* HEADINGS & TEXT */
+
+.truths-title h4 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.truths-nerd h4 {
+	text-transform: none;
+}
+
+.page p {
+	font-size: 1.1rem;
+	text-align: center;
+	margin-top: 1vh;
+}
+
+/* SVGs */
+.title-logo {
+	width: 70%; 
+	fill: var(--color);
+}
+
+/* PICTURES */
+
+.hand-project {
+	max-width: 50vw;
+	margin-left: 5vw;
+	z-index: 1;
+}
+
+.hand-title {
+	max-width: 65vw;
+	margin-left: 2vw;
+}
+
+.hand-size-small {
+	max-width: 12vw;
+	margin: 1vh 0 0 6vw;
+	justify-content: center;
+}
+
+.hand-size-medium, .hand-size-large {
+	display: none;
+}
+
+.hand-version {
+	max-width: 22vw;
+	margin: 2vh 0 0 15vw;
+}
+
+.hand-initials {
+	max-width: 40vw;
+	margin-left: 3vw;
+}
+
+/* LINKS */
+.substack a, .email a, .github a, .menu a {
+	font-family: lato, sans-serif;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: var(--white);
+	background-color: var(--color);
+	padding: 7px;
+	border-radius: 10px;
+}
+
+
+/* BREAKPOINTS */
+@media (min-width: 650px) {
+	.title-block {
+		grid-column: 1 / 3;
+		gap: var(--line-weight);
+		border-top: var(--line-weight) solid var(--color); /* not controlling top--find other rule */
+	}
+
+	.title, .project-name, .size, .version, .drawn, 
+	.page, .truths-title {
+		padding: 0.25vh;
+	}
+
+	.logo {
+		grid-column: 1 / span 4;
+		grid-row: span 3;
+	}
+
+	.project-name, .title {
+		grid-column: span 8; 
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		padding: 1vh;
+	/*	consider adding max-width as it scales*/
+	}
+
+	.size {
+		grid-column: 5 / span 1;
+	}
+
+	.page {
+		grid-column: span 1;
+	}
+
+	.version {
+		grid-column: span 2;
+	}
+
+	.drawn {
+		grid-column: span 4;
+	}
+
+	.gray-box {
+		display: none;
+	}
+	
+	.truths-title {
+		grid-column: 1 / span 12;
+		justify-content: center;
+		padding: 1vh;
+	}
+
+	.truths-nerd, .truths-cats, .truths-digifab, 
+	.truths-svg, .truths-web {
+		padding: 0.75vh;
+	}
+
+	.truths-nerd {
+		grid-column: 1 / span 2;
+	}
+
+	.truths-cats {
+		grid-column: span 2;
+	}
+
+	.truths-digifab {
+		grid-column: span 2;
+	}
+
+	.truths-svg {
+		grid-column: span 2;
+	}
+
+	.truths-web {
+		grid-column: span 4;
+	}
+
+	.substack, .email, .github {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5vh;
+	}
+
+	.substack {
+		grid-column: 1 / span 5;
+	}
+
+	.email {
+		grid-column: span 4;
+	}
+
+	.github {
+		grid-column: span 3;
+	}
+
+
+	/*	PICTURES*/
+	.hand-project {
+		max-width: 18vh;
+		margin-left: 5vw;
+	}
+
+	.hand-title {
+		max-width: 22vh;
+		margin-left: 4vw;
+	}
+
+	.hand-size-medium {
+		display: block;
+		max-width: 3vh;
+		margin: 1.5vh 0 0 0.5vw;
+	}
+
+	.hand-size-small, .hand-size-large {
+		display: none;
+	}
+
+	.hand-version {
+		max-width: 6vh;
+		margin: 2vh 0 0 1vw;
+	}
+
+	.hand-initials {
+		max-width: 15vh;
+		margin-left: 3vw;
+	}
+
+
+	/*	 LINKS */
+	.substack a, 
+	.email a, 
+	.github a {
+		font-family: lato;
+		font-size: 1.4rem;
+		text-transform: capitalize;
+		text-align: center;
+		text-decoration: underline var(--underline) solid var(--color);
+		text-underline-offset: 6px;
+		color: var(--color);
+		background-color: var(--white);
+		padding: 5px;
+		border-radius: 0;
+	}
+
+	.substack a:hover, 
+	.email a:hover, 
+	.github a:hover {
+		text-decoration: underline var(--underline) solid var(--color);
+		text-decoration-thickness: 2px;
+	}
+
+	.substack a:active,
+	.email a:active,
+	.github a:active {
+		background-color: var(--white);
+		text-decoration: underline 2px dashed var(--color);
+	}
+}
+
+@media (min-width: 1100px) {
+
+/*	GRID LAYOUT */
+	.title-block {
+		grid-column: 2 / span 1; /* columns covered in views grid */
+		grid-row: 3;
+		justify-self: end;
+		align-self: end;
+		padding: 0;
+		gap: var(--line-weight);
+		border-top: var(--line-weight) solid var(--color);
+		border-left: var(--line-weight) solid var(--color);
+	}
+
+	.title, .project-name, .size, .version, .drawn, 
+	.page, .truths-title {
+		padding: 0px;
+	}
+
+	.logo {
+		grid-column: 1 / span 4;
+		grid-row: span 3;
+	}
+
+	.project-name, .title {
+		grid-column: span 8; 
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		padding: 1vh;
+	/*	consider adding max-width as it scales*/
+	}
+
+	.size {
+		grid-column: 5 / span 1;
+	}
+
+	.page {
+		grid-column: span 1;
+	}
+
+	.version {
+		grid-column: span 2;
+	}
+
+	.drawn {
+		grid-column: span 4;
+	}
+
+	.gray-box {
+		display: none;
+	}
+	
+	.truths-title {
+		grid-column: 1 / span 12;
+		justify-content: center;
+		background-color: ghostwhite;
+		padding: 0.5vh;
+	}
+
+	.truths-nerd, .truths-cats, .truths-digifab, 
+	.truths-svg, .truths-web {
+		padding: 0.5vh;
+	}
+
+	.truths-nerd {
+		grid-column: 1 / span 2;
+	}
+
+	.truths-cats {
+		grid-column: span 2;
+	}
+
+	.truths-digifab {
+		grid-column: span 2;
+	}
+
+	.truths-svg {
+		grid-column: span 2;
+	}
+
+	.truths-web {
+		grid-column: span 4;
+	}
+
+	.substack, .email, .github {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px 0 10px;
+	}
+
+	.substack {
+		grid-column: 1 / span 5;
+	}
+
+	.email {
+		grid-column: span 4;
+	}
+
+	.github {
+		grid-column: span 3;
+	}
+
+
+/*	LINKS */
+	.substack a,
+	.email a,
+	.github a {
+		font-size: 1.2rem;
+	}
+
+
+	/* SVGs */
+	.title-logo {
+		max-width: 125px; 
+		fill: var(--color);
+	}
+
+
+/*	PICTURES */
+	.hand-project {
+		max-width: 140px;
+		padding-bottom: 5px;
+		margin-left: 75px;
+	}
+
+	.hand-title {
+		max-width: 165px;
+		margin-left: 55px;
+		padding-bottom: 3px;
+	}
+
+	.hand-size-large {
+		display: block;
+		max-width: 40px;
+		padding: 10px 0 0 10px;
+	}
+
+	.hand-size-small, .hand-size-medium {
+		display: none;
+	}
+
+	.hand-version {
+		max-width: 50px;
+		margin: 10px 0 0 15px;
+	}
+
+	.hand-initials {
+		max-width: 140px;
+		margin-left: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
