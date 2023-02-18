@@ -1,6 +1,6 @@
 
-<projects-list>		
-	<a href="projects/e4p">PHP forms</a>
-	<a href="projects/speed-and-spoke">Mock client</a>
-	<a href="projects/super-layout-challenge">Responsive Layout</a>
-</projects-list>
+<section class="projects-list">
+	
+	<?php include("templates/modules/projects-module/template.php"); ?>
+
+</section>
