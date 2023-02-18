@@ -1,0 +1,23 @@
+
+[
+	{
+		"class": "hello-small",
+		"src": "images/hello.png",
+		"alt": "An image showing base and projected views of the text, 'Hello'"
+	},
+	{
+		"class": "hello-large",
+		"src": "images/hello-world.png",
+		"alt": "An image showing base and projected views of the text, 'Hello, World!'"
+	},
+	{
+		"class": "goals-small",
+		"src": "images/goals-small.png",
+		"alt": "An image showing base and projected views of the text, 'Goals'"
+	},
+	{
+		"class": "goals-large",
+		"src": "images/goals-large.png",
+		"alt": "An image showing base and projected views of the text, 'Goals'"
+	}
+]
