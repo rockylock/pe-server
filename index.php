@@ -17,43 +17,40 @@
 		
 			<section class="views">
 				
-				<picture class="hello-small">
-					<img src="images/hello.png" alt="An image showing base and projected views
-					of the text, 'Hello'.">
-				</picture>
+				<?php include("templates/modules/views-module/template.php"); ?>
 
-				<picture class="hello-large">
-					<img src="images/hello-world.png" alt="An image showing base and projected views
-					of the text, 'Hello, world!'">
-				</picture>
+				<!-- <picture-module>
+					<picture class="hello-small">
+						<img src="images/hello.png" alt="An image showing base and projected views
+						of the text, 'Hello'.">
+					</picture>
+
+					<picture class="hello-large">
+						<img src="images/hello-world.png" alt="An image showing base and projected views
+						of the text, 'Hello, world!'">
+					</picture>
+				</picture-module> -->
 
 			</section>
 
 			<section class="content">
 
-				<?php 
-				if ( isset ( $_GET["page"] ) ) {
+				<?php
+
+				// ROUTER  
+				$page = "home";
+				if ( isset ($_GET["page"]) ) {
 					$page = $_GET["page"];
+				}
 
-					if ($page == "home") {
-						include("templates/pages/home.php");
-					}
+				$pageFilePath = "templates/pages/" . $page . ".php";
 
-					if ($page == "goals") {
-						include("templates/pages/goals.php");
-					}
-
-					if ($page == "projects") {
-						include("templates/pages/projects.php");
-					}
-
-					if ($page == "resume") {
-						include("templates/pages/resume.php");
-					}
-				} 
-				else { 
-					include("templates/pages/home.php"); 
-				}	
+				if ( file_exists($pageFilePath) ) {
+					include($pageFilePath);
+				} else {
+					echo "Error: page <code>$page</code> doesn't exist.";
+				}
+				
 				?> 
 
 			</section>
