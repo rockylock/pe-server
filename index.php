@@ -19,19 +19,8 @@
 				
 				<?php include("templates/modules/views-module/template.php"); ?>
 
-				<!-- <picture-module>
-					<picture class="hello-small">
-						<img src="images/hello.png" alt="An image showing base and projected views
-						of the text, 'Hello'.">
-					</picture>
-
-					<picture class="hello-large">
-						<img src="images/hello-world.png" alt="An image showing base and projected views
-						of the text, 'Hello, world!'">
-					</picture>
-				</picture-module> -->
-
 			</section>
+
 
 			<section class="content">
 
@@ -54,6 +43,7 @@
 				?> 
 
 			</section>
+			
 
 			<section class="title-block"> 
 				
