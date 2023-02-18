@@ -1,0 +1,21 @@
+
+[
+	{
+		"image": "images/landscape.jpg",
+		"heading": "Project 1",
+		"blurb": "info blurb for p1",
+		"url": "?"
+	},
+	{
+		"image": "images/landscape.jpg",
+		"heading": "Project 2",
+		"blurb": "info blurb on p2",
+		"url": "?"
+	},
+	{
+		"image": "images/landscape.jpg",
+		"heading": "Project 3",
+		"blurb": "info blurb about p3",
+		"url": "?"
+	}
+]
