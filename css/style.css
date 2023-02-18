@@ -85,6 +85,16 @@ projects-list  {
 	.content {
 		grid-column: 1 / 3;
 	}
+
+	.hello-small, .goals-small, .projects-small, .about-small, .resume-small {
+	display: none;
+/*	set size*/
+}
+
+.hello-large, .goals-large, .about-large, .projects-large, .resume-large {
+	display: block;
+	padding: 30px;
+}
 }
 
 @media (min-width: 1100px) {
