@@ -43,20 +43,12 @@ projects-list  {
 	padding: 0 0 0 10px;
 }
 
+
 /* RESUME */
 .resume { 
 	padding: 10px;
  }
 
-/* HEADINGS & TEXT */
-
-.welcome p {
-	font-family: lato, sans-serif;
-	font-size: 1.25rem;
-	font-weight: 700;
-	line-height: 1.5;
-	letter-spacing: 0.03em;
-}
 
 /* SVGs */
 
@@ -70,6 +62,7 @@ projects-list  {
  	stroke-width: 1.25;
  	justify-content: center;
 }
+
 
 /* BREAKPOINTS */
 @media (min-width: 650px) {
