@@ -1,5 +1,4 @@
-
-html {
+:root {
 	--line-weight: 2px;
 	--underline: 1px;
 	--color: #041424;
@@ -7,7 +6,10 @@ html {
 	--highlight: #f05a28;
 	--medium-bp: 650px;
 	--large-bp: 1100px;
-	
+	--padding: 10px;
+}
+
+html {
 	padding: 10px;
 }
 
