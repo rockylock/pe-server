@@ -6,6 +6,8 @@
 		$rolesData = json_decode($json, true);
 	?>
 	
+	<h1 class="loud-voice"><?=$page?></h1>
+	
 	<?php foreach($rolesData as $role) { ?>
 
 		<role-detail>

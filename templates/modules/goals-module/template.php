@@ -7,8 +7,10 @@
 	
 	?>
 
+	<h1 class="loud-voice"><?=$page?></h1>
+
 	<?php foreach($goalsData as $timeBlock) { ?>
-	
+		
 		<goal-detail>
 			<h2 class="goal-timeframe"> <?=$timeBlock["timeframe"]?></h2>
 
