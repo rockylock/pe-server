@@ -1,5 +1,3 @@
-/* Should we pull in @fonts here? */
-/* don't think you can... might have to be higher up (the top of) the food chain! */
 
 .loud-voice	{
 	font-family: lato, sans-serif;
@@ -24,6 +22,7 @@
 	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
+	color: var(--color);
 }
 
 :is(.calm-voice, p) em {
@@ -38,6 +37,9 @@ h1 {
 	color: var(--color)
 }
 
+h2 {
+	color: var(--color)	
+}
 
 h3 {
 	font-family: lato, sans-serif;
@@ -53,10 +55,6 @@ h4 {
 	color: var(--color)
 }
 
-/* these would be scoped to section or to an article element */
-/* this is just a loose setting for now */
-/* or smaller group of article-like styles such as a <text-content> custom element */
-
 h1 + p {
 	margin-top: 1rem;
 }
@@ -67,6 +65,10 @@ h1 + h2 {
 
 h2 + p {
 	margin-top: 20px;
+}
+
+h2 + ul {
+	margin-top: var(--margin-top);
 }
 
 h2 + h3 {
@@ -85,6 +87,27 @@ code {
 	font-family: monospace;
 	font-size: 1.1em;
 	color: green;
+}
+
+li p {
+	display: inline;
+}
+
+a {
+	font-family: lato;
+	text-transform: capitalize;
+	text-decoration: underline var(--underline) solid var(--color);
+	text-underline-offset: 6px;
+}
+
+a:hover {
+	text-decoration: underline var(--underline) solid var(--color);
+	text-decoration-thickness: 2px;
+}
+
+a:active {
+	background-color: var(--white);
+	text-decoration: underline 2px dashed var(--color);
 }
 
 

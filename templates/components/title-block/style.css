@@ -327,7 +327,7 @@
 /*	GRID LAYOUT */
 	.title-block {
 		grid-column: 2 / span 1; /* columns covered in views grid */
-		grid-row: 3;
+		grid-row: 2;
 		justify-self: end;
 		align-self: end;
 		padding: 0;

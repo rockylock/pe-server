@@ -1,12 +1,15 @@
 :root {
 	--line-weight: 2px;
 	--underline: 1px;
+	--link-focus: var(--line-weight);
 	--color: #041424;
 	--white: white;  /* #f2f2f2 */
 	--highlight: #f05a28;
 	--medium-bp: 650px;
 	--large-bp: 1100px;
 	--padding: 10px;
+	--padding-sides: calc(2*var(--padding));
+	--margin-top: 1rem;
 }
 
 html {

@@ -1,6 +1,8 @@
 
 <section class="resume">
 
+	<h1 class="loud-voice"><?=$page?></h1>
+
 	<section class="experience">
 		
 		<?php include("templates/modules/experience-module/template.php"); ?>

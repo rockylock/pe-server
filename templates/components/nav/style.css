@@ -7,7 +7,7 @@ nav {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 10px;
-	padding: 10px 5px;
+	padding: var(--padding) 5px;
 	border-bottom: var(--line-weight) solid var(--color);
 }
 
@@ -64,7 +64,7 @@ a:active {
 		border-right: var(--line-weight) solid var(--color);
 		border-bottom: none;
 		justify-content: flex-start;
-		padding: 4px 10px 10px;
+		padding: 5px var(--padding-sides) 10px;
 	}	
 
 	nav a {

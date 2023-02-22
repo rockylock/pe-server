@@ -1,21 +1,27 @@
 
 [
 	{
+		"id": "theme-challenge",
 		"image": "images/landscape.jpg",
-		"heading": "Project 1",
-		"blurb": "info blurb for p1",
-		"url": "?"
+		"title": "Theme Challenge",
+		"url": "?page=project&id=theme-challenge",
+		"ext-url": "projects/theme-challenge",
+		"blurb": "An interpretation of car share websites."
 	},
 	{
+		"id": "mock-client",
 		"image": "images/landscape.jpg",
-		"heading": "Project 2",
-		"blurb": "info blurb on p2",
-		"url": "?"
+		"title": "Mock Client",
+		"url": "?page=project&id=mock-client",
+		"ext-url": "projects/speed-and-spoke/",
+		"blurb": "A simple, one-page site for a  mock client."
 	},
 	{
+		"id": "responsive-layout",
 		"image": "images/landscape.jpg",
-		"heading": "Project 3",
-		"blurb": "info blurb about p3",
-		"url": "?"
+		"title": "Responsive Layout Challenge",
+		"url": "?page=project&id=responsive-layout",
+		"ext-url": "projects/super-layout-challenge",
+		"blurb": "Taking advantage of responsive design."
 	}
 ]

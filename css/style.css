@@ -3,25 +3,10 @@
 print-drawing {
 	display: flex;
 	flex-direction: column;
-/*	background-color: var(--white);*/
-/*	border: var(--line-weight) solid var(--color);*/
-	padding: 0;
-	gap: 0;
 }
 
-.home, .goals,
-.projects, .resume {
-	background-color: var(--white);
-}
-
-.views {
-/*	display: grid;*/
-/*	grid-column: span 12;*/
-	background-color: var(--white);
-}
-
-.welcome {
-	padding: 10px;
+.content {
+	padding: var(--padding) var(--padding-sides);
 }
 
 /* IMAGES */
@@ -42,12 +27,6 @@ projects-list  {
 	gap: 20px;
 	padding: 0 0 0 10px;
 }
-
-
-/* RESUME */
-.resume { 
-	padding: 10px;
- }
 
 
 /* SVGs */
@@ -80,14 +59,14 @@ projects-list  {
 	}
 
 	.hello-small, .goals-small, .projects-small, .about-small, .resume-small {
-	display: none;
-/*	set size*/
-}
+		display: none;
+	/*	set size*/
+	}
 
-.hello-large, .goals-large, .about-large, .projects-large, .resume-large {
-	display: block;
-	padding: 30px;
-}
+	.hello-large, .goals-large, .about-large, .projects-large, .resume-large {
+		display: block;
+		padding: 30px;
+	}
 }
 
 @media (min-width: 1100px) {
@@ -105,23 +84,16 @@ projects-list  {
 		display: grid;
 		height: 91vh;
 		grid-template-columns: 50% 50%;
-		grid-template-rows: 50px 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		border: var(--line-weight) solid var(--color);
 	}
 
 	.views {
-		grid-column: 2 / 3; 
-		grid-row: 2 / span 1;
-	}
-
-	.menu {
-		grid-column: 1 / 2;
-		grid-row: 1 / span 1;
+		grid-area: 1 / 2 / span 1 / span 1;
 	}
 
 	.content {
-		grid-column: 1 / 2;
-		grid-row: 2 / span 2;
+		grid-area: 1 / 1 / span 2 / span 1;
 	}
 
 	.hello {
@@ -137,10 +109,10 @@ projects-list  {
 /*		padding: 2vh;*/
 	}
 
-	.resume {
+	.content {
 		overflow-y: scroll;
-		height: 85.25vh;
-		paddding-bottom: 100px;
+		height: 90vh;
+		padding-bottom: 100px;
 	/*	border: 1px solid red;*/
 	}
 }
