@@ -721,6 +721,88 @@ simple-yet-extremely-effective-portfolio-pieces-p3
 Test.
 
 
+## 2023-03-11 - JavaScript methods
+
+- const: creates a constant whose identifier cannot be reassigned; can be global or local block scope.
+
+- Array.from() : creates an array from iteratable objects (map, set), or from array-like objects (objects with a length property and indexed elements). If I wanted to create an array from my past vehicles data...
+
+- Array.isArray() : determines if the passed value is an array. 
+
+console.log(Array.isArray([1, 3, 5]));
+// Expected output: true
+
+Array.isArray([]);
+// Expected output: true
+
+console.log(Array.isArray('[]'));
+// Expected output: false - a string isn't an array
+
+
+- Array.length : represents the number of elements in that array. Useful for search results. 
+
+
+- Array.push() : adds elements to the end of an array and returns the new length of the array. Useful for adding more data. A mutating method!
+
+You can also merge arrays: 
+
+    const vegetables = ["parsnip", "potato"];
+    const moreVegs = ["celery", "beetroot"];
+
+    // Merge the second array into the first one
+    vegetables.push(...moreVegs);
+
+    console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot']
+
+
+- Array.shift() : removes the element at the zeroth index and shifts the values at consecutive indexes down, then returns the removed value. A mutating method! Can be used in loops. 
+
+    cars.shift();
+
+- Array.join() : The string conversions of all array elements are joined into one string. If an element is undefined, null, it is converted to an empty string instead of the string "null" or "undefined".
+
+- Array.reverse() : The reverse() method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array. A mutating array!
+
+sort high/low, a/z, z/a...
+
+- Array.find() : It calls a provided callbackFn function once for each element in an array in ascending-index order, until callbackFn returns a truthy value.
+
+- Array.filter(): It calls a provided callbackFn function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a truthy value
+
+- Array.forEach() : calls a provided callbackFn function once for each element in an array in ascending-index order. The typical use case is to execute side effects at the end of a chain.
+
+- Array.map() :  creates a new array populated with the results of calling a provided function on every element in the calling array. Useful for modifying, reformatting arrays.  
+
+creates a new array and performs a function on each array element.
+
+- Array.reduce() :  reduces an array to a single value.
+
+Like
+
+
+you should use spreading or other copying methods where possible to create new arrays and objects as the accumulator, rather than mutating the existing one. If you decided to mutate the accumulator instead of copying it, remember to still return the modified object in the callback, or the next iteration will receive undefined.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
