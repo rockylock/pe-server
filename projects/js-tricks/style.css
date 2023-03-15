@@ -1,0 +1,27 @@
+
+:root {
+	--ink: #041424; /* Black Pearl */
+	--paper: ghostwhite;
+}
+
+body {
+	background-color: var(--paper);
+	min-height: 100vh;
+	padding: 20px;
+}
+
+h1 {
+	color: var(--ink);
+}
+
+button {
+	color: var(--ink);
+}
+
+body.dark {
+	background-color: var(--ink);
+}
+
+h1.dark {
+	color: var(--paper);
+}
