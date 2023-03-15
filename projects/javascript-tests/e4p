@@ -1,0 +1,269 @@
+
+/* E4P Pseudocode */
+
+// Exercise 1: Saying Hello
+
+/*
+STEPS
+=====
+
+create a variable with no value.
+prompt user for their name.
+provide a way for users to input their response.  
+provide a way for users to send their response. 
+give feedback if no response is given upon delivery.
+record response upon delivery. 
+return a greeting with their response: "Hello, nice to meet you, [response]." 
+*/
+
+function helloUser() {
+    var userName = prompt('What is your name?');
+    
+    if (userName) {
+        var message = "Hello, " + userName + ", it's nice to meet you.";
+        alert(message);    
+    } else {
+        alert("Please enter your name.");
+        helloUser();
+    }
+}
+
+
+
+// Exercise 2: Counting the number of characters
+
+/* 
+STEPS
+=====
+
+create a prompt that asks for user input: "What is the input string?"
+create an input variable with no initial value. 
+provide a way for users to access the prompt.
+provide a way for users to input and send their response. 
+give feedback is no response is given upon delivery. 
+record response upon delivery. 
+record the number of characters upon delivery. 
+create a message with the input string and the number of characters. 
+return the message. 
+*/
+
+function charCount() {
+    var userInput = prompt('Type out something.');
+
+    if (userInput) {
+        var count = userInput.length;
+        var message = userInput + " has " + count + " characters.";
+        alert(message);
+    } else {
+        alert("Type out anything.");
+        charCount();
+    }
+}
+
+
+
+// Exercise 3: Printing quotes
+
+/*
+STEPS
+=====
+
+create a quote variable with no initial value. 
+create a person variable with no intitial value. 
+create a prompt that asks for a quote input: "What is the quote?"
+create a prompt that asks for a person input: "Who said it?"
+give feedback if no response is given upon delivery. 
+record quote input. 
+record person input. 
+create output string with inputs: "[PERSON] says, '[QUOTE].'" use string escape. 
+return output string. 
+*/
+
+function quotePrinter() {
+    var quoteInput = prompt("What is the quote?");
+        if (quoteInput) {
+            quoteInput = quoteInput;
+        } else {
+            alert("Please enter a quote.");
+            quotePrinter();
+        }
+    var personInput = prompt("Who said it?");
+
+    var message = personInput + " says, '" + quoteInput + ".'";
+    alert(message);
+}
+
+
+
+// Exercise 4: Mad Lib
+
+/*
+STEPS
+=====
+
+create noun, verb, adverb, and adjective variables with no initial value. 
+create prompts for noun/verb/adverb/adjective.  
+give feedback if no response is given upon delivery for each input. 
+record inputs. 
+create output message with inputs. 
+return output string. 
+*/
+
+function madLib() {
+    var noun = prompt("Enter a noun.");
+    var verb = prompt("Enter a verb.");
+    var adverb = prompt("Enter an adverb.");
+    var adjective = prompt("Now enter an adjective.");
+
+    var madLib = "The " + noun + " would " + verb + " " + adverb + " over the " + adjective + " potato.";
+    alert(madLib);
+}
+
+
+
+// Exercise 5: Simple math
+
+/*
+STEPS
+=====
+
+create a first number variable with no initial value.
+create a second number variable with no initial value.
+prompt user for first and second number inputs. 
+give feedback if no response is given upon delivery for each input. 
+convert inputs from strings to numbers. 
+create sum variable that adds values. 
+create difference variable that subtracts values. 
+create product variable that multiplies values. 
+create quotient variable that divides values. 
+create an output message that:
+- shows the first number
+- shows the second number
+- shows the addition/subtraction/multiplication/division equations
+- tells user that they cannot divide by 0 if that's their second input. 
+- has line breaks for each equation
+*/
+
+
+// Exercise 6: Retirement Calculator
+
+/* 
+STEPS
+=====
+
+create current age variable with no ititial value. 
+create retirement age variable with no ititial value. 
+prompt user for current and retirement age inputs. 
+give feedback if no response is given upon delivery for each input. 
+record inputs. 
+convert inputs from strings to numbers. 
+get current year from system. 
+create time left variable that subtracts retirement age from current age. 
+	if retirement age < current age, alert user that they've traveled back in time
+	if retirement age > current age, create retirement year variable that adds time left variable to current year. 
+create output message that: 
+- "What is your current age? [current age]"
+- "At what age would you like to retire? [retirement age]"
+- "You have [time left] years until you can retire."
+- "It's [year], so you'll retire in [retirement year].
+
+*/
+
+
+// Exercise 7: Area of a rectangular room
+
+/*
+STEPS
+=====
+
+create feet variable with no inital value. 
+create width variable with no initial value. 
+create prompt requesting feet and width.
+give feedback if no response is given upon delivery for each input. 
+record inputs. 
+convert inputs from strings to numbers. 
+create square foot variable that multiplies feet and width.
+create variable that converts square feet to square meters. 
+create output message that includes square feet/meter variables. 
+*/
+
+
+// Exercise 8: Pizza party
+
+/*
+STEPS
+=====
+
+create party guests variable with no initial value. 
+create pizza variable with no initial value. 
+create slices per pizza variable with no initial value. 
+prompt user to enter values. 
+give feedback if no response is given upon delivery for each input. 
+record inputs. 
+convert inputs from strings to numbers. 
+create total slices variable that multiplies the pizzas and slices per pizza. 
+check if total slices is even. 
+	if not, round down to nearest even number and create even slices variable. 
+	if not, create variable with remaining slices.
+create new variable that divides even slices variable by party guests. 
+create output message that includes the number of pieces each guest gets, and number of leftover slices.  
+*/
+
+
+// Exercise 9: Paint calculator
+
+/*
+STEPS
+=====
+
+create length variable with no initial value. 
+create width variable with no initial value. 
+prompt user to enter values. 
+give feedback if no response is given upon delivery for each input. 
+record inputs. 
+convert inputs from strings to numbers. 
+create gallon coverage variable that is set to 350.
+create square feet variable that multiplies length and width variables.
+create gallons needed variable that divides square feet by gallon coverage.
+	round up to nearest interger. 
+create output message that displays hoe many gallons are needed.
+*/
+
+
+// Exercise 10: Self-checkout
+
+/*
+STEPS
+=====
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

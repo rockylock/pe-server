@@ -1,0 +1,52 @@
+
+var exampleArray = ["item 1", "item 2", "item 3", "item 4", "item 5", "item 6"];
+
+// var exampleArray = ["twelve", "seventy", "Banana", "chicken fingers", "Boston", "Cat"];
+
+// function exampleFunction(thing) {
+// 	console.log("I'm calling " + thing + " in the array.");
+// }
+
+function printItem(item, index) {
+	var listItem = document.createElement("li");
+	listItem.textContent = "array slot " + index + ": " + item;
+	listItem.classList.add("item");
+	document.body.appendChild(listItem);
+}
+
+//Reusable function that can take any array and run any function. 
+function doThings(anArray, aFunction) {
+	for (var i = 0; i < anArray.length; i++) {
+		aFunction( anArray[i], i, anArray );
+	}
+}
+
+//doThings(exampleArray, printItem);
+
+/*
+This doThings function uses anArray, and aFunction of our choosing. It creates a loop by using variable i (increment), which starts at 0, and will continue +1 until i matches the last item number in the array (calling all items in the array). The aFunction function calls the array items, the index slot, and the complete array. 
+
+This all gets replaced with a prepackaged Method...
+*/
+
+exampleArray.forEach( function(item, index, fullArray) {
+	console.log(item, index, fullArray);
+
+	var listItem = document.createElement("li");
+	listItem.textContent = "array slot " + index + ": " + item;
+	listItem.classList.add("item");
+	document.body.appendChild(listItem);
+});
+
+// ... or a renderItem function?
+
+function renderItem(item, index, fullArray) {
+	console.log(item, index, fullArray);
+
+	var listItem = document.createElement("li");
+	listItem.textContent = "array slot " + index + ": " + item;
+	listItem.classList.add("item");
+	document.body.appendChild(listItem);
+}
+
+// exampleArray.forEach(renderItem);
